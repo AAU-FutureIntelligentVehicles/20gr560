@@ -18,14 +18,16 @@ To enable the AAU Autonomous platform to identify, plan and park in various park
 
 ## Hardware
 * 1X - Yamaha Golfcart Modified by AAU with rotary encoders for throttle and steering by computers.
-* 1X - LMS151-10100 2D Lidar from SICK (Long range)
-* 1X - TiM551-205001 2D Lidar from SICK (Short range)
-* 1X - ZED Stereo Camera
+* 1X - LMS151-10100 2D Lidar from SICK (Long range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms1xx/c/g91901?fbclid=IwAR36fvkAideAd8VKnqbqEY3QgBjZ2wvi99WE_RQ9XY6bNaRo_KK1hWGKP6w]
+* 1X - TiM551-205001 2D Lidar from SICK (Short range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/tim5xx/c/g292754?fbclid=IwAR1EoMyMUDPIAK5gg-jNNjlXKLAd6xlFWHwWFd4NhjKxbAcQdSUORvat83k]
+* 1X - ZED Stereo Camera [https://www.stereolabs.com/zed/]
 
 ## Software
-* ROS2
+* ROS2 Foxy Fitzroy LTS distribution [https://index.ros.org/doc/ros2/Installation/Foxy/]
 ### Langauges used
 * C++
+* LaTeX
+* Markdown
 
 
 # SETUP, INSTRUCTIONS, INSTALLATIONS
