@@ -15,9 +15,6 @@ Project report to be found here: []
 
 **Marco António de Oliveira Quaresma Ferreira Alemão** [malema18@student.aau.dk]
 
-Image of the group from the left (Philip, Valdas, Frederik, Marco and Rasmus)
-<img src="/misc/grpp.jpg" alt="Group members" width="500"/>
-
 ## Hardware
 * 1X - Yamaha Golfcart Modified by AAU with rotary encoders for throttle and steering by computers.
 * 1X - LMS151-10100 2D Lidar from SICK (Long range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms1xx/c/g91901?fbclid=IwAR36fvkAideAd8VKnqbqEY3QgBjZ2wvi99WE_RQ9XY6bNaRo_KK1hWGKP6w]
