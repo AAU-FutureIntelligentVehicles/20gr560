@@ -13,6 +13,8 @@ To enable the AAU Autonomous platform to identify, plan and park in various park
 
 **Marco António De Oliveira Queresma Ferreira Alemão** [malema18@student.aau.dk]
 
+![Group members](https://drive.google.com/file/d/1F7ZDKSnggcnOfaPV0615xmoOvqCbYJad/view?usp=sharing)
+
 
 ## Hardware
 * 1X - Yamaha Golfcart Modified by AAU with rotary encoders for throttle and steering by computers.
