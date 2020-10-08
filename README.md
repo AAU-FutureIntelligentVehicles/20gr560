@@ -24,6 +24,7 @@ To enable the AAU Autonomous platform to identify, plan and park in various park
 
 ## Software
 * ROS2 Foxy Fitzroy LTS distribution [https://index.ros.org/doc/ros2/Installation/Foxy/]
+* tpod_driver (Main driver for interfacing with the AAU vehicle platform) [https://github.com/AAU-FutureIntelligentVehicles/tpod_driver]
 ### Langauges used
 * C++
 * LaTeX
