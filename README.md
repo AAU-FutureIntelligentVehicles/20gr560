@@ -11,7 +11,7 @@ To enable the AAU Autonomous platform to identify, plan and park in various park
 
 **Philip Lund Møller** [pmalle18@student.aau.dk]
 
-**Marco António de Queresma Feirrera Alemão** [malema18@student.aau.dk]
+**Marco António De Oliveira Queresma Ferreira Alemão** [malema18@student.aau.dk]
 
 
 ## Hardware
