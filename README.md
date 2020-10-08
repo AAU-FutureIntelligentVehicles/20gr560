@@ -22,6 +22,7 @@ Project report to be found here: []
 * 1X - TiM551-205001 2D Lidar from SICK (Short range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/tim5xx/c/g292754?fbclid=IwAR1EoMyMUDPIAK5gg-jNNjlXKLAd6xlFWHwWFd4NhjKxbAcQdSUORvat83k]
 <img src="https://cdn.sick.com/media/895/8/28/028/IM0051028.png" alt="TiM551-205001" width="200"/>
 * 1X - ZED Stereo Camera [https://www.stereolabs.com/zed/]
+<img src="https://cdn.stereolabs.com/assets/images/zed/zed-product-main.jpg" alt="ZED" width="200"/>
 
 ## Software
 * ROS2 Foxy Fitzroy LTS distribution [https://index.ros.org/doc/ros2/Installation/Foxy/]
