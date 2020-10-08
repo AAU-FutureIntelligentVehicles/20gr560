@@ -2,6 +2,8 @@
 ## The aim of our project
 To enable the AAU Autonomous platform to identify, plan and park in various parking scenarios using ROS2 with LIDAR and Stereo Cameras.
 
+Project report to be found here: []
+
 ## Members
 **Frederik Johannes Christensen** [fjch18@student.aau.dk]
 
