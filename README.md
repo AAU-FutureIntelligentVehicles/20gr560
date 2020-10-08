@@ -18,8 +18,9 @@ Project report to be found here: []
 ## Hardware
 * 1X - Yamaha Golfcart Modified by AAU with rotary encoders for throttle and steering by computers.
 * 1X - LMS151-10100 2D Lidar from SICK (Long range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/lms1xx/c/g91901?fbclid=IwAR36fvkAideAd8VKnqbqEY3QgBjZ2wvi99WE_RQ9XY6bNaRo_KK1hWGKP6w]
-![LMS151xx](https://cdn.sick.com/media/895/9/99/999/IM0033999.png)
+<img src="https://cdn.sick.com/media/895/9/99/999/IM0033999.png" alt="LMS151-10100" width="200"/>
 * 1X - TiM551-205001 2D Lidar from SICK (Short range) [https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/tim5xx/c/g292754?fbclid=IwAR1EoMyMUDPIAK5gg-jNNjlXKLAd6xlFWHwWFd4NhjKxbAcQdSUORvat83k]
+<img src="https://cdn.sick.com/media/895/8/28/028/IM0051028.png" alt="TiM551-205001" width="200"/>
 * 1X - ZED Stereo Camera [https://www.stereolabs.com/zed/]
 
 ## Software
