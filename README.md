@@ -13,9 +13,9 @@ Project report to be found here: []
 
 **Philip Lund Møller** [pmalle18@student.aau.dk]
 
-**Marco António De Oliveira Queresma Ferreira Alemão** [malema18@student.aau.dk]
+**Marco António de Oliveira Quaresma Ferreira Alemão** [malema18@student.aau.dk]
 
-![Group members](https://drive.google.com/file/d/1F7ZDKSnggcnOfaPV0615xmoOvqCbYJad/view?usp=sharing)
+![Group members](/misc/grpp.jpg)
 
 
 ## Hardware
