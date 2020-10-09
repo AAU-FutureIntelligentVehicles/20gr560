@@ -15,7 +15,7 @@ Project report to be found here: []
 
 **Marco António De Oliveira Queresma Ferreira Alemão** [malema18@student.aau.dk]
 
-![Group members](https://drive.google.com/file/d/1F7ZDKSnggcnOfaPV0615xmoOvqCbYJad/view?usp=sharing)
+![Group members](/misc/grpp.jpg)
 
 
 ## Hardware
