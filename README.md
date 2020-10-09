@@ -13,14 +13,9 @@ Project report to be found here: []
 
 **Philip Lund Møller** [pmalle18@student.aau.dk]
 
-<<<<<<< HEAD
+
 **Marco António De Oliveira Queresma Ferreira Alemão** [malema18@student.aau.dk]
 
-![Group members](/misc/grpp.jpg)
-
-=======
-**Marco António de Oliveira Quaresma Ferreira Alemão** [malema18@student.aau.dk]
->>>>>>> origin/main
 
 ## Hardware
 * 1X - Yamaha Golfcart Modified by AAU with rotary encoders for throttle and steering by computers.
