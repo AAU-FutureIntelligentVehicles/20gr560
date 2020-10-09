@@ -1,2 +1,0 @@
-Invoking command in '/home/frederik/git/20gr560/ros_ws/src/build/tpod_driver': /usr/bin/cmake /home/frederik/git/20gr560/ros_ws/src/tpod_driver-master -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/frederik/git/20gr560/ros_ws/src/install/tpod_driver
-Invoked command in '/home/frederik/git/20gr560/ros_ws/src/build/tpod_driver' returned '1': /usr/bin/cmake /home/frederik/git/20gr560/ros_ws/src/tpod_driver-master -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/frederik/git/20gr560/ros_ws/src/install/tpod_driver
