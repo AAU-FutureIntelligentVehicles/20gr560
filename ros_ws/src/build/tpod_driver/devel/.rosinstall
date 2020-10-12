@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/frederik/git/20gr560/ros_ws/src/build/tpod_driver/devel/setup.sh

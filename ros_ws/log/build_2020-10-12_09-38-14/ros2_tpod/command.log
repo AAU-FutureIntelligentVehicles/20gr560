@@ -1,0 +1,4 @@
+Invoking command in '/home/frederik/git/20gr560/ros_ws/build/ros2_tpod': /usr/bin/cmake --build /home/frederik/git/20gr560/ros_ws/build/ros2_tpod -- -j4 -l4
+Invoked command in '/home/frederik/git/20gr560/ros_ws/build/ros2_tpod' returned '0': /usr/bin/cmake --build /home/frederik/git/20gr560/ros_ws/build/ros2_tpod -- -j4 -l4
+Invoking command in '/home/frederik/git/20gr560/ros_ws/build/ros2_tpod': /usr/bin/cmake --install /home/frederik/git/20gr560/ros_ws/build/ros2_tpod
+Invoked command in '/home/frederik/git/20gr560/ros_ws/build/ros2_tpod' returned '0': /usr/bin/cmake --install /home/frederik/git/20gr560/ros_ws/build/ros2_tpod

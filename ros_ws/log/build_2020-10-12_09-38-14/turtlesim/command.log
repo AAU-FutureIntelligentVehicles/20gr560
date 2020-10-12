@@ -1,0 +1,4 @@
+Invoking command in '/home/frederik/git/20gr560/ros_ws/build/turtlesim': /usr/bin/cmake --build /home/frederik/git/20gr560/ros_ws/build/turtlesim -- -j4 -l4
+Invoked command in '/home/frederik/git/20gr560/ros_ws/build/turtlesim' returned '0': /usr/bin/cmake --build /home/frederik/git/20gr560/ros_ws/build/turtlesim -- -j4 -l4
+Invoking command in '/home/frederik/git/20gr560/ros_ws/build/turtlesim': /usr/bin/cmake --install /home/frederik/git/20gr560/ros_ws/build/turtlesim
+Invoked command in '/home/frederik/git/20gr560/ros_ws/build/turtlesim' returned '0': /usr/bin/cmake --install /home/frederik/git/20gr560/ros_ws/build/turtlesim
