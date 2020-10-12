@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/manual_input.dir/src/manual_input.cpp.o  -o manual_input 

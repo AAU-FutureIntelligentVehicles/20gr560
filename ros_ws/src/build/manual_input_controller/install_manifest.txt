@@ -1,0 +1,16 @@
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/lib/manual_input_controller/manual_input
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/ament_index/resource_index/package_run_dependencies/manual_input_controller
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/ament_index/resource_index/parent_prefix_path/manual_input_controller
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/environment/ament_prefix_path.sh
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/environment/ament_prefix_path.dsv
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/environment/path.sh
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/environment/path.dsv
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/local_setup.bash
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/local_setup.sh
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/local_setup.zsh
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/local_setup.dsv
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/package.dsv
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/ament_index/resource_index/packages/manual_input_controller
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/cmake/manual_input_controllerConfig.cmake
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/cmake/manual_input_controllerConfig-version.cmake
+/home/frederik/git/20gr560/ros_ws/src/install/manual_input_controller/share/manual_input_controller/package.xml

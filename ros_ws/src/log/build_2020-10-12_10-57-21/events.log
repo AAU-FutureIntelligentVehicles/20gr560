@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000294] (-) JobUnselected: {'identifier': 'manual_input_controller'}
+[0.000476] (-) JobUnselected: {'identifier': 'tpod_driver'}
+[0.001132] (-) EventReactorShutdown: {}
