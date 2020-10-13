@@ -1,4 +1,0 @@
-/home/frederik/git/20gr560/ros_ws/install/tpod_driver/lib/pkgconfig/tpod_driver.pc
-/home/frederik/git/20gr560/ros_ws/install/tpod_driver/share/tpod_driver/cmake/tpod_driverConfig.cmake
-/home/frederik/git/20gr560/ros_ws/install/tpod_driver/share/tpod_driver/cmake/tpod_driverConfig-version.cmake
-/home/frederik/git/20gr560/ros_ws/install/tpod_driver/share/tpod_driver/package.xml

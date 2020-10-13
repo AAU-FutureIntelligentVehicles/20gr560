@@ -1,8 +1,0 @@
-prefix=/home/frederik/git/20gr560/ros_ws/src/install/tpod_driver
-
-Name: tpod_driver
-Description: Description of tpod_driver
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

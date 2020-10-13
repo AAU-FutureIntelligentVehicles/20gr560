@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tpod_driver"
-PROJECT_SPACE_DIR = "/home/frederik/git/20gr560/ros_ws/build/tpod_driver/devel"
+PROJECT_SPACE_DIR = "/home/frederik/git/20gr560/ros_ws/devel"
 PROJECT_VERSION = "0.0.0"

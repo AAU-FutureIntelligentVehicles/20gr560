@@ -1,4 +1,4 @@
-prefix=/home/frederik/git/20gr560/ros_ws/install/tpod_driver
+prefix=/home/frederik/git/20gr560/ros_ws/install
 
 Name: tpod_driver
 Description: Description of tpod_driver

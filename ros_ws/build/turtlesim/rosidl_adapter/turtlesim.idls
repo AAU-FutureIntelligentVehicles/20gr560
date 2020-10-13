@@ -1,8 +1,0 @@
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
-/home/frederik/git/20gr560/ros_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl

@@ -43,32 +43,32 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frederik/git/20gr560/ros_ws/src/tpod_driver
+CMAKE_SOURCE_DIR = /home/frederik/git/20gr560/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frederik/git/20gr560/ros_ws/build/tpod_driver
+CMAKE_BINARY_DIR = /home/frederik/git/20gr560/ros_ws/build
 
 # Include any dependencies generated for this target.
-include CMakeFiles/tpod_driver_node.dir/depend.make
+include tpod_driver/CMakeFiles/tpod_driver_node.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/tpod_driver_node.dir/progress.make
+include tpod_driver/CMakeFiles/tpod_driver_node.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/tpod_driver_node.dir/flags.make
+include tpod_driver/CMakeFiles/tpod_driver_node.dir/flags.make
 
-CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o: CMakeFiles/tpod_driver_node.dir/flags.make
-CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o: /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frederik/git/20gr560/ros_ws/build/tpod_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o -c /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp
+tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o: tpod_driver/CMakeFiles/tpod_driver_node.dir/flags.make
+tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o: /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frederik/git/20gr560/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o"
+	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o -c /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp
 
-CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.i: cmake_force
+tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp > CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.i
+	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp > CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.i
 
-CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.s: cmake_force
+tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp -o CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.s
+	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frederik/git/20gr560/ros_ws/src/tpod_driver/src/tpod_driver.cpp -o CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.s
 
 # Object files for target tpod_driver_node
 tpod_driver_node_OBJECTS = \
@@ -77,39 +77,39 @@ tpod_driver_node_OBJECTS = \
 # External object files for target tpod_driver_node
 tpod_driver_node_EXTERNAL_OBJECTS =
 
-devel/lib/tpod_driver/tpod_driver_node: CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o
-devel/lib/tpod_driver/tpod_driver_node: CMakeFiles/tpod_driver_node.dir/build.make
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libroscpp.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole.so
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librostime.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libcpp_common.so
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-devel/lib/tpod_driver/tpod_driver_node: CMakeFiles/tpod_driver_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frederik/git/20gr560/ros_ws/build/tpod_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/tpod_driver/tpod_driver_node"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tpod_driver_node.dir/link.txt --verbose=$(VERBOSE)
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: tpod_driver/CMakeFiles/tpod_driver_node.dir/src/tpod_driver.cpp.o
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: tpod_driver/CMakeFiles/tpod_driver_node.dir/build.make
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libroscpp.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/librostime.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node: tpod_driver/CMakeFiles/tpod_driver_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frederik/git/20gr560/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node"
+	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tpod_driver_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/tpod_driver_node.dir/build: devel/lib/tpod_driver/tpod_driver_node
+tpod_driver/CMakeFiles/tpod_driver_node.dir/build: /home/frederik/git/20gr560/ros_ws/devel/lib/tpod_driver/tpod_driver_node
 
-.PHONY : CMakeFiles/tpod_driver_node.dir/build
+.PHONY : tpod_driver/CMakeFiles/tpod_driver_node.dir/build
 
-CMakeFiles/tpod_driver_node.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/tpod_driver_node.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/tpod_driver_node.dir/clean
+tpod_driver/CMakeFiles/tpod_driver_node.dir/clean:
+	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && $(CMAKE_COMMAND) -P CMakeFiles/tpod_driver_node.dir/cmake_clean.cmake
+.PHONY : tpod_driver/CMakeFiles/tpod_driver_node.dir/clean
 
-CMakeFiles/tpod_driver_node.dir/depend:
-	cd /home/frederik/git/20gr560/ros_ws/build/tpod_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frederik/git/20gr560/ros_ws/src/tpod_driver /home/frederik/git/20gr560/ros_ws/src/tpod_driver /home/frederik/git/20gr560/ros_ws/build/tpod_driver /home/frederik/git/20gr560/ros_ws/build/tpod_driver /home/frederik/git/20gr560/ros_ws/build/tpod_driver/CMakeFiles/tpod_driver_node.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/tpod_driver_node.dir/depend
+tpod_driver/CMakeFiles/tpod_driver_node.dir/depend:
+	cd /home/frederik/git/20gr560/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frederik/git/20gr560/ros_ws/src /home/frederik/git/20gr560/ros_ws/src/tpod_driver /home/frederik/git/20gr560/ros_ws/build /home/frederik/git/20gr560/ros_ws/build/tpod_driver /home/frederik/git/20gr560/ros_ws/build/tpod_driver/CMakeFiles/tpod_driver_node.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : tpod_driver/CMakeFiles/tpod_driver_node.dir/depend
 
