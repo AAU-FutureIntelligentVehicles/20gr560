@@ -1,8 +1,0 @@
-Invoking command in '/home/frederik/git/20gr560/build/tpod_driver': /usr/bin/cmake /home/frederik/git/20gr560/ros_ws/src/tpod_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/frederik/git/20gr560/install/tpod_driver
-Invoked command in '/home/frederik/git/20gr560/build/tpod_driver' returned '0': /usr/bin/cmake /home/frederik/git/20gr560/ros_ws/src/tpod_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/frederik/git/20gr560/install/tpod_driver
-Invoking command in '/home/frederik/git/20gr560/build/tpod_driver': /usr/bin/cmake --build /home/frederik/git/20gr560/build/tpod_driver -- -j4 -l4
-Invoked command in '/home/frederik/git/20gr560/build/tpod_driver' returned '0': /usr/bin/cmake --build /home/frederik/git/20gr560/build/tpod_driver -- -j4 -l4
-Invoking command in '/home/frederik/git/20gr560/build/tpod_driver': /usr/bin/cmake --build /home/frederik/git/20gr560/build/tpod_driver --target tests -- -j4 -l4
-Invoked command in '/home/frederik/git/20gr560/build/tpod_driver' returned '0': /usr/bin/cmake --build /home/frederik/git/20gr560/build/tpod_driver --target tests -- -j4 -l4
-Invoking command in '/home/frederik/git/20gr560/build/tpod_driver': /usr/bin/cmake --install /home/frederik/git/20gr560/build/tpod_driver
-Invoked command in '/home/frederik/git/20gr560/build/tpod_driver' returned '0': /usr/bin/cmake --install /home/frederik/git/20gr560/build/tpod_driver
