@@ -9,4 +9,34 @@
             </geometry>
         </visual>
     </link>
+
+      <joint name="base_to_lms" type="fixed">
+        <origin xyz="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="lms_link"/>
+      </joint>
+
+    <link name="lms_link">
+        <visual>
+          <geometry>
+            <mesh filename="package://cart_sim/meshes/LMS.dae"/>
+          </geometry>
+          <origin rpy="0 0 -1.570796" xyz="2 0 0"/>
+        </visual>
+    </link>
+
+      <joint name="base_to_tim" type="fixed">
+        <origin xyz="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="tim_link"/>
+      </joint>
+
+    <link name="tim_link">
+          <visual>
+            <geometry>
+              <mesh filename="package://cart_sim/meshes/TIM.dae"/>
+            </geometry>
+            <origin rpy="1.570796 0 0" xyz="2.1 0 0"/>
+          </visual>
+      </link>
 </robot>
