@@ -1,0 +1,7 @@
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find cart_sim)/urdf/cart_model.xacro'"/>
+
+  <!-- Show in Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find cart_sim)/launch/config.rviz"/>
+
+</launch>
