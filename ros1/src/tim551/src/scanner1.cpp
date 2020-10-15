@@ -9,6 +9,7 @@ void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
   ROS_INFO("Range: [%.5f]", scan->ranges[0]);
 
 
+
   //ROS_INFO("Angle min: [%.5f]", scan->angle_min);
   //ROS_INFO("Angle max: [%.5f]", scan->angle_max);
   //ROS_INFO("Range max: [%.5f]", scan->range_max);
