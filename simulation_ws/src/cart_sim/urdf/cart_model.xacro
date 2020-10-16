@@ -21,7 +21,7 @@
           <geometry>
             <mesh filename="package://cart_sim/meshes/LMS.dae"/>
           </geometry>
-          <origin rpy="0 0 -1.570796" xyz="2 0 0"/>
+          <origin rpy="0 0 -1.570796" xyz="1 0.058815 0.57"/>
         </visual>
     </link>
 
@@ -36,7 +36,22 @@
             <geometry>
               <mesh filename="package://cart_sim/meshes/TIM.dae"/>
             </geometry>
-            <origin rpy="1.570796 0 0" xyz="2.1 0 0"/>
+            <origin rpy="1.570796 0.2094395 0" xyz="0.7 0 1.61"/>
+          </visual>
+      </link>
+
+      <joint name="base_to_D455" type="fixed">
+        <origin xyz="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="D455_link"/>
+      </joint>
+
+    <link name="D455_link">
+          <visual>
+            <geometry>
+              <mesh filename="package://cart_sim/meshes/D455.dae"/>
+            </geometry>
+            <origin rpy="1.3613565 0 -1.570796" xyz="0.72 0 1.71"/>
           </visual>
       </link>
 </robot>
