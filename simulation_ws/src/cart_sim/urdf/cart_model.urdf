@@ -8,11 +8,17 @@
                 <mesh filename="package://cart_sim/meshes/golfcar.dae"/>
             </geometry>
         </visual>
-        <inertial>
-          <mass value="10"/>
-          <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-        </inertial>
     </link>
+
+    <link name="world">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </link>
+
+        <joint name="world_to_base" type="fixed">
+          <origin xyz="0 0 0"/>
+          <parent link="world"/>
+          <child link="base_link"/>
+        </joint>
 
       <joint name="base_to_lms" type="fixed">
         <origin xyz="0 0 0"/>
@@ -27,10 +33,6 @@
           </geometry>
           <origin rpy="0 0 -1.570796" xyz="1 0.058815 0.57"/>
         </visual>
-        <inertial>
-          <mass value="10"/>
-          <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-        </inertial>
     </link>
 
       <joint name="base_to_tim" type="fixed">
@@ -46,10 +48,6 @@
             </geometry>
             <origin rpy="1.570796 0.2094395 0" xyz="0.7 0 1.61"/>
           </visual>
-          <inertial>
-            <mass value="10"/>
-            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-          </inertial>
       </link>
 
       <joint name="base_to_D455" type="fixed">
@@ -65,9 +63,5 @@
             </geometry>
             <origin rpy="1.3613565 0 -1.570796" xyz="0.72 0 1.71"/>
           </visual>
-          <inertial>
-            <mass value="10"/>
-            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-          </inertial>
       </link>
 </robot>

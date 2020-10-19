@@ -14,6 +14,7 @@
   </include>
 
   <!-- Spawning -->
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find cart_sim)/urdf/cart_model.xacro -urdf -z 1.2 -model cart_model" />
+  <!-- Spawn a robot into Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find cart_sim)/urdf/box.urdf -urdf -z 1 -model box" />
 
 </launch>
