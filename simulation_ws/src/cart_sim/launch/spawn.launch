@@ -6,6 +6,6 @@
     <arg name="y" default="0"/>
     <arg name="z" default="1"/>
 
-    <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model cart_model -x $(arg x) -y $(arg y) -z $(arg z)" />
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model cart_model -x $(arg x) -y $(arg y) -z $(arg z)" />
 
 </launch>
