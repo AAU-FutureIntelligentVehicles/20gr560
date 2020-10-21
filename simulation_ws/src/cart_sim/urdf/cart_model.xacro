@@ -3,14 +3,19 @@
 <robot name="cart_model" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <link name="base_link">
         <visual>
-            <origin rpy="1.570796 0 0" xyz="-1.2375 0.65 0"/>
+            <origin rpy="1.570796 0 0" xyz="-1.2375 0.65 -0.89"/>
             <geometry>
                 <mesh filename="package://cart_sim/meshes/golfcar.dae"/>
             </geometry>
         </visual>
+        <collision name="collision">
+          <geometry>
+            <box size="2.38 1.2 1.78"/>
+          </geometry>
+        </collision>
         <inertial>
-          <mass value="10"/>
-          <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+          <mass value="300"/>
+          <inertia ixx="10.0" ixy="0.0" ixz="0.0" iyy="10.0" iyz="0.0" izz="10.0"/>
         </inertial>
     </link>
 
@@ -27,6 +32,57 @@
           </geometry>
           <origin rpy="0 0 -1.570796" xyz="1 0.058815 0.57"/>
         </visual>
+        <sensor type="ray" name="sensor">
+
+          <!-- Position the ray sensor based on the specification. Also rotate
+               it by 90 degrees around the X-axis so that the <horizontal> rays
+               become vertical -->
+          <pose>0 0 -0.004645 0 0 0</pose>
+
+          <!-- Enable visualization to see the rays in the GUI -->
+          <visualize>true</visualize>
+
+          <!-- Set the update rate of the sensor -->
+          <update_rate>30</update_rate>
+                  <ray>
+
+            <!-- The scan element contains the horizontal and vertical beams.
+                 We are leaving out the vertical beams for this tutorial. -->
+            <scan>
+
+              <!-- The horizontal beams -->
+              <horizontal>
+                <!-- The velodyne has 32 beams(samples) -->
+                <samples>360</samples>
+
+                <!-- Resolution is multiplied by samples to determine number of
+                     simulated beams vs interpolated beams. See:
+                     http://sdformat.org/spec?ver=1.6&elem=sensor#horizontal_resolution
+                     -->
+                <resolution>1</resolution>
+
+                <!-- Minimum angle in radians -->
+                <min_angle>-1.570796</min_angle>
+
+                <!-- Maximum angle in radians -->
+                <max_angle>1.570796</max_angle>
+              </horizontal>
+            </scan>
+
+            <!-- Range defines characteristics of an individual beam -->
+            <range>
+
+              <!-- Minimum distance of the beam -->
+              <min>0.5</min>
+
+              <!-- Maximum distance of the beam -->
+              <max>50</max>
+
+              <!-- Linear resolution of the beam -->
+              <resolution>0.02</resolution>
+            </range>
+          </ray>
+        </sensor>
         <inertial>
           <mass value="10"/>
           <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -69,5 +125,47 @@
             <mass value="10"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
           </inertial>
+          <sensor name="camera" type="depth">
+            <update_rate>30</update_rate>
+            <!-- The REALSENSE has up to 90fps but this is alot for a SIM -->
+            <camera>
+              <horizontal_fov>1.500983</horizontal_fov>
+              <image>
+                <width>1280</width>
+                <height>720</height>
+                <format>R8G8B8</format>
+              </image>
+              <clip>
+                <near>0.4</near>
+                <far>20.0</far>
+              </clip>
+            </camera>
+            <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
+              <baseline>0.2</baseline>
+              <alwaysOn>true</alwaysOn>
+              <!-- Keep this zero, update_rate in the parent <sensor> tag
+                will control the frame rate. -->
+              <updateRate>0.0</updateRate>
+              <cameraName>camera_ir</cameraName>
+              <imageTopicName>/camera/color/image_raw</imageTopicName>
+              <cameraInfoTopicName>/camera/color/camera_info</cameraInfoTopicName>
+              <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
+              <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
+              <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
+              <frameName>camera_link</frameName>
+              <pointCloudCutoff>0.4</pointCloudCutoff>
+              <pointCloudCutoffMax>20.0</pointCloudCutoffMax>
+              <distortionK1>0</distortionK1>
+              <distortionK2>0</distortionK2>
+              <distortionK3>0</distortionK3>
+              <distortionT1>0</distortionT1>
+              <distortionT2>0</distortionT2>
+              <CxPrime>0</CxPrime>
+              <Cx>0</Cx>
+              <Cy>0</Cy>
+              <focalLength>0</focalLength>
+              <hackBaseline>0</hackBaseline>
+            </plugin>
+          </sensor>
       </link>
 </robot>

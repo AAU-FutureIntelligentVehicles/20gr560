@@ -1,0 +1,21 @@
+<?xml version ="1.0" ?>
+
+<robot name="cart_standalone" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="base_link">
+        <visual>
+            <origin rpy="1.570796 0 0" xyz="-1.2375 0.65 -0.89"/>
+            <geometry>
+                <mesh filename="package://cart_sim/meshes/golfcar.dae"/>
+            </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box size="2.38 1.2 1.78"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <mass value="300"/>
+          <inertia ixx="10.0" ixy="0.0" ixz="0.0" iyy="10.0" iyz="0.0" izz="10.0"/>
+        </inertial>
+    </link>
+</robot>
