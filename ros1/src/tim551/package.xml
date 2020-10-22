@@ -10,9 +10,9 @@
 
 
   <buildtool_depend>catkin</buildtool_depend>
-
   <build_depend>libusb-1.0-dev</build_depend>
   <build_depend>roslaunch</build_depend>
+  <build_depend>message_generation</build_depend>
 
   <build_export_depend>libusb-1.0-dev</build_export_depend>
   
@@ -21,10 +21,14 @@
   <depend>roscpp</depend>
   <depend>rospy</depend>
   <depend>sensor_msgs</depend>
+  <depend>visualization_msgs</depend>
 
   <exec_depend>libusb-1.0</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>xacro</exec_depend>
+  
+  
+  <exec_depend>message_runtime</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
