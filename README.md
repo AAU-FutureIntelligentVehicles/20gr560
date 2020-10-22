@@ -25,7 +25,8 @@ Project report to be found here: []
 <img src="https://cdn.sick.com/media/895/8/28/028/IM0051028.png" alt="TiM551-205001" width="200"/>
 * 1X - ZED Stereo Camera [https://www.stereolabs.com/zed/]
 <img src="https://cdn.stereolabs.com/assets/images/zed/zed-product-main.jpg" alt="ZED" width="200"/>
-
+* 1X - Intel RealSense D455 IR/RGB Depth Camera [https://www.intelrealsense.com/depth-camera-d455/]
+<img src="https://www.intelrealsense.com/wp-content/uploads/2020/07/depth-camera-d455-intel-realsense.jpg" alt="D455" width="200"/>
 ## Software
 * ROS2 Foxy Fitzroy LTS distribution [https://index.ros.org/doc/ros2/Installation/Foxy/]
 * tpod_driver (Main driver for interfacing with the AAU vehicle platform) [https://github.com/AAU-FutureIntelligentVehicles/tpod_driver]
