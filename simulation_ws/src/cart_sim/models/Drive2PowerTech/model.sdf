@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="Drive2PowerTech">
+    <pose>0 0 2 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>300</mass>
+        <inertia>
+          <ixx>25</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>25</iyy>
+          <iyz>0</iyz>
+          <izz>25</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.38 1.2 1.78</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>-1.2375 0.65 -0.89 1.570796 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://Drive2PowerTech/meshes/golfcar.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="LMS">
+      <pose>1.2 0 -0.5 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.105 0.102 0.162</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+      <pose>-0.05 0.058815 0 0 0 -1.570796</pose>
+      <geometry>
+        <mesh>
+          <uri>model://Drive2PowerTech/meshes/LMS.dae</uri>
+        </mesh>
+      </geometry>
+    </visual>
+    <sensor type="ray" name="sensor">
+
+      <!-- Position the ray sensor based on the specification. Also rotate
+           it by 90 degrees around the X-axis so that the <horizontal> rays
+           become vertical -->
+      <pose>0 0 -0.004645 0 0 0</pose>
+
+      <!-- Enable visualization to see the rays in the GUI -->
+      <visualize>true</visualize>
+
+      <!-- Set the update rate of the sensor -->
+      <update_rate>30</update_rate>
+              <ray>
+
+        <!-- The scan element contains the horizontal and vertical beams.
+             We are leaving out the vertical beams for this tutorial. -->
+        <scan>
+
+          <!-- The horizontal beams -->
+          <horizontal>
+            <!-- The velodyne has 32 beams(samples) -->
+            <samples>360</samples>
+
+            <!-- Resolution is multiplied by samples to determine number of
+                 simulated beams vs interpolated beams. See:
+                 http://sdformat.org/spec?ver=1.6&elem=sensor#horizontal_resolution
+                 -->
+            <resolution>1</resolution>
+
+            <!-- Minimum angle in radians -->
+            <min_angle>-1.570796</min_angle>
+
+            <!-- Maximum angle in radians -->
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+
+        <!-- Range defines characteristics of an individual beam -->
+        <range>
+
+          <!-- Minimum distance of the beam -->
+          <min>0.5</min>
+
+          <!-- Maximum distance of the beam -->
+          <max>50</max>
+
+          <!-- Linear resolution of the beam -->
+          <resolution>0.02</resolution>
+        </range>
+      </ray>
+    </sensor>
+    </link>
+    <joint type="fixed" name="lms_mount">
+        <pose>0 0 0 0 0 0</pose>
+        <child>LMS</child>
+        <parent>link</parent>
+      </joint>
+  </model>
+</sdf>
