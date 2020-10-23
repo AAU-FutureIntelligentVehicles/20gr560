@@ -2,20 +2,19 @@
 #include <ros/console.h>
 #include <sensor_msgs/LaserScan.h>
 #include <queue>
+#include <limits>
 #include "global.h"
 
 // 270 values in array (1 beam = value)
 class tim{
 private:
   scan s;
-  float sum;
   results r;
-  float avg;
-  float lrange[4];
   ros::NodeHandle nh;
   ros::Publisher pub;
   ros::Subscriber sub;
   std::queue<float> q;
+  float inf = std::numeric_limits<float>::infinity();
   sensor_msgs::LaserScan msg;
 public:
 
@@ -24,7 +23,7 @@ void publisher(){
 }
 
 void subscriber(){
-  sub= nh.subscribe("/scan",10,&tim::scanner, this);
+  sub= nh.subscribe("scan_rear",10,&tim::scanner, this);
 }
 void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
   s.ranges[0] = scan->ranges[179];
@@ -57,25 +56,25 @@ void distance(int i){
     j = 176;
   }
 
-  if (s.ranges[i] > s.limit){
+  if (s.ranges[i] > s.limit && s.ranges[i] != inf){
     q.push(s.ranges[i]);
-    sum += q.back();
+    r.sum += q.back();
       if(q.size()>s.len){
         msg.ranges.resize(5); // resizing the cpp array to ros array
-        avg = sum/15;
-        msg.ranges[i] = avg;
+        r.avg = r.sum/15;
+        msg.ranges[i] = r.avg;
         pub.publish(msg);
         ROS_INFO("Angle: [%d] deg", j);
-        lrange[i] = avg;
-        ROS_INFO("Average: [%.5f]", lrange[i]);
-        sum -= q.front();
+        r.lrange[i] = r.avg;
+        ROS_INFO("Average: [%.5f]", r.lrange[i]);
+        r.sum -= q.front();
         q.pop();
       }
       }
   else{
     ROS_ERROR("***CRITICAL ERROR***");
     ROS_ERROR("Angle: [%d] deg is too close!", j);
-      }
+  }
 }
 };
 int main(int argc, char** argv){

@@ -23,7 +23,6 @@ public:
     average[2] = msg->ranges[2];
     average[3] = msg->ranges[3];
     average[4] = msg->ranges[4];
-    ROS_INFO("Publishing to RVIZ under the topic /average_scan");
     visualization();
 }
   void visualization(){
@@ -51,6 +50,7 @@ public:
 int main(int argc, char** argv){
   ros::init(argc, argv, "avgscan");
   bim T;
+  ROS_INFO("Publishing to RVIZ under the topic /average_scan");
   T.subscriber();
   T.publisher();
   ros::spin();

@@ -11,5 +11,7 @@ struct scan{
 };
 struct results{
   float sum;
+  float avg;
+  float lrange[4];
 };
 #endif
