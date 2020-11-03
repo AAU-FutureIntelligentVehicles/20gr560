@@ -2,7 +2,8 @@
 #define TIM551
 
 struct scan{
-  float ranges[4];
+  float ranges[180];
+  int pipi[181];
   float range;
   float angle_min;
   float angle_max;
@@ -12,6 +13,6 @@ struct scan{
 struct results{
   float sum;
   float avg;
-  float lrange[4];
+  float lrange[181];
 };
 #endif

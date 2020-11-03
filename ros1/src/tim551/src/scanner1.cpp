@@ -26,21 +26,40 @@ void subscriber(){
   sub= nh.subscribe("scan_rear",10,&tim::scanner, this);
 }
 void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
-  s.ranges[0] = scan->ranges[179];
-  s.ranges[1] = scan->ranges[178];
-  s.ranges[2] = scan->ranges[177];
-  s.ranges[3] = scan->ranges[176];
-  s.ranges[4] = scan->ranges[175];
-  distance(0);
-  distance(1);
-  distance(2);
-  distance(3);
-  distance(4);
+//(scan->ranges.size())
+  for(int i=0;i<(scan->ranges.size());i++){
+            if(!(scan->ranges.empty()))
+            s.ranges[i] = scan->ranges[i];
+          }
+  for (int i = 0; i <(scan->ranges.size()); i++) {
+    distance(i);
+  }
 }
 
 void distance(int i){
-  int j;
-  if(i == 0){
+  if (s.ranges[i] > s.limit && s.ranges[i] != inf){
+    q.push(s.ranges[i]);
+    r.sum += q.back();
+      if(q.size()>s.len){
+        msg.ranges.resize(180); // resizing the cpp array to ros array
+        r.avg = r.sum/15;
+        msg.ranges[i] = r.avg;
+      //  pub.publish(msg);
+        r.lrange[i] = r.avg;
+        ROS_INFO("Average: [%.5f]", r.lrange[i]);
+        r.sum -= q.front();
+        q.pop();
+      }
+      }
+  else{
+    ROS_ERROR("***Angle is too close***");
+    //ROS_ERROR("Angle: [%d] deg is too close!", j);
+  }
+
+
+
+//************ FOR 5 ANGLES ONLY****************//
+/*  if(i == 0){
     j = 180;
   }
   else if(i == 1){
@@ -54,8 +73,10 @@ void distance(int i){
   }
   else if(i == 4){
     j = 176;
-  }
+  }*/
 
+
+/*
   if (s.ranges[i] > s.limit && s.ranges[i] != inf){
     q.push(s.ranges[i]);
     r.sum += q.back();
@@ -69,19 +90,22 @@ void distance(int i){
         ROS_INFO("Average: [%.5f]", r.lrange[i]);
         r.sum -= q.front();
         q.pop();
-      }
+        }
       }
   else{
     ROS_ERROR("***CRITICAL ERROR***");
     ROS_ERROR("Angle: [%d] deg is too close!", j);
-  }
+  } */
+//****************************************************
+
+
 }
 };
 int main(int argc, char** argv){
 ros::init(argc, argv, "scanner");
 tim T;
 T.subscriber();
-T.publisher();
+//T.publisher();
 ros::spin();
 return 0;
 }
