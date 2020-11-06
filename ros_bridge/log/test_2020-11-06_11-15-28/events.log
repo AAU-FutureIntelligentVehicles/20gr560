@@ -1,0 +1,541 @@
+[0.000000] (-) TimerEvent: {}
+[0.000116] (ros1_bridge) JobQueued: {'identifier': 'ros1_bridge', 'dependencies': OrderedDict([('ros1_bridge', '/home/vdr/ros_bridge/install/ros1_bridge')])}
+[0.000157] (ros1_bridge) JobStarted: {'identifier': 'ros1_bridge'}
+[0.099774] (-) TimerEvent: {}
+[0.200659] (-) TimerEvent: {}
+[0.301968] (-) TimerEvent: {}
+[0.402973] (-) TimerEvent: {}
+[0.474758] (ros1_bridge) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/vdr/ros_bridge/build/ros1_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vdr'), ('LANGUAGE', 'en_US:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '3353'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/home/vdr/ros_bridge/install/ros1_bridge/lib:/opt/ros/melodic/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/vdr'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/vdr'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3557'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('_colcon_cd_root', '/home/vdr/ros2_install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'vdr'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '102ffcf14814c99fa9160465682641615600000030740007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'vdr'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vdr-GV62-8RC:@/tmp/.ICE-unix/3074,unix/vdr-GV62-8RC:/tmp/.ICE-unix/3074'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/vdr/ros_bridge/install/ros1_bridge:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:cea5345e-71c2-40d3-bd00-7771fe30fef3'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vdr/ros_bridge/build/ros1_bridge'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/home/vdr/ros_bridge/install/ros1_bridge/lib/python3.6/site-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/vdr/ros_bridge/install/ros1_bridge:/opt/ros/melodic')]), 'shell': False}
+[0.498858] (ros1_bridge) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/vdr/ros_bridge/build/ros1_bridge/CTestConfiguration.ini\n'}
+[0.499409] (ros1_bridge) StdoutLine: {'line': b'Parse Config file:/home/vdr/ros_bridge/build/ros1_bridge/CTestConfiguration.ini\n'}
+[0.499493] (ros1_bridge) StdoutLine: {'line': b'   Site: vdr-GV62-8RC\n'}
+[0.499555] (ros1_bridge) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.499648] (ros1_bridge) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.499767] (ros1_bridge) StdoutLine: {'line': b'SetCTestConfiguration:CMakeCommand:/usr/bin/cmake\n'}
+[0.499966] (ros1_bridge) StdoutLine: {'line': b'Create new tag: 20201106-1015 - Experimental\n'}
+[0.500031] (ros1_bridge) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/vdr/ros_bridge/build/ros1_bridge/CTestConfiguration.ini\n'}
+[0.500090] (ros1_bridge) StdoutLine: {'line': b'Parse Config file:/home/vdr/ros_bridge/build/ros1_bridge/CTestConfiguration.ini\n'}
+[0.500147] (ros1_bridge) StdoutLine: {'line': b'Test project /home/vdr/ros_bridge/build/ros1_bridge\n'}
+[0.500202] (ros1_bridge) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.500257] (ros1_bridge) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.500311] (ros1_bridge) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.500365] (ros1_bridge) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.500419] (ros1_bridge) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.500518] (ros1_bridge) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.500572] (ros1_bridge) StdoutLine: {'line': b'test 1\n'}
+[0.500625] (ros1_bridge) StdoutLine: {'line': b'      Start  1: copyright\n'}
+[0.500680] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[0.500735] (ros1_bridge) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/copyright.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_copyright/copyright.txt" "--command" "/opt/ros/dashing/bin/ament_copyright" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/copyright.xunit.xml"\n'}
+[0.500793] (ros1_bridge) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.503008] (-) TimerEvent: {}
+[0.603341] (-) TimerEvent: {}
+[0.703931] (-) TimerEvent: {}
+[0.753350] (ros1_bridge) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[0.753544] (ros1_bridge) StdoutLine: {'line': b'1:  - /opt/ros/dashing/bin/ament_copyright --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/copyright.xunit.xml\n'}
+[0.804015] (-) TimerEvent: {}
+[0.904256] (-) TimerEvent: {}
+[1.004593] (-) TimerEvent: {}
+[1.105259] (-) TimerEvent: {}
+[1.203017] (ros1_bridge) StdoutLine: {'line': b'1: No problems found, checked 24 files\n'}
+[1.205355] (-) TimerEvent: {}
+[1.216927] (ros1_bridge) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.217222] (ros1_bridge) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/copyright.xunit.xml'\n"}
+[1.225141] (ros1_bridge) StdoutLine: {'line': b' 1/10 Test  #1: copyright ...............................................   Passed    0.73 sec\n'}
+[1.225388] (ros1_bridge) StdoutLine: {'line': b'test 2\n'}
+[1.225461] (ros1_bridge) StdoutLine: {'line': b'      Start  2: cppcheck\n'}
+[1.225522] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[1.225579] (ros1_bridge) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cppcheck.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/dashing/bin/ament_cppcheck" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cppcheck.xunit.xml"\n'}
+[1.225639] (ros1_bridge) StdoutLine: {'line': b'2: Test timeout computed to be: 120\n'}
+[1.276167] (ros1_bridge) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[1.276306] (ros1_bridge) StdoutLine: {'line': b'2:  - /opt/ros/dashing/bin/ament_cppcheck --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cppcheck.xunit.xml\n'}
+[1.305470] (-) TimerEvent: {}
+[1.405714] (-) TimerEvent: {}
+[1.506008] (-) TimerEvent: {}
+[1.606322] (-) TimerEvent: {}
+[1.607053] (ros1_bridge) StdoutLine: {'line': b'2: No problems found\n'}
+[1.618183] (ros1_bridge) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[1.618348] (ros1_bridge) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cppcheck.xunit.xml'\n"}
+[1.625330] (ros1_bridge) StdoutLine: {'line': b' 2/10 Test  #2: cppcheck ................................................   Passed    0.40 sec\n'}
+[1.625550] (ros1_bridge) StdoutLine: {'line': b'test 3\n'}
+[1.625616] (ros1_bridge) StdoutLine: {'line': b'      Start  3: cpplint\n'}
+[1.625675] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[1.625731] (ros1_bridge) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cpplint.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_cpplint/cpplint.txt" "--command" "/opt/ros/dashing/bin/ament_cpplint" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cpplint.xunit.xml"\n'}
+[1.625803] (ros1_bridge) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[1.676099] (ros1_bridge) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[1.676237] (ros1_bridge) StdoutLine: {'line': b'3:  - /opt/ros/dashing/bin/ament_cpplint --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cpplint.xunit.xml\n'}
+[1.706434] (-) TimerEvent: {}
+[1.806676] (-) TimerEvent: {}
+[1.907046] (-) TimerEvent: {}
+[2.007320] (-) TimerEvent: {}
+[2.107566] (-) TimerEvent: {}
+[2.207775] (-) TimerEvent: {}
+[2.307991] (-) TimerEvent: {}
+[2.370665] (ros1_bridge) StdoutLine: {'line': b"3: Using '--root=/home/vdr/ros_bridge/src/ros1_bridge/include' argument\n"}
+[2.370930] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371001] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/bridge.hpp\n'}
+[2.371062] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371120] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/builtin_interfaces_factories.hpp\n'}
+[2.371184] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371241] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/convert_builtin_interfaces.hpp\n'}
+[2.371300] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371355] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/convert_decl.hpp\n'}
+[2.371409] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371464] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/factory.hpp\n'}
+[2.371532] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371587] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/include/ros1_bridge/factory_interface.hpp\n'}
+[2.371643] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371698] (ros1_bridge) StdoutLine: {'line': b"3: Using '--root=/home/vdr/ros_bridge/src/ros1_bridge/src' argument\n"}
+[2.371753] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371808] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/bridge.cpp\n'}
+[2.371863] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.371917] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/builtin_interfaces_factories.cpp\n'}
+[2.371973] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372027] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/convert_builtin_interfaces.cpp\n'}
+[2.372082] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372136] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/dynamic_bridge.cpp\n'}
+[2.372190] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372245] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/parameter_bridge.cpp\n'}
+[2.372299] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372355] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/simple_bridge.cpp\n'}
+[2.372409] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372474] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/simple_bridge_1_to_2.cpp\n'}
+[2.372529] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372584] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/simple_bridge_2_to_1.cpp\n'}
+[2.372639] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372693] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/src/static_bridge.cpp\n'}
+[2.372747] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372800] (ros1_bridge) StdoutLine: {'line': b"3: Using '--root=/home/vdr/ros_bridge/src/ros1_bridge/test' argument\n"}
+[2.372855] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.372910] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/test/test_ros1_client.cpp\n'}
+[2.372965] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.373019] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/test/test_ros1_server.cpp\n'}
+[2.373073] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.373127] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/test/test_ros2_client.cpp\n'}
+[2.373181] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.373236] (ros1_bridge) StdoutLine: {'line': b'3: Done processing /home/vdr/ros_bridge/src/ros1_bridge/test/test_ros2_server.cpp\n'}
+[2.373290] (ros1_bridge) StdoutLine: {'line': b'3: \n'}
+[2.373344] (ros1_bridge) StdoutLine: {'line': b'3: No problems found\n'}
+[2.379562] (ros1_bridge) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[2.379722] (ros1_bridge) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/cpplint.xunit.xml'\n"}
+[2.386970] (ros1_bridge) StdoutLine: {'line': b' 3/10 Test  #3: cpplint .................................................   Passed    0.76 sec\n'}
+[2.387140] (ros1_bridge) StdoutLine: {'line': b'test 4\n'}
+[2.387206] (ros1_bridge) StdoutLine: {'line': b'      Start  4: flake8\n'}
+[2.387265] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[2.387324] (ros1_bridge) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/flake8.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_flake8/flake8.txt" "--command" "/opt/ros/dashing/bin/ament_flake8" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/flake8.xunit.xml"\n'}
+[2.387384] (ros1_bridge) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[2.408099] (-) TimerEvent: {}
+[2.437849] (ros1_bridge) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[2.437989] (ros1_bridge) StdoutLine: {'line': b'4:  - /opt/ros/dashing/bin/ament_flake8 --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/flake8.xunit.xml\n'}
+[2.508224] (-) TimerEvent: {}
+[2.608482] (-) TimerEvent: {}
+[2.708736] (-) TimerEvent: {}
+[2.809251] (-) TimerEvent: {}
+[2.909871] (-) TimerEvent: {}
+[3.010407] (-) TimerEvent: {}
+[3.110640] (-) TimerEvent: {}
+[3.144353] (ros1_bridge) StdoutLine: {'line': b'4: \n'}
+[3.144532] (ros1_bridge) StdoutLine: {'line': b'4: 1 files checked\n'}
+[3.144599] (ros1_bridge) StdoutLine: {'line': b'4: No problems found\n'}
+[3.144657] (ros1_bridge) StdoutLine: {'line': b'4: \n'}
+[3.144713] (ros1_bridge) StdoutLine: {'line': b'4: Checked files:\n'}
+[3.144769] (ros1_bridge) StdoutLine: {'line': b'4: \n'}
+[3.144825] (ros1_bridge) StdoutLine: {'line': b'4: * ./ros1_bridge/__init__.py\n'}
+[3.161715] (ros1_bridge) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[3.161961] (ros1_bridge) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/flake8.xunit.xml'\n"}
+[3.169170] (ros1_bridge) StdoutLine: {'line': b' 4/10 Test  #4: flake8 ..................................................   Passed    0.78 sec\n'}
+[3.169404] (ros1_bridge) StdoutLine: {'line': b'test 5\n'}
+[3.169473] (ros1_bridge) StdoutLine: {'line': b'      Start  5: lint_cmake\n'}
+[3.169533] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[3.169589] (ros1_bridge) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/lint_cmake.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/dashing/bin/ament_lint_cmake" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/lint_cmake.xunit.xml"\n'}
+[3.169649] (ros1_bridge) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[3.210771] (-) TimerEvent: {}
+[3.220275] (ros1_bridge) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[3.220409] (ros1_bridge) StdoutLine: {'line': b'5:  - /opt/ros/dashing/bin/ament_lint_cmake --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/lint_cmake.xunit.xml\n'}
+[3.310886] (-) TimerEvent: {}
+[3.411128] (-) TimerEvent: {}
+[3.414021] (ros1_bridge) StdoutLine: {'line': b'5: \n'}
+[3.414130] (ros1_bridge) StdoutLine: {'line': b'5: No problems found\n'}
+[3.422831] (ros1_bridge) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[3.423008] (ros1_bridge) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/lint_cmake.xunit.xml'\n"}
+[3.429948] (ros1_bridge) StdoutLine: {'line': b' 5/10 Test  #5: lint_cmake ..............................................   Passed    0.26 sec\n'}
+[3.430156] (ros1_bridge) StdoutLine: {'line': b'test 6\n'}
+[3.430220] (ros1_bridge) StdoutLine: {'line': b'      Start  6: pep257\n'}
+[3.430279] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[3.430336] (ros1_bridge) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/pep257.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_pep257/pep257.txt" "--command" "/opt/ros/dashing/bin/ament_pep257" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/pep257.xunit.xml"\n'}
+[3.430406] (ros1_bridge) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[3.481225] (ros1_bridge) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[3.481361] (ros1_bridge) StdoutLine: {'line': b'6:  - /opt/ros/dashing/bin/ament_pep257 --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/pep257.xunit.xml\n'}
+[3.511246] (-) TimerEvent: {}
+[3.611483] (-) TimerEvent: {}
+[3.711825] (-) TimerEvent: {}
+[3.812364] (-) TimerEvent: {}
+[3.842823] (ros1_bridge) StdoutLine: {'line': b'6: checking ./ros1_bridge/__init__.py\n'}
+[3.842957] (ros1_bridge) StdoutLine: {'line': b'6: No problems found\n'}
+[3.853705] (ros1_bridge) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.853890] (ros1_bridge) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/pep257.xunit.xml'\n"}
+[3.861167] (ros1_bridge) StdoutLine: {'line': b' 6/10 Test  #6: pep257 ..................................................   Passed    0.43 sec\n'}
+[3.861358] (ros1_bridge) StdoutLine: {'line': b'test 7\n'}
+[3.861424] (ros1_bridge) StdoutLine: {'line': b'      Start  7: uncrustify\n'}
+[3.861483] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[3.861540] (ros1_bridge) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/uncrustify.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/dashing/bin/ament_uncrustify" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/uncrustify.xunit.xml"\n'}
+[3.861600] (ros1_bridge) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[3.912125] (ros1_bridge) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[3.912265] (ros1_bridge) StdoutLine: {'line': b'7:  - /opt/ros/dashing/bin/ament_uncrustify --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/uncrustify.xunit.xml\n'}
+[3.912419] (-) TimerEvent: {}
+[4.012678] (-) TimerEvent: {}
+[4.113021] (-) TimerEvent: {}
+[4.195736] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/bridge.hpp'\n"}
+[4.195993] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196117] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/builtin_interfaces_factories.hpp'\n"}
+[4.196177] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196234] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/convert_builtin_interfaces.hpp'\n"}
+[4.196291] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196347] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/convert_decl.hpp'\n"}
+[4.196402] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196466] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/factory.hpp'\n"}
+[4.196523] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196577] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'include/ros1_bridge/factory_interface.hpp'\n"}
+[4.196631] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196691] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/bridge.cpp'\n"}
+[4.196744] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196797] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/builtin_interfaces_factories.cpp'\n"}
+[4.196851] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.196904] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/convert_builtin_interfaces.cpp'\n"}
+[4.196961] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197015] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/dynamic_bridge.cpp'\n"}
+[4.197070] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197123] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/parameter_bridge.cpp'\n"}
+[4.197178] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197233] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/simple_bridge.cpp'\n"}
+[4.197287] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197342] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/simple_bridge_1_to_2.cpp'\n"}
+[4.197397] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197451] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/simple_bridge_2_to_1.cpp'\n"}
+[4.197505] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197559] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'src/static_bridge.cpp'\n"}
+[4.197613] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197669] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'test/test_ros1_client.cpp'\n"}
+[4.197722] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197775] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'test/test_ros1_server.cpp'\n"}
+[4.197829] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197883] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'test/test_ros2_client.cpp'\n"}
+[4.197936] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.197990] (ros1_bridge) StdoutLine: {'line': b"7: No code style divergence in file 'test/test_ros2_server.cpp'\n"}
+[4.198043] (ros1_bridge) StdoutLine: {'line': b'7: \n'}
+[4.198096] (ros1_bridge) StdoutLine: {'line': b'7: No problems found\n'}
+[4.206593] (ros1_bridge) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[4.206823] (ros1_bridge) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/uncrustify.xunit.xml'\n"}
+[4.213132] (-) TimerEvent: {}
+[4.213860] (ros1_bridge) StdoutLine: {'line': b' 7/10 Test  #7: uncrustify ..............................................   Passed    0.35 sec\n'}
+[4.214085] (ros1_bridge) StdoutLine: {'line': b'test 8\n'}
+[4.214172] (ros1_bridge) StdoutLine: {'line': b'      Start  8: xmllint\n'}
+[4.214235] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[4.214293] (ros1_bridge) StdoutLine: {'line': b'8: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/xmllint.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/ament_xmllint/xmllint.txt" "--command" "/opt/ros/dashing/bin/ament_xmllint" "--xunit-file" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/xmllint.xunit.xml"\n'}
+[4.214358] (ros1_bridge) StdoutLine: {'line': b'8: Test timeout computed to be: 60\n'}
+[4.265204] (ros1_bridge) StdoutLine: {'line': b"8: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[4.265343] (ros1_bridge) StdoutLine: {'line': b'8:  - /opt/ros/dashing/bin/ament_xmllint --xunit-file /home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/xmllint.xunit.xml\n'}
+[4.313244] (-) TimerEvent: {}
+[4.413489] (-) TimerEvent: {}
+[4.513898] (-) TimerEvent: {}
+[4.614633] (-) TimerEvent: {}
+[4.715304] (-) TimerEvent: {}
+[4.815694] (-) TimerEvent: {}
+[4.916366] (-) TimerEvent: {}
+[5.017128] (-) TimerEvent: {}
+[5.117878] (-) TimerEvent: {}
+[5.218627] (-) TimerEvent: {}
+[5.247166] (ros1_bridge) StdoutLine: {'line': b"8: File 'package.xml' is valid\n"}
+[5.247680] (ros1_bridge) StdoutLine: {'line': b'8: \n'}
+[5.247992] (ros1_bridge) StdoutLine: {'line': b'8: No problems found\n'}
+[5.261084] (ros1_bridge) StdoutLine: {'line': b'8: -- run_test.py: return code 0\n'}
+[5.261333] (ros1_bridge) StdoutLine: {'line': b"8: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/xmllint.xunit.xml'\n"}
+[5.268390] (ros1_bridge) StdoutLine: {'line': b' 8/10 Test  #8: xmllint .................................................   Passed    1.05 sec\n'}
+[5.268649] (ros1_bridge) StdoutLine: {'line': b'test 9\n'}
+[5.268720] (ros1_bridge) StdoutLine: {'line': b'      Start  9: test_topics_across_dynamic_bridge__rmw_fastrtps_cpp\n'}
+[5.268781] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[5.268839] (ros1_bridge) StdoutLine: {'line': b'9: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/launch_test/CHANGEME.txt" "--env" "RMW_IMPLEMENTATION=rmw_fastrtps_cpp" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/home/vdr/ros_bridge/build/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp_.py" "--junit-xml=/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml" "--package-name=ros1_bridge"\n'}
+[5.268904] (ros1_bridge) StdoutLine: {'line': b'9: Test timeout computed to be: 60\n'}
+[5.318722] (-) TimerEvent: {}
+[5.319282] (ros1_bridge) StdoutLine: {'line': b'9: -- run_test.py: extra environment variables:\n'}
+[5.319419] (ros1_bridge) StdoutLine: {'line': b'9:  - RMW_IMPLEMENTATION=rmw_fastrtps_cpp\n'}
+[5.319483] (ros1_bridge) StdoutLine: {'line': b"9: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[5.319543] (ros1_bridge) StdoutLine: {'line': b'9:  - /usr/bin/python3 -m launch_testing.launch_test /home/vdr/ros_bridge/build/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp_.py --junit-xml=/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml --package-name=ros1_bridge\n'}
+[5.418901] (-) TimerEvent: {}
+[5.519345] (-) TimerEvent: {}
+[5.619777] (-) TimerEvent: {}
+[5.720192] (-) TimerEvent: {}
+[5.820911] (-) TimerEvent: {}
+[5.921479] (-) TimerEvent: {}
+[5.923796] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[5.923912] (ros1_bridge) StdoutLine: {'line': b"9: Starting test run ros1_bridge.test_topics_across_dynamic_bridge__rmw_fastrtps_cpp_.launch_tests[ros1_talker_ros2_listener_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', 'rosrun', 'roscpp_tutorials', 'talker'], ['/opt/ros/dashing/lib/demo_nodes_cpp/listener']]\n"}
+[5.923979] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [launch]: All log files can be found below /home/vdr/.ros/log/2020-11-06-11-15-34-503276-vdr-GV62-8RC-13170\n'}
+[5.924044] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[5.987088] (ros1_bridge) StdoutLine: {'line': b"9: test_listener_output[ros1_talker_ros2_listener_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', 'rosrun', 'roscpp_tutorials', 'talker'], ['/opt/ros/dashing/lib/demo_nodes_cpp/listener']] (ros1_bridge.TestTopicsAcrossDynamicBridge) ... [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1]: process started with pid [13174]\n"}
+[5.987287] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__dynamic_bridge-2]: process started with pid [13175]\n'}
+[5.987426] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__talker-3]: process started with pid [13179]\n'}
+[5.987492] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__listener-4]: process started with pid [13185]\n'}
+[6.021573] (-) TimerEvent: {}
+[6.121872] (-) TimerEvent: {}
+[6.222138] (-) TimerEvent: {}
+[6.322404] (-) TimerEvent: {}
+[6.422693] (-) TimerEvent: {}
+[6.475908] (ros1_bridge) StdoutLine: {'line': b'9: [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1] \x1b[31mRLException: roscore cannot run as another roscore/master is already running. \n'}
+[6.476202] (ros1_bridge) StdoutLine: {'line': b'9: [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1] Please kill other roscore/master processes before relaunching.\n'}
+[6.476291] (ros1_bridge) StdoutLine: {'line': b'9: [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1] The ROS_MASTER_URI is http://vdr-GV62-8RC:11311/\x1b[0m\n'}
+[6.476351] (ros1_bridge) StdoutLine: {'line': b'9: [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1] \x1b[31mThe traceback for the exception was written to the log file\x1b[0m\n'}
+[6.522850] (-) TimerEvent: {}
+[6.623327] (-) TimerEvent: {}
+[6.649890] (ros1_bridge) StdoutLine: {'line': b"9: [ERROR] [ros1_talker_ros2_listener_across_dynamic_bridge__roscore-1]: process has died [pid 13174, exit code 1, cmd '/opt/ros/melodic/env.sh /opt/ros/melodic/bin/roscore'].\n"}
+[6.723500] (-) TimerEvent: {}
+[6.824210] (-) TimerEvent: {}
+[6.924857] (-) TimerEvent: {}
+[7.025529] (-) TimerEvent: {}
+[7.126202] (-) TimerEvent: {}
+[7.226873] (-) TimerEvent: {}
+[7.327531] (-) TimerEvent: {}
+[7.428167] (-) TimerEvent: {}
+[7.528782] (-) TimerEvent: {}
+[7.629412] (-) TimerEvent: {}
+[7.730186] (-) TimerEvent: {}
+[7.830966] (-) TimerEvent: {}
+[7.931645] (-) TimerEvent: {}
+[8.032316] (-) TimerEvent: {}
+[8.133087] (-) TimerEvent: {}
+[8.233813] (-) TimerEvent: {}
+[8.334560] (-) TimerEvent: {}
+[8.435251] (-) TimerEvent: {}
+[8.535935] (-) TimerEvent: {}
+[8.636606] (-) TimerEvent: {}
+[8.737308] (-) TimerEvent: {}
+[8.838038] (-) TimerEvent: {}
+[8.938782] (-) TimerEvent: {}
+[9.039517] (-) TimerEvent: {}
+[9.140259] (-) TimerEvent: {}
+[9.240944] (-) TimerEvent: {}
+[9.341620] (-) TimerEvent: {}
+[9.398287] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__listener-4]: sending signal 'SIGINT' to process[ros1_talker_ros2_listener_across_dynamic_bridge__listener-4]\n"}
+[9.398951] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__talker-3]: sending signal 'SIGINT' to process[ros1_talker_ros2_listener_across_dynamic_bridge__talker-3]\n"}
+[9.399667] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__dynamic_bridge-2]: sending signal 'SIGINT' to process[ros1_talker_ros2_listener_across_dynamic_bridge__dynamic_bridge-2]\n"}
+[9.401213] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__listener-4]: process has finished cleanly [pid 13185]\n'}
+[9.441787] (-) TimerEvent: {}
+[9.542222] (-) TimerEvent: {}
+[9.589177] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__talker-3]: process has finished cleanly [pid 13179]\n'}
+[9.642282] (-) TimerEvent: {}
+[9.742459] (-) TimerEvent: {}
+[9.842809] (-) TimerEvent: {}
+[9.943410] (-) TimerEvent: {}
+[10.044127] (-) TimerEvent: {}
+[10.144795] (-) TimerEvent: {}
+[10.184167] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros1_talker_ros2_listener_across_dynamic_bridge__dynamic_bridge-2]: process has finished cleanly [pid 13175]\n'}
+[10.185541] (ros1_bridge) StdoutLine: {'line': b'9: ok\n'}
+[10.186356] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[10.186974] (ros1_bridge) StdoutLine: {'line': b'9: ----------------------------------------------------------------------\n'}
+[10.187498] (ros1_bridge) StdoutLine: {'line': b'9: Ran 1 test in 3.465s\n'}
+[10.188002] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[10.188278] (ros1_bridge) StdoutLine: {'line': b'9: OK\n'}
+[10.188375] (ros1_bridge) StdoutLine: {'line': b"9: test_processes_finished_gracefully[ros1_talker_ros2_listener_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', 'rosrun', 'roscpp_tutorials', 'talker'], ['/opt/ros/dashing/lib/demo_nodes_cpp/listener']] (ros1_bridge.TestTopicsAcrossDynamicBridgeAfterShutdown)\n"}
+[10.189269] (ros1_bridge) StdoutLine: {'line': b'9: Test that both executables finished gracefully. ... \n'}
+[10.189401] (ros1_bridge) StdoutLine: {'line': b"9: Starting test run ros1_bridge.test_topics_across_dynamic_bridge__rmw_fastrtps_cpp_.launch_tests[ros2_talker_ros1_listener_across_dynamic_bridge, ['/opt/ros/dashing/lib/demo_nodes_cpp/talker'], ['/opt/ros/melodic/env.sh', 'rosrun', 'rospy_tutorials', 'listener']]\n"}
+[10.189517] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [launch]: All log files can be found below /home/vdr/.ros/log/2020-11-06-11-15-34-503276-vdr-GV62-8RC-13170\n'}
+[10.189629] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[10.191256] (ros1_bridge) StdoutLine: {'line': b'9: ok\n'}
+[10.191396] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[10.191509] (ros1_bridge) StdoutLine: {'line': b'9: ----------------------------------------------------------------------\n'}
+[10.191621] (ros1_bridge) StdoutLine: {'line': b'9: Ran 1 test in 0.001s\n'}
+[10.191728] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[10.191823] (ros1_bridge) StdoutLine: {'line': b'9: OK\n'}
+[10.215516] (ros1_bridge) StdoutLine: {'line': b"9: test_listener_output[ros2_talker_ros1_listener_across_dynamic_bridge, ['/opt/ros/dashing/lib/demo_nodes_cpp/talker'], ['/opt/ros/melodic/env.sh', 'rosrun', 'rospy_tutorials', 'listener']] (ros1_bridge.TestTopicsAcrossDynamicBridge) ... [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5]: process started with pid [13259]\n"}
+[10.215761] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__dynamic_bridge-6]: process started with pid [13261]\n'}
+[10.215993] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__talker-7]: process started with pid [13264]\n'}
+[10.216122] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__listener-8]: process started with pid [13278]\n'}
+[10.244899] (-) TimerEvent: {}
+[10.345203] (-) TimerEvent: {}
+[10.445459] (-) TimerEvent: {}
+[10.545748] (-) TimerEvent: {}
+[10.646052] (-) TimerEvent: {}
+[10.720578] (ros1_bridge) StdoutLine: {'line': b'9: [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5] \x1b[31mRLException: roscore cannot run as another roscore/master is already running. \n'}
+[10.720831] (ros1_bridge) StdoutLine: {'line': b'9: [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5] Please kill other roscore/master processes before relaunching.\n'}
+[10.720939] (ros1_bridge) StdoutLine: {'line': b'9: [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5] The ROS_MASTER_URI is http://vdr-GV62-8RC:11311/\x1b[0m\n'}
+[10.721000] (ros1_bridge) StdoutLine: {'line': b'9: [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5] \x1b[31mThe traceback for the exception was written to the log file\x1b[0m\n'}
+[10.746271] (-) TimerEvent: {}
+[10.846873] (-) TimerEvent: {}
+[10.872219] (ros1_bridge) StdoutLine: {'line': b"9: [ERROR] [ros2_talker_ros1_listener_across_dynamic_bridge__roscore-5]: process has died [pid 13259, exit code 1, cmd '/opt/ros/melodic/env.sh /opt/ros/melodic/bin/roscore'].\n"}
+[10.947135] (-) TimerEvent: {}
+[11.047816] (-) TimerEvent: {}
+[11.148583] (-) TimerEvent: {}
+[11.249339] (-) TimerEvent: {}
+[11.350068] (-) TimerEvent: {}
+[11.450824] (-) TimerEvent: {}
+[11.551587] (-) TimerEvent: {}
+[11.652280] (-) TimerEvent: {}
+[11.752974] (-) TimerEvent: {}
+[11.853625] (-) TimerEvent: {}
+[11.954300] (-) TimerEvent: {}
+[12.055043] (-) TimerEvent: {}
+[12.155789] (-) TimerEvent: {}
+[12.236709] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__listener-8]: sending signal 'SIGINT' to process[ros2_talker_ros1_listener_across_dynamic_bridge__listener-8]\n"}
+[12.237173] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__talker-7]: sending signal 'SIGINT' to process[ros2_talker_ros1_listener_across_dynamic_bridge__talker-7]\n"}
+[12.237974] (ros1_bridge) StdoutLine: {'line': b"9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__dynamic_bridge-6]: sending signal 'SIGINT' to process[ros2_talker_ros1_listener_across_dynamic_bridge__dynamic_bridge-6]\n"}
+[12.240634] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__talker-7]: process has finished cleanly [pid 13264]\n'}
+[12.255860] (-) TimerEvent: {}
+[12.356070] (-) TimerEvent: {}
+[12.387743] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__listener-8]: process has finished cleanly [pid 13278]\n'}
+[12.456309] (-) TimerEvent: {}
+[12.556817] (-) TimerEvent: {}
+[12.657570] (-) TimerEvent: {}
+[12.758321] (-) TimerEvent: {}
+[12.812524] (ros1_bridge) StdoutLine: {'line': b'9: [INFO] [ros2_talker_ros1_listener_across_dynamic_bridge__dynamic_bridge-6]: process has finished cleanly [pid 13261]\n'}
+[12.813875] (ros1_bridge) StdoutLine: {'line': b'9: ok\n'}
+[12.814293] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[12.814601] (ros1_bridge) StdoutLine: {'line': b'9: ----------------------------------------------------------------------\n'}
+[12.815005] (ros1_bridge) StdoutLine: {'line': b'9: Ran 1 test in 2.039s\n'}
+[12.815262] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[12.815506] (ros1_bridge) StdoutLine: {'line': b'9: OK\n'}
+[12.815749] (ros1_bridge) StdoutLine: {'line': b"9: test_processes_finished_gracefully[ros2_talker_ros1_listener_across_dynamic_bridge, ['/opt/ros/dashing/lib/demo_nodes_cpp/talker'], ['/opt/ros/melodic/env.sh', 'rosrun', 'rospy_tutorials', 'listener']] (ros1_bridge.TestTopicsAcrossDynamicBridgeAfterShutdown)\n"}
+[12.816365] (ros1_bridge) StdoutLine: {'line': b'9: Test that both executables finished gracefully. ... ok\n'}
+[12.816702] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[12.816955] (ros1_bridge) StdoutLine: {'line': b'9: ----------------------------------------------------------------------\n'}
+[12.817204] (ros1_bridge) StdoutLine: {'line': b'9: Ran 1 test in 0.001s\n'}
+[12.817449] (ros1_bridge) StdoutLine: {'line': b'9: \n'}
+[12.817690] (ros1_bridge) StdoutLine: {'line': b'9: OK\n'}
+[12.858442] (-) TimerEvent: {}
+[12.859250] (ros1_bridge) StdoutLine: {'line': b'9: -- run_test.py: return code 0\n'}
+[12.859562] (ros1_bridge) StdoutLine: {'line': b"9: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_topics_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml'\n"}
+[12.867656] (ros1_bridge) StdoutLine: {'line': b' 9/10 Test  #9: test_topics_across_dynamic_bridge__rmw_fastrtps_cpp .....   Passed    7.60 sec\n'}
+[12.867925] (ros1_bridge) StdoutLine: {'line': b'test 10\n'}
+[12.867991] (ros1_bridge) StdoutLine: {'line': b'      Start 10: test_services_across_dynamic_bridge__rmw_fastrtps_cpp\n'}
+[12.868051] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[12.868107] (ros1_bridge) StdoutLine: {'line': b'10: Test command: /usr/bin/python3 "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml" "--package-name" "ros1_bridge" "--output-file" "/home/vdr/ros_bridge/build/ros1_bridge/launch_test/CHANGEME.txt" "--env" "RMW_IMPLEMENTATION=rmw_fastrtps_cpp" "--command" "/usr/bin/python3" "-m" "launch_testing.launch_test" "/home/vdr/ros_bridge/build/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp_.py" "--junit-xml=/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml" "--package-name=ros1_bridge"\n'}
+[12.868171] (ros1_bridge) StdoutLine: {'line': b'10: Test timeout computed to be: 60\n'}
+[12.919408] (ros1_bridge) StdoutLine: {'line': b'10: -- run_test.py: extra environment variables:\n'}
+[12.919549] (ros1_bridge) StdoutLine: {'line': b'10:  - RMW_IMPLEMENTATION=rmw_fastrtps_cpp\n'}
+[12.919618] (ros1_bridge) StdoutLine: {'line': b"10: -- run_test.py: invoking following command in '/home/vdr/ros_bridge/src/ros1_bridge':\n"}
+[12.919680] (ros1_bridge) StdoutLine: {'line': b'10:  - /usr/bin/python3 -m launch_testing.launch_test /home/vdr/ros_bridge/build/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp_.py --junit-xml=/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml --package-name=ros1_bridge\n'}
+[12.958561] (-) TimerEvent: {}
+[13.011977] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[13.012109] (ros1_bridge) StdoutLine: {'line': b"10: Starting test run ros1_bridge.test_services_across_dynamic_bridge__rmw_fastrtps_cpp_.launch_tests[ros1_server_ros2_client_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_server'], ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_client_cpp']]\n"}
+[13.012175] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [launch]: All log files can be found below /home/vdr/.ros/log/2020-11-06-11-15-42-019872-vdr-GV62-8RC-13352\n'}
+[13.012234] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[13.013512] (ros1_bridge) StdoutLine: {'line': b"10: test_client_process_terminates_after_a_finite_amount_of_time[ros1_server_ros2_client_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_server'], ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_client_cpp']] (ros1_bridge.TestServicesAcrossDynamicBridge)\n"}
+[13.038286] (ros1_bridge) StdoutLine: {'line': b'10: Test that the client executables terminates after a finite amount of time. ... [INFO] [ros1_server_ros2_client_across_dynamic_bridge__roscore-1]: process started with pid [13356]\n'}
+[13.038519] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__dynamic_bridge-2]: process started with pid [13357]\n'}
+[13.038667] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__server-3]: process started with pid [13360]\n'}
+[13.038734] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__client-4]: process started with pid [13366]\n'}
+[13.058662] (-) TimerEvent: {}
+[13.158979] (-) TimerEvent: {}
+[13.259249] (-) TimerEvent: {}
+[13.359515] (-) TimerEvent: {}
+[13.459769] (-) TimerEvent: {}
+[13.533580] (ros1_bridge) StdoutLine: {'line': b'10: [ros1_server_ros2_client_across_dynamic_bridge__roscore-1] \x1b[31mRLException: roscore cannot run as another roscore/master is already running. \n'}
+[13.533763] (ros1_bridge) StdoutLine: {'line': b'10: [ros1_server_ros2_client_across_dynamic_bridge__roscore-1] Please kill other roscore/master processes before relaunching.\n'}
+[13.533829] (ros1_bridge) StdoutLine: {'line': b'10: [ros1_server_ros2_client_across_dynamic_bridge__roscore-1] The ROS_MASTER_URI is http://vdr-GV62-8RC:11311/\x1b[0m\n'}
+[13.533889] (ros1_bridge) StdoutLine: {'line': b'10: [ros1_server_ros2_client_across_dynamic_bridge__roscore-1] \x1b[31mThe traceback for the exception was written to the log file\x1b[0m\n'}
+[13.559999] (-) TimerEvent: {}
+[13.657567] (ros1_bridge) StdoutLine: {'line': b"10: [ERROR] [ros1_server_ros2_client_across_dynamic_bridge__roscore-1]: process has died [pid 13356, exit code 1, cmd '/opt/ros/melodic/env.sh /opt/ros/melodic/bin/roscore'].\n"}
+[13.660217] (-) TimerEvent: {}
+[13.760660] (-) TimerEvent: {}
+[13.861408] (-) TimerEvent: {}
+[13.962110] (-) TimerEvent: {}
+[14.062824] (-) TimerEvent: {}
+[14.163558] (-) TimerEvent: {}
+[14.240561] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__client-4]: process has finished cleanly [pid 13366]\n'}
+[14.249417] (ros1_bridge) StdoutLine: {'line': b"10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__server-3]: sending signal 'SIGINT' to process[ros1_server_ros2_client_across_dynamic_bridge__server-3]\n"}
+[14.251544] (ros1_bridge) StdoutLine: {'line': b"10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__dynamic_bridge-2]: sending signal 'SIGINT' to process[ros1_server_ros2_client_across_dynamic_bridge__dynamic_bridge-2]\n"}
+[14.263750] (-) TimerEvent: {}
+[14.364319] (-) TimerEvent: {}
+[14.461604] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__server-3]: process has finished cleanly [pid 13360]\n'}
+[14.464516] (-) TimerEvent: {}
+[14.564821] (-) TimerEvent: {}
+[14.612725] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros1_server_ros2_client_across_dynamic_bridge__dynamic_bridge-2]: process has finished cleanly [pid 13357]\n'}
+[14.613112] (ros1_bridge) StdoutLine: {'line': b'10: ok\n'}
+[14.613201] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[14.613263] (ros1_bridge) StdoutLine: {'line': b'10: ----------------------------------------------------------------------\n'}
+[14.613332] (ros1_bridge) StdoutLine: {'line': b'10: Ran 1 test in 1.228s\n'}
+[14.613388] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[14.613443] (ros1_bridge) StdoutLine: {'line': b'10: OK\n'}
+[14.613497] (ros1_bridge) StdoutLine: {'line': b"10: test_processes_finished_gracefully[ros1_server_ros2_client_across_dynamic_bridge, ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_server'], ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_client_cpp']] (ros1_bridge.TestServicesAcrossDynamicBridgeAfterShutdown)\n"}
+[14.614079] (ros1_bridge) StdoutLine: {'line': b'10: Test that both executables finished gracefully. ... \n'}
+[14.614166] (ros1_bridge) StdoutLine: {'line': b"10: Starting test run ros1_bridge.test_services_across_dynamic_bridge__rmw_fastrtps_cpp_.launch_tests[ros2_server_ros1_client_across_dynamic_bridge, ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_server_cpp'], ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_client']]\n"}
+[14.614232] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [launch]: All log files can be found below /home/vdr/.ros/log/2020-11-06-11-15-42-019872-vdr-GV62-8RC-13352\n'}
+[14.614295] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[14.615713] (ros1_bridge) StdoutLine: {'line': b'10: ok\n'}
+[14.615857] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[14.615976] (ros1_bridge) StdoutLine: {'line': b'10: ----------------------------------------------------------------------\n'}
+[14.616089] (ros1_bridge) StdoutLine: {'line': b'10: Ran 1 test in 0.000s\n'}
+[14.616187] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[14.616284] (ros1_bridge) StdoutLine: {'line': b'10: OK\n'}
+[14.616402] (ros1_bridge) StdoutLine: {'line': b"10: test_client_process_terminates_after_a_finite_amount_of_time[ros2_server_ros1_client_across_dynamic_bridge, ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_server_cpp'], ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_client']] (ros1_bridge.TestServicesAcrossDynamicBridge)\n"}
+[14.620876] (ros1_bridge) StdoutLine: {'line': b'10: Test that the client executables terminates after a finite amount of time. ... [INFO] [ros2_server_ros1_client_across_dynamic_bridge__roscore-5]: process started with pid [13432]\n'}
+[14.621139] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__dynamic_bridge-6]: process started with pid [13433]\n'}
+[14.621329] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__server-7]: process started with pid [13437]\n'}
+[14.621445] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__client-8]: process started with pid [13444]\n'}
+[14.664905] (-) TimerEvent: {}
+[14.765206] (-) TimerEvent: {}
+[14.865487] (-) TimerEvent: {}
+[14.965766] (-) TimerEvent: {}
+[15.066021] (-) TimerEvent: {}
+[15.139253] (ros1_bridge) StdoutLine: {'line': b'10: [ros2_server_ros1_client_across_dynamic_bridge__roscore-5] \x1b[31mRLException: roscore cannot run as another roscore/master is already running. \n'}
+[15.139422] (ros1_bridge) StdoutLine: {'line': b'10: [ros2_server_ros1_client_across_dynamic_bridge__roscore-5] Please kill other roscore/master processes before relaunching.\n'}
+[15.139497] (ros1_bridge) StdoutLine: {'line': b'10: [ros2_server_ros1_client_across_dynamic_bridge__roscore-5] The ROS_MASTER_URI is http://vdr-GV62-8RC:11311/\x1b[0m\n'}
+[15.139557] (ros1_bridge) StdoutLine: {'line': b'10: [ros2_server_ros1_client_across_dynamic_bridge__roscore-5] \x1b[31mThe traceback for the exception was written to the log file\x1b[0m\n'}
+[15.166177] (-) TimerEvent: {}
+[15.266550] (-) TimerEvent: {}
+[15.291132] (ros1_bridge) StdoutLine: {'line': b"10: [ERROR] [ros2_server_ros1_client_across_dynamic_bridge__roscore-5]: process has died [pid 13432, exit code 1, cmd '/opt/ros/melodic/env.sh /opt/ros/melodic/bin/roscore'].\n"}
+[15.366822] (-) TimerEvent: {}
+[15.467487] (-) TimerEvent: {}
+[15.568281] (-) TimerEvent: {}
+[15.668899] (-) TimerEvent: {}
+[15.769621] (-) TimerEvent: {}
+[15.870292] (-) TimerEvent: {}
+[15.971036] (-) TimerEvent: {}
+[16.071802] (-) TimerEvent: {}
+[16.172550] (-) TimerEvent: {}
+[16.273195] (-) TimerEvent: {}
+[16.369491] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__client-8]: process has finished cleanly [pid 13444]\n'}
+[16.373357] (-) TimerEvent: {}
+[16.376122] (ros1_bridge) StdoutLine: {'line': b"10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__server-7]: sending signal 'SIGINT' to process[ros2_server_ros1_client_across_dynamic_bridge__server-7]\n"}
+[16.378190] (ros1_bridge) StdoutLine: {'line': b"10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__dynamic_bridge-6]: sending signal 'SIGINT' to process[ros2_server_ros1_client_across_dynamic_bridge__dynamic_bridge-6]\n"}
+[16.386184] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__server-7]: process has finished cleanly [pid 13437]\n'}
+[16.473488] (-) TimerEvent: {}
+[16.573801] (-) TimerEvent: {}
+[16.674254] (-) TimerEvent: {}
+[16.774988] (-) TimerEvent: {}
+[16.875730] (-) TimerEvent: {}
+[16.976490] (-) TimerEvent: {}
+[17.077247] (-) TimerEvent: {}
+[17.177997] (-) TimerEvent: {}
+[17.218676] (ros1_bridge) StdoutLine: {'line': b'10: [INFO] [ros2_server_ros1_client_across_dynamic_bridge__dynamic_bridge-6]: process has finished cleanly [pid 13433]\n'}
+[17.219032] (ros1_bridge) StdoutLine: {'line': b'10: ok\n'}
+[17.219140] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[17.219221] (ros1_bridge) StdoutLine: {'line': b'10: ----------------------------------------------------------------------\n'}
+[17.219280] (ros1_bridge) StdoutLine: {'line': b'10: Ran 1 test in 1.755s\n'}
+[17.219337] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[17.219392] (ros1_bridge) StdoutLine: {'line': b'10: OK\n'}
+[17.219448] (ros1_bridge) StdoutLine: {'line': b"10: test_processes_finished_gracefully[ros2_server_ros1_client_across_dynamic_bridge, ['/home/vdr/ros_bridge/build/ros1_bridge/test_ros2_server_cpp'], ['/opt/ros/melodic/env.sh', '/home/vdr/ros_bridge/build/ros1_bridge/test_ros1_client']] (ros1_bridge.TestServicesAcrossDynamicBridgeAfterShutdown)\n"}
+[17.219749] (ros1_bridge) StdoutLine: {'line': b'10: Test that both executables finished gracefully. ... ok\n'}
+[17.219840] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[17.219897] (ros1_bridge) StdoutLine: {'line': b'10: ----------------------------------------------------------------------\n'}
+[17.219952] (ros1_bridge) StdoutLine: {'line': b'10: Ran 1 test in 0.000s\n'}
+[17.220006] (ros1_bridge) StdoutLine: {'line': b'10: \n'}
+[17.220061] (ros1_bridge) StdoutLine: {'line': b'10: OK\n'}
+[17.233050] (ros1_bridge) StdoutLine: {'line': b'10: -- run_test.py: return code 0\n'}
+[17.233353] (ros1_bridge) StdoutLine: {'line': b"10: -- run_test.py: verify result file '/home/vdr/ros_bridge/build/ros1_bridge/test_results/ros1_bridge/test_services_across_dynamic_bridge__rmw_fastrtps_cpp.xunit.xml'\n"}
+[17.240511] (ros1_bridge) StdoutLine: {'line': b'10/10 Test #10: test_services_across_dynamic_bridge__rmw_fastrtps_cpp ...   Passed    4.37 sec\n'}
+[17.240942] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[17.241030] (ros1_bridge) StdoutLine: {'line': b'100% tests passed, 0 tests failed out of 10\n'}
+[17.241094] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[17.241152] (ros1_bridge) StdoutLine: {'line': b'Label Time Summary:\n'}
+[17.241209] (ros1_bridge) StdoutLine: {'line': b'copyright     =   0.73 sec*proc (1 test)\n'}
+[17.241265] (ros1_bridge) StdoutLine: {'line': b'cppcheck      =   0.40 sec*proc (1 test)\n'}
+[17.241321] (ros1_bridge) StdoutLine: {'line': b'cpplint       =   0.76 sec*proc (1 test)\n'}
+[17.241376] (ros1_bridge) StdoutLine: {'line': b'flake8        =   0.78 sec*proc (1 test)\n'}
+[17.241431] (ros1_bridge) StdoutLine: {'line': b'lint_cmake    =   0.26 sec*proc (1 test)\n'}
+[17.241489] (ros1_bridge) StdoutLine: {'line': b'linter        =   4.77 sec*proc (8 tests)\n'}
+[17.241544] (ros1_bridge) StdoutLine: {'line': b'pep257        =   0.43 sec*proc (1 test)\n'}
+[17.241598] (ros1_bridge) StdoutLine: {'line': b'uncrustify    =   0.35 sec*proc (1 test)\n'}
+[17.241652] (ros1_bridge) StdoutLine: {'line': b'xmllint       =   1.05 sec*proc (1 test)\n'}
+[17.241706] (ros1_bridge) StdoutLine: {'line': b'\n'}
+[17.241761] (ros1_bridge) StdoutLine: {'line': b'Total Test time (real) =  16.74 sec\n'}
+[17.268936] (ros1_bridge) CommandEnded: {'returncode': 0}
+[17.269916] (ros1_bridge) JobEnded: {'identifier': 'ros1_bridge', 'rc': 0}
+[17.270659] (-) EventReactorShutdown: {}

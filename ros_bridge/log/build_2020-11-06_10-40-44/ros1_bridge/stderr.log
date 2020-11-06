@@ -1,0 +1,19 @@
+CMake Error at CMakeLists.txt:255 (find_package):
+  By not providing "Findlaunch_testing_ament_cmake.cmake" in
+  CMAKE_MODULE_PATH this project has asked CMake to find a package
+  configuration file provided by "launch_testing_ament_cmake", but CMake did
+  not find one.
+
+  Could not find a package configuration file provided by
+  "launch_testing_ament_cmake" with any of the following names:
+
+    launch_testing_ament_cmakeConfig.cmake
+    launch_testing_ament_cmake-config.cmake
+
+  Add the installation prefix of "launch_testing_ament_cmake" to
+  CMAKE_PREFIX_PATH or set "launch_testing_ament_cmake_DIR" to a directory
+  containing one of the above files.  If "launch_testing_ament_cmake"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+

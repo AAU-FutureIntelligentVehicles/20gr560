@@ -1,0 +1,74 @@
+CMake Warning at CMakeLists.txt:171 (add_library):
+  Cannot generate a safe runtime search path for target ros1_bridge because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [liburdfdom_sensor.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model_state.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_world.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at CMakeLists.txt:142 (add_executable):
+  Cannot generate a safe runtime search path for target static_bridge because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [liburdfdom_sensor.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model_state.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_world.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  CMakeLists.txt:188 (custom_executable)
+
+
+CMake Warning at CMakeLists.txt:142 (add_executable):
+  Cannot generate a safe runtime search path for target parameter_bridge
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [liburdfdom_sensor.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model_state.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_world.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  CMakeLists.txt:195 (custom_executable)
+
+
+CMake Warning at CMakeLists.txt:142 (add_executable):
+  Cannot generate a safe runtime search path for target dynamic_bridge
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [liburdfdom_sensor.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model_state.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_model.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+    runtime library [liburdfdom_world.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/dashing/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  CMakeLists.txt:202 (custom_executable)
+
+

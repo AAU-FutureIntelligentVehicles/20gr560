@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.000484] (ros1_bridge) JobQueued: {'identifier': 'ros1_bridge', 'dependencies': OrderedDict()}
+[0.000686] (ros1_bridge) JobStarted: {'identifier': 'ros1_bridge'}
+[0.008523] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'cmake'}
+[0.009287] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/vdr/ros_bridge/src/ros1_bridge', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/vdr/ros_bridge/install/ros1_bridge'], 'cwd': '/home/vdr/ros_bridge/build/ros1_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vdr'), ('LANGUAGE', 'en_US:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2974'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/vdr/ros_bridge/src'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/vdr'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3366'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'vdr'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '108fb7671d584d82ec160456446958381500000028790007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'vdr'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vdr-GV62-8RC:@/tmp/.ICE-unix/2879,unix/vdr-GV62-8RC:/tmp/.ICE-unix/2879'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5eb8213d-699d-40d9-87cc-8d72e0a0c16b'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vdr/ros_bridge/build/ros1_bridge'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing:/opt/ros/melodic')]), 'shell': False}
+[0.025030] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw: 0.7.2 (/opt/ros/dashing/share/rmw/cmake)\n'}
+[0.045187] (ros1_bridge) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099350] (-) TimerEvent: {}
+[0.199637] (-) TimerEvent: {}
+[0.203570] (ros1_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.213519] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[0.217562] (ros1_bridge) StdoutLine: {'line': b'-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[0.245587] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[0.246662] (ros1_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.262055] (ros1_bridge) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.299786] (-) TimerEvent: {}
+[0.400065] (-) TimerEvent: {}
+[0.500306] (-) TimerEvent: {}
+[0.600562] (-) TimerEvent: {}
+[0.633948] (ros1_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[0.634577] (ros1_bridge) StdoutLine: {'line': b'-- Found diagnostic_msgs: 0.7.0 (/opt/ros/dashing/share/diagnostic_msgs/cmake)\n'}
+[0.700658] (-) TimerEvent: {}
+[0.730149] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[0.733295] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.733473] (ros1_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.736530] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.737201] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.738171] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.738801] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[0.741737] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.742378] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.752502] (ros1_bridge) StdoutLine: {'line': b'-- Found action_msgs: 0.7.4 (/opt/ros/dashing/share/action_msgs/cmake)\n'}
+[0.756552] (ros1_bridge) StdoutLine: {'line': b'-- Found action_tutorials: 0.7.9 (/opt/ros/dashing/share/action_tutorials/cmake)\n'}
+[0.761815] (ros1_bridge) StdoutLine: {'line': b'-- Found actionlib_msgs: 0.7.0 (/opt/ros/dashing/share/actionlib_msgs/cmake)\n'}
+[0.762122] (ros1_bridge) StdoutLine: {'line': b'-- Found builtin_interfaces: 0.7.4 (/opt/ros/dashing/share/builtin_interfaces/cmake)\n'}
+[0.766212] (ros1_bridge) StdoutLine: {'line': b'-- Found composition_interfaces: 0.7.4 (/opt/ros/dashing/share/composition_interfaces/cmake)\n'}
+[0.766593] (ros1_bridge) StdoutLine: {'line': b'-- Found diagnostic_msgs: 0.7.0 (/opt/ros/dashing/share/diagnostic_msgs/cmake)\n'}
+[0.771992] (ros1_bridge) StdoutLine: {'line': b'-- Found example_interfaces: 0.7.1 (/opt/ros/dashing/share/example_interfaces/cmake)\n'}
+[0.776473] (ros1_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 0.7.0 (/opt/ros/dashing/share/geometry_msgs/cmake)\n'}
+[0.779797] (ros1_bridge) StdoutLine: {'line': b'-- Found lifecycle_msgs: 0.7.4 (/opt/ros/dashing/share/lifecycle_msgs/cmake)\n'}
+[0.782139] (ros1_bridge) StdoutLine: {'line': b'-- Found logging_demo: 0.7.9 (/opt/ros/dashing/share/logging_demo/cmake)\n'}
+[0.800721] (-) TimerEvent: {}
+[0.815155] (ros1_bridge) StdoutLine: {'line': b'-- Found map_msgs: 2.0.2 (/opt/ros/dashing/share/map_msgs/cmake)\n'}
+[0.815712] (ros1_bridge) StdoutLine: {'line': b'-- Found nav_msgs: 0.7.0 (/opt/ros/dashing/share/nav_msgs/cmake)\n'}
+[0.818857] (ros1_bridge) StdoutLine: {'line': b'-- Found pendulum_msgs: 0.7.9 (/opt/ros/dashing/share/pendulum_msgs/cmake)\n'}
+[0.819168] (ros1_bridge) StdoutLine: {'line': b'-- Found rcl_interfaces: 0.7.4 (/opt/ros/dashing/share/rcl_interfaces/cmake)\n'}
+[0.819865] (ros1_bridge) StdoutLine: {'line': b'-- Found rosgraph_msgs: 0.7.4 (/opt/ros/dashing/share/rosgraph_msgs/cmake)\n'}
+[0.822084] (ros1_bridge) StdoutLine: {'line': b'-- Found rqt_py_common: 1.0.5 (/opt/ros/dashing/share/rqt_py_common/cmake)\n'}
+[0.822421] (ros1_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)\n'}
+[0.828301] (ros1_bridge) StdoutLine: {'line': b'-- Found shape_msgs: 0.7.0 (/opt/ros/dashing/share/shape_msgs/cmake)\n'}
+[0.828651] (ros1_bridge) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.832065] (ros1_bridge) StdoutLine: {'line': b'-- Found std_srvs: 0.7.0 (/opt/ros/dashing/share/std_srvs/cmake)\n'}
+[0.842623] (ros1_bridge) StdoutLine: {'line': b'-- Found stereo_msgs: 0.7.0 (/opt/ros/dashing/share/stereo_msgs/cmake)\n'}
+[0.855150] (ros1_bridge) StdoutLine: {'line': b'-- Found tf2_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_msgs/cmake)\n'}
+[0.863274] (ros1_bridge) StdoutLine: {'line': b'-- Found trajectory_msgs: 0.7.0 (/opt/ros/dashing/share/trajectory_msgs/cmake)\n'}
+[0.867375] (ros1_bridge) StdoutLine: {'line': b'-- Found turtlesim: 1.0.3 (/opt/ros/dashing/share/turtlesim/cmake)\n'}
+[0.867922] (ros1_bridge) StdoutLine: {'line': b'-- Found unique_identifier_msgs: 2.1.1 (/opt/ros/dashing/share/unique_identifier_msgs/cmake)\n'}
+[0.876028] (ros1_bridge) StdoutLine: {'line': b'-- Found visualization_msgs: 0.7.0 (/opt/ros/dashing/share/visualization_msgs/cmake)\n'}
+[0.900794] (-) TimerEvent: {}
+[1.001004] (-) TimerEvent: {}
+[1.101246] (-) TimerEvent: {}
+[1.201448] (-) TimerEvent: {}
+[1.301625] (-) TimerEvent: {}
+[1.401812] (-) TimerEvent: {}
+[1.502054] (-) TimerEvent: {}
+[1.602285] (-) TimerEvent: {}
+[1.702511] (-) TimerEvent: {}
+[1.802717] (-) TimerEvent: {}
+[1.902927] (-) TimerEvent: {}
+[2.003145] (-) TimerEvent: {}
+[2.103356] (-) TimerEvent: {}
+[2.203572] (-) TimerEvent: {}
+[2.303759] (-) TimerEvent: {}
+[2.403965] (-) TimerEvent: {}
+[2.504228] (-) TimerEvent: {}
+[2.604438] (-) TimerEvent: {}
+[2.704655] (-) TimerEvent: {}
+[2.771290] (ros1_bridge) StderrLine: {'line': b'CMake Error at CMakeLists.txt:255 (find_package):\n'}
+[2.771488] (ros1_bridge) StderrLine: {'line': b'  By not providing "Findlaunch_testing_ament_cmake.cmake" in\n'}
+[2.771602] (ros1_bridge) StderrLine: {'line': b'  CMAKE_MODULE_PATH this project has asked CMake to find a package\n'}
+[2.771707] (ros1_bridge) StderrLine: {'line': b'  configuration file provided by "launch_testing_ament_cmake", but CMake did\n'}
+[2.771803] (ros1_bridge) StderrLine: {'line': b'  not find one.\n'}
+[2.771898] (ros1_bridge) StderrLine: {'line': b'\n'}
+[2.771992] (ros1_bridge) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[2.772087] (ros1_bridge) StderrLine: {'line': b'  "launch_testing_ament_cmake" with any of the following names:\n'}
+[2.772196] (ros1_bridge) StderrLine: {'line': b'\n'}
+[2.772291] (ros1_bridge) StderrLine: {'line': b'    launch_testing_ament_cmakeConfig.cmake\n'}
+[2.772389] (ros1_bridge) StderrLine: {'line': b'    launch_testing_ament_cmake-config.cmake\n'}
+[2.772484] (ros1_bridge) StderrLine: {'line': b'\n'}
+[2.772577] (ros1_bridge) StderrLine: {'line': b'  Add the installation prefix of "launch_testing_ament_cmake" to\n'}
+[2.772670] (ros1_bridge) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "launch_testing_ament_cmake_DIR" to a directory\n'}
+[2.772761] (ros1_bridge) StderrLine: {'line': b'  containing one of the above files.  If "launch_testing_ament_cmake"\n'}
+[2.772854] (ros1_bridge) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[2.772946] (ros1_bridge) StderrLine: {'line': b'  installed.\n'}
+[2.773038] (ros1_bridge) StderrLine: {'line': b'\n'}
+[2.773130] (ros1_bridge) StderrLine: {'line': b'\n'}
+[2.773452] (ros1_bridge) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.773566] (ros1_bridge) StdoutLine: {'line': b'See also "/home/vdr/ros_bridge/build/ros1_bridge/CMakeFiles/CMakeOutput.log".\n'}
+[2.773665] (ros1_bridge) StdoutLine: {'line': b'See also "/home/vdr/ros_bridge/build/ros1_bridge/CMakeFiles/CMakeError.log".\n'}
+[2.778153] (ros1_bridge) CommandEnded: {'returncode': 1}
+[2.800757] (ros1_bridge) JobEnded: {'identifier': 'ros1_bridge', 'rc': 1}
+[2.804825] (-) TimerEvent: {}
+[2.811667] (-) EventReactorShutdown: {}

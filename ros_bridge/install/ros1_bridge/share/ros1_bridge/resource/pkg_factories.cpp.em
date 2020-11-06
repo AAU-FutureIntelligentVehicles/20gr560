@@ -1,0 +1,1 @@
+/home/vdr/ros_bridge/src/ros1_bridge/resource/pkg_factories.cpp.em
