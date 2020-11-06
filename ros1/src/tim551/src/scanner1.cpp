@@ -19,7 +19,7 @@ private:
 public:
 
 void publisher(){
-  pub=nh.advertise<sensor_msgs::LaserScan>("floater", 1000);
+  pub=nh.advertise<sensor_msgs::LaserScan>("averages", 1000);
 }
 
 void subscriber(){
@@ -44,7 +44,7 @@ void distance(int i){
         msg.ranges.resize(180); // resizing the cpp array to ros array
         r.avg = r.sum/15;
         msg.ranges[i] = r.avg;
-      //  pub.publish(msg);
+        pub.publish(msg);
         r.lrange[i] = r.avg;
         ROS_INFO("Average: [%.5f]", r.lrange[i]);
         r.sum -= q.front();
@@ -105,7 +105,7 @@ int main(int argc, char** argv){
 ros::init(argc, argv, "scanner");
 tim T;
 T.subscriber();
-//T.publisher();
+T.publisher();
 ros::spin();
 return 0;
 }

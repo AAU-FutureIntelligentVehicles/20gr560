@@ -12,7 +12,7 @@ private:
   float average[4];
 public:
   void subscriber(){
-    sub=nh.subscribe("floater",10,&bim::halo, this);
+    sub=nh.subscribe("averages",10,&bim::halo, this);
   }
   void publisher(){
     vis_pub = nh.advertise<sensor_msgs::LaserScan>("average_scan", 1000);

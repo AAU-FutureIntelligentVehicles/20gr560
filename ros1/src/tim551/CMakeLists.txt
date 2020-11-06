@@ -37,7 +37,7 @@ catkin_package(
     DEPENDS Boost libusb
     CATKIN_DEPENDS roscpp rospy sensor_msgs diagnostic_updater dynamic_reconfigure message_runtime visualization_msgs
     LIBRARIES
-    INCLUDE_DIRS include)
+    INCLUDE_DIRS)
 include_directories(include ${catkin_INCLUDE_DIRS} ${libusb_INCLUDE_DIRS})
 
 
