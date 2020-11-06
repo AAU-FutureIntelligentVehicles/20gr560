@@ -1,0 +1,27 @@
+[0.012s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[0.049s] [35m[1mScanning dependencies of target listener[0m
+[0.060s] [ 50%] Built target talker
+[0.066s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[1.707s] [100%] [32m[1mLinking CXX executable listener[0m
+[1.829s] [100%] Built target listener
+[1.838s] Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[1.868s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8
+[1.914s] [100%] Built target talker
+[1.914s] [100%] Built target listener
+[1.929s] [36mInstall the project...[0m
+[1.936s] -- Install configuration: ""
+[1.936s] -- Up-to-date: /home/vdr/ros2/install/subpub/lib/subpub/talker
+[1.937s] -- Installing: /home/vdr/ros2/install/subpub/lib/subpub/listener
+[1.938s] -- Set runtime path of "/home/vdr/ros2/install/subpub/lib/subpub/listener" to ""
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/package_run_dependencies/subpub
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/parent_prefix_path/subpub
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/ament_prefix_path.sh
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/path.sh
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.bash
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.sh
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.zsh
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/packages/subpub
+[1.938s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig.cmake
+[1.939s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig-version.cmake
+[1.939s] -- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/package.xml
+[1.941s] Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8

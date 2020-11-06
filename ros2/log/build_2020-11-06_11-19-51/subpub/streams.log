@@ -1,0 +1,68 @@
+[0.009s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/subpub -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/subpub
+[0.694s] -- The C compiler identification is GNU 7.5.0
+[0.784s] -- The CXX compiler identification is GNU 7.5.0
+[0.787s] -- Check for working C compiler: /usr/bin/cc
+[0.839s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.840s] -- Detecting C compiler ABI info
+[0.893s] -- Detecting C compiler ABI info - done
+[0.897s] -- Detecting C compile features
+[1.277s] -- Detecting C compile features - done
+[1.281s] -- Check for working CXX compiler: /usr/bin/c++
+[1.366s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.367s] -- Detecting CXX compiler ABI info
+[1.431s] -- Detecting CXX compiler ABI info - done
+[1.434s] -- Detecting CXX compile features
+[1.731s] -- Detecting CXX compile features - done
+[1.786s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[1.902s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.902s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.301s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[2.614s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[2.791s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[2.794s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.795s] -- Looking for pthread.h
+[2.850s] -- Looking for pthread.h - found
+[2.851s] -- Looking for pthread_create
+[2.905s] -- Looking for pthread_create - not found
+[2.906s] -- Looking for pthread_create in pthreads
+[2.951s] -- Looking for pthread_create in pthreads - not found
+[2.952s] -- Looking for pthread_create in pthread
+[3.004s] -- Looking for pthread_create in pthread - found
+[3.005s] -- Found Threads: TRUE  
+[3.116s] -- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+[3.154s] -- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[3.348s] -- Configuring done
+[3.743s] -- Generating done
+[3.744s] -- Build files have been written to: /home/vdr/ros2/build/subpub
+[3.749s] Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/subpub -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/subpub
+[3.752s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[3.785s] [35m[1mScanning dependencies of target talker[0m
+[3.785s] [35m[1mScanning dependencies of target listener[0m
+[4.226s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[4.226s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[6.021s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[6.159s] [ 75%] Built target talker
+[6.177s] [100%] [32m[1mLinking CXX executable listener[0m
+[6.300s] [100%] Built target listener
+[6.309s] Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[6.339s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8
+[6.386s] [100%] Built target talker
+[6.386s] [100%] Built target listener
+[6.401s] [36mInstall the project...[0m
+[6.408s] -- Install configuration: ""
+[6.408s] -- Installing: /home/vdr/ros2/install/subpub/lib/subpub/talker
+[6.408s] -- Set runtime path of "/home/vdr/ros2/install/subpub/lib/subpub/talker" to ""
+[6.408s] -- Installing: /home/vdr/ros2/install/subpub/lib/subpub/listener
+[6.409s] -- Set runtime path of "/home/vdr/ros2/install/subpub/lib/subpub/listener" to ""
+[6.409s] -- Installing: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/package_run_dependencies/subpub
+[6.409s] -- Installing: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/parent_prefix_path/subpub
+[6.409s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/environment/ament_prefix_path.sh
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/environment/path.sh
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/local_setup.bash
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/local_setup.sh
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/local_setup.zsh
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/packages/subpub
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig.cmake
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig-version.cmake
+[6.410s] -- Installing: /home/vdr/ros2/install/subpub/share/subpub/package.xml
+[6.413s] Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8
