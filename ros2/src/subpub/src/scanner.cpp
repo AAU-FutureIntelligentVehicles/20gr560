@@ -4,7 +4,7 @@
 #include <string>
 #include "rclcpp/rclcpp.hpp"
 #include <sensor_msgs/msg/laser_scan.hpp>
-#include <visualization_msgs/msg/marker_array.hpp>
+//#include <visualization_msgs/msg/marker_array.hpp>
 
 using std::placeholders::_1;
 
@@ -33,12 +33,12 @@ private:
         marker.time_increment= 0.00018518499564379454;
         marker.scan_time = 0.06666667014360428;
         marker.range_min = 0.05000000074505806;
-        marker.range_max = 6;
+        marker.range_max = 8;
         for(unsigned int i=0;i<scan->ranges.size();i++){
             if(!(scan->ranges.empty()))
                 marker.ranges[i] = scan->ranges[i];
         }
-        marker.intensities[0];
+        //marker.intensities[0];
         publisher_->publish(marker);
     }
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
