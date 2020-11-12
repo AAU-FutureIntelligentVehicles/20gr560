@@ -1,0 +1,145 @@
+[0.000000] (-) TimerEvent: {}
+[0.000197] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.000252] (subpub) JobQueued: {'identifier': 'subpub', 'dependencies': OrderedDict()}
+[0.000293] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.029459] (subpub) JobStarted: {'identifier': 'subpub'}
+[0.083809] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.085538] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '/home/vdr/ros2/src/slam_toolbox', '-DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox'], 'cwd': '/home/vdr/ros2/build/slam_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vdr'), ('LANGUAGE', 'en_US:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '3207'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/vdr'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/vdr'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3421'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('_colcon_cd_root', '/home/vdr/ros2_install'), ('COLCON_PREFIX_PATH', '/home/vdr/ros2/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'vdr'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '10650105db744facd116049972446114300000031120007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'vdr'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vdr-GV62-8RC:@/tmp/.ICE-unix/3112,unix/vdr-GV62-8RC:/tmp/.ICE-unix/3112'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/vdr/ros2/install/subpub:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:22d8d08e-5766-4312-ae4f-cb4330c640c1'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vdr/ros2/build/slam_toolbox'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/vdr/ros2/install/subpub:/opt/ros/dashing')]), 'shell': False}
+[0.099018] (-) TimerEvent: {}
+[0.139333] (subpub) JobProgress: {'identifier': 'subpub', 'progress': 'cmake'}
+[0.199107] (-) TimerEvent: {}
+[0.201104] (subpub) JobProgress: {'identifier': 'subpub', 'progress': 'build'}
+[0.211502] (subpub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vdr/ros2/build/subpub', '--', '-j8', '-l8'], 'cwd': '/home/vdr/ros2/build/subpub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vdr'), ('LANGUAGE', 'en_US:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '3207'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/vdr'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/vdr'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3421'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('_colcon_cd_root', '/home/vdr/ros2_install'), ('COLCON_PREFIX_PATH', '/home/vdr/ros2/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'vdr'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '10650105db744facd116049972446114300000031120007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'vdr'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vdr-GV62-8RC:@/tmp/.ICE-unix/3112,unix/vdr-GV62-8RC:/tmp/.ICE-unix/3112'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/vdr/ros2/install/subpub:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:22d8d08e-5766-4312-ae4f-cb4330c640c1'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vdr/ros2/build/subpub'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/vdr/ros2/install/subpub:/opt/ros/dashing')]), 'shell': False}
+[0.299341] (-) TimerEvent: {}
+[0.400118] (-) TimerEvent: {}
+[0.500708] (-) TimerEvent: {}
+[0.601176] (-) TimerEvent: {}
+[0.701887] (-) TimerEvent: {}
+[0.802545] (-) TimerEvent: {}
+[0.903165] (-) TimerEvent: {}
+[1.003641] (-) TimerEvent: {}
+[1.104288] (-) TimerEvent: {}
+[1.152122] (subpub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[1.200050] (subpub) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[1.204422] (-) TimerEvent: {}
+[1.301436] (subpub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o\x1b[0m\n'}
+[1.304582] (-) TimerEvent: {}
+[1.405108] (-) TimerEvent: {}
+[1.505754] (-) TimerEvent: {}
+[1.606425] (-) TimerEvent: {}
+[1.707227] (-) TimerEvent: {}
+[1.807963] (-) TimerEvent: {}
+[1.908667] (-) TimerEvent: {}
+[2.009434] (-) TimerEvent: {}
+[2.110077] (-) TimerEvent: {}
+[2.210707] (-) TimerEvent: {}
+[2.254551] (slam_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[2.310909] (-) TimerEvent: {}
+[2.411598] (-) TimerEvent: {}
+[2.512276] (-) TimerEvent: {}
+[2.613105] (-) TimerEvent: {}
+[2.713750] (-) TimerEvent: {}
+[2.814313] (-) TimerEvent: {}
+[2.898330] (slam_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[2.914449] (-) TimerEvent: {}
+[2.946617] (slam_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.014587] (-) TimerEvent: {}
+[3.060187] (slam_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.061366] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.114674] (-) TimerEvent: {}
+[3.125685] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.130605] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.214859] (-) TimerEvent: {}
+[3.315325] (-) TimerEvent: {}
+[3.415685] (-) TimerEvent: {}
+[3.460873] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.465499] (slam_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.515780] (-) TimerEvent: {}
+[3.541532] (slam_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.542136] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.615887] (-) TimerEvent: {}
+[3.616558] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.620230] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.716007] (-) TimerEvent: {}
+[3.816249] (-) TimerEvent: {}
+[3.916542] (-) TimerEvent: {}
+[3.937093] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.984633] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[4.016646] (-) TimerEvent: {}
+[4.045624] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[4.045934] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.116730] (-) TimerEvent: {}
+[4.217031] (-) TimerEvent: {}
+[4.317328] (-) TimerEvent: {}
+[4.417665] (-) TimerEvent: {}
+[4.441429] (slam_toolbox) StdoutLine: {'line': b'-- Found message_filters: 3.1.3 (/opt/ros/dashing/share/message_filters/cmake)\n'}
+[4.459973] (slam_toolbox) StdoutLine: {'line': b'-- Found nav_msgs: 0.7.0 (/opt/ros/dashing/share/nav_msgs/cmake)\n'}
+[4.517767] (-) TimerEvent: {}
+[4.618215] (-) TimerEvent: {}
+[4.669848] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[4.718294] (-) TimerEvent: {}
+[4.818575] (-) TimerEvent: {}
+[4.874799] (slam_toolbox) StdoutLine: {'line': b'-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[4.898570] (slam_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[4.901236] (slam_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.903623] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.918670] (-) TimerEvent: {}
+[4.996278] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.996848] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[5.018769] (-) TimerEvent: {}
+[5.068842] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[5.069078] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.118868] (-) TimerEvent: {}
+[5.122414] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[5.122751] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[5.186713] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[5.187530] (slam_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.218964] (-) TimerEvent: {}
+[5.252933] (slam_toolbox) StdoutLine: {'line': b'-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)\n'}
+[5.279081] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)\n'}
+[5.319097] (-) TimerEvent: {}
+[5.325107] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)\n'}
+[5.398017] (subpub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[5.419245] (-) TimerEvent: {}
+[5.501557] (slam_toolbox) StdoutLine: {'line': b'-- Found visualization_msgs: 0.7.0 (/opt/ros/dashing/share/visualization_msgs/cmake)\n'}
+[5.519416] (-) TimerEvent: {}
+[5.620048] (-) TimerEvent: {}
+[5.630408] (slam_toolbox) StdoutLine: {'line': b'-- Found pluginlib: 2.3.3 (/opt/ros/dashing/share/pluginlib/cmake)\n'}
+[5.653312] (slam_toolbox) StdoutLine: {'line': b'-- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)\n'}
+[5.720273] (-) TimerEvent: {}
+[5.786163] (slam_toolbox) StdoutLine: {'line': b'-- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  \n'}
+[5.820500] (-) TimerEvent: {}
+[5.845827] (slam_toolbox) StdoutLine: {'line': b'-- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)\n'}
+[5.920783] (-) TimerEvent: {}
+[6.019221] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_geometry_msgs/cmake)\n'}
+[6.020930] (-) TimerEvent: {}
+[6.041341] (slam_toolbox) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/dashing/share/eigen3_cmake_module/cmake)\n'}
+[6.121144] (-) TimerEvent: {}
+[6.149226] (slam_toolbox) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.4") \n'}
+[6.202340] (slam_toolbox) StderrLine: {'line': b'CMake Error at CMakeLists.txt:21 (find_package):\n'}
+[6.202542] (slam_toolbox) StderrLine: {'line': b'  By not providing "Findtf2_sensor_msgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[6.202629] (slam_toolbox) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[6.202707] (slam_toolbox) StderrLine: {'line': b'  "tf2_sensor_msgs", but CMake did not find one.\n'}
+[6.202782] (slam_toolbox) StderrLine: {'line': b'\n'}
+[6.202856] (slam_toolbox) StderrLine: {'line': b'  Could not find a package configuration file provided by "tf2_sensor_msgs"\n'}
+[6.202930] (slam_toolbox) StderrLine: {'line': b'  with any of the following names:\n'}
+[6.203003] (slam_toolbox) StderrLine: {'line': b'\n'}
+[6.203075] (slam_toolbox) StderrLine: {'line': b'    tf2_sensor_msgsConfig.cmake\n'}
+[6.203153] (slam_toolbox) StderrLine: {'line': b'    tf2_sensor_msgs-config.cmake\n'}
+[6.203215] (slam_toolbox) StderrLine: {'line': b'\n'}
+[6.203278] (slam_toolbox) StderrLine: {'line': b'  Add the installation prefix of "tf2_sensor_msgs" to CMAKE_PREFIX_PATH or\n'}
+[6.203341] (slam_toolbox) StderrLine: {'line': b'  set "tf2_sensor_msgs_DIR" to a directory containing one of the above files.\n'}
+[6.203405] (slam_toolbox) StderrLine: {'line': b'  If "tf2_sensor_msgs" provides a separate development package or SDK, be\n'}
+[6.203470] (slam_toolbox) StderrLine: {'line': b'  sure it has been installed.\n'}
+[6.203533] (slam_toolbox) StderrLine: {'line': b'\n'}
+[6.203595] (slam_toolbox) StderrLine: {'line': b'\n'}
+[6.203876] (slam_toolbox) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[6.203987] (slam_toolbox) StdoutLine: {'line': b'See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeOutput.log".\n'}
+[6.204063] (slam_toolbox) StdoutLine: {'line': b'See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeError.log".\n'}
+[6.207210] (slam_toolbox) CommandEnded: {'returncode': 1}
+[6.221233] (-) TimerEvent: {}
+[6.321520] (-) TimerEvent: {}
+[6.340091] (slam_toolbox) JobEnded: {'identifier': 'slam_toolbox', 'rc': 1}
+[6.375399] (subpub) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[6.384414] (subpub) JobEnded: {'identifier': 'subpub', 'rc': 'SIGINT'}
+[6.395557] (-) EventReactorShutdown: {}

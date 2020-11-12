@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target listener[0m
+[ 50%] Built target talker
+[ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[100%] [32m[1mLinking CXX executable listener[0m
+[100%] Built target listener

@@ -1,0 +1,16 @@
+[0.012s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[0.047s] [35m[1mScanning dependencies of target scanner[0m
+[0.062s] [ 66%] Built target talker
+[0.062s] [ 66%] Built target listener
+[0.066s] [ 83%] [32mBuilding CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o[0m
+[0.136s] [01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kglobal.h: No such file or directory
+[0.136s]  #include [01;31m[K<global.h>[m[K
+[0.136s]           [01;31m[K^~~~~~~~~~[m[K
+[0.136s] compilation terminated.
+[0.138s] make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1
+[0.138s] CMakeFiles/scanner.dir/build.make:62: recipe for target 'CMakeFiles/scanner.dir/src/scanner.cpp.o' failed
+[0.138s] make[1]: *** [CMakeFiles/scanner.dir/all] Error 2
+[0.138s] CMakeFiles/Makefile2:173: recipe for target 'CMakeFiles/scanner.dir/all' failed
+[0.138s] Makefile:140: recipe for target 'all' failed
+[0.138s] make: *** [all] Error 2
+[0.141s] Invoked command in '/home/vdr/ros2/build/subpub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8

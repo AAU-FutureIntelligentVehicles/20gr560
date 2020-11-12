@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000148] (subpub) JobQueued: {'identifier': 'subpub', 'dependencies': OrderedDict()}
+[0.000462] (subpub) JobStarted: {'identifier': 'subpub'}
+[0.008869] (subpub) JobProgress: {'identifier': 'subpub', 'progress': 'cmake'}
+[0.009829] (subpub) JobProgress: {'identifier': 'subpub', 'progress': 'build'}
+[0.009873] (subpub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vdr/ros2/build/subpub', '--', '-j8', '-l8'], 'cwd': '/home/vdr/ros2/build/subpub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vdr'), ('LANGUAGE', 'en_US:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '3207'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/vdr'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/vdr'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3421'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('_colcon_cd_root', '/home/vdr/ros2_install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'vdr'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '10650105db744facd116049972446114300000031120007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'vdr'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vdr-GV62-8RC:@/tmp/.ICE-unix/3112,unix/vdr-GV62-8RC:/tmp/.ICE-unix/3112'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:04e2260c-2953-4d8a-ba24-5752f370bea5'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vdr/ros2/build/subpub'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.047558] (subpub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scanner\x1b[0m\n'}
+[0.059975] (subpub) StdoutLine: {'line': b'[ 33%] Built target talker\n'}
+[0.066296] (subpub) StdoutLine: {'line': b'[ 66%] Built target listener\n'}
+[0.072236] (subpub) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o\x1b[0m\n'}
+[0.099858] (-) TimerEvent: {}
+[0.200222] (-) TimerEvent: {}
+[0.300491] (-) TimerEvent: {}
+[0.400762] (-) TimerEvent: {}
+[0.501057] (-) TimerEvent: {}
+[0.601341] (-) TimerEvent: {}
+[0.701626] (-) TimerEvent: {}
+[0.769289] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:14:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[0.769476] (subpub) StderrLine: {'line': b'     MinimalSubscriber(\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[0.769543] (subpub) StderrLine: {'line': b'                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.769602] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:20:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[0.769661] (subpub) StderrLine: {'line': b'     MinimalPublisher(\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[0.769717] (subpub) StderrLine: {'line': b'                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.781563] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:43:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kssensor_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.781723] (subpub) StderrLine: {'line': b'     rclcpp::Publisher<\x1b[01;31m\x1b[Kssensor_msgs\x1b[m\x1b[K::msg::LaserScan>::SharedPtr publisher_;\n'}
+[0.781791] (subpub) StderrLine: {'line': b'                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.783710] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:43:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.783803] (subpub) StderrLine: {'line': b'     rclcpp::Publisher<ssensor_msgs::msg::LaserScan\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_;\n'}
+[0.783867] (subpub) StderrLine: {'line': b'                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.783932] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:43:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[0.784030] (subpub) StderrLine: {'line': b'     rclcpp::Publisher<ssensor_msgs::msg::LaserScan>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K publisher_;\n'}
+[0.784086] (subpub) StderrLine: {'line': b'                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[0.785096] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:43:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.785290] (subpub) StderrLine: {'line': b'     rclcpp::Publisher<ssensor_msgs::msg::LaserScan>::SharedPtr \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K;\n'}
+[0.785460] (subpub) StderrLine: {'line': b'                                                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.785704] (subpub) StderrLine: {'line': b'                                                                \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[0.785773] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Poggers::MinimalSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.785836] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:15:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[0.785907] (subpub) StderrLine: {'line': b'             : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("minimal_subscriber")\n'}
+[0.785965] (subpub) StderrLine: {'line': b'               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.786023] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:18:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[0.786085] (subpub) StderrLine: {'line': b'                 "averages", 10, std::bind(&\x1b[01;31m\x1b[KMinimalSubscriber\x1b[m\x1b[K::topic_callback, this, _1));\n'}
+[0.786143] (subpub) StderrLine: {'line': b'                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.786201] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:19:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.786259] (subpub) StderrLine: {'line': b'     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.786316] (subpub) StderrLine: {'line': b'     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.786373] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Poggers::MinimalPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.786431] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:21:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[0.786488] (subpub) StderrLine: {'line': b'             : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("minimal_publisher"), count_(0)\n'}
+[0.786545] (subpub) StderrLine: {'line': b'               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.786602] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:23:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.786660] (subpub) StderrLine: {'line': b'         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<sensor_msgs::msg::LaserScan>("newscan", 10);\n'}
+[0.786733] (subpub) StderrLine: {'line': b'         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.786852] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:23:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.786920] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<sensor_msgs::msg::LaserScan>("newscan", 10);\n'}
+[0.786978] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.787035] (subpub) StderrLine: {'line': b'         \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[0.792790] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:25:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[0.792970] (subpub) StderrLine: {'line': b'                 500ms, std::bind(&\x1b[01;31m\x1b[KMinimalPublisher\x1b[m\x1b[K::timer_callback, this));\n'}
+[0.793046] (subpub) StderrLine: {'line': b'                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.793126] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:26:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.793188] (subpub) StderrLine: {'line': b'     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.793262] (subpub) StderrLine: {'line': b'     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.795617] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Poggers::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.795766] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct sensor_msgs::msg::LaserScan_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.795837] (subpub) StderrLine: {'line': b'         message.\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K = scan->ranges[179];\n'}
+[0.795897] (subpub) StderrLine: {'line': b'                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.795970] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.796029] (subpub) StderrLine: {'line': b'         message.data = \x1b[01;31m\x1b[Kscan\x1b[m\x1b[K->ranges[179];\n'}
+[0.796086] (subpub) StderrLine: {'line': b'                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.796231] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kscanf\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.796324] (subpub) StderrLine: {'line': b'         message.data = \x1b[01;36m\x1b[Kscan\x1b[m\x1b[K->ranges[179];\n'}
+[0.796388] (subpub) StderrLine: {'line': b'                        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.796447] (subpub) StderrLine: {'line': b'                        \x1b[32m\x1b[Kscanf\x1b[m\x1b[K\n'}
+[0.796764] (subpub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/client.hpp:39:0\x1b[m\x1b[K,\n'}
+[0.796854] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.796918] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.796977] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.797034] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.797090] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.797146] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24\x1b[m\x1b[K,\n'}
+[0.797207] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.797262] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[0.797317] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:5\x1b[m\x1b[K:\n'}
+[0.797372] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct sensor_msgs::msg::LaserScan_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.797435] (subpub) StderrLine: {'line': b'         RCLCPP_INFO(this->get_logger(), "Publishing: \'%s\'", message.\x1b[01;31m\x1b[Kd\x1b[m\x1b[Kata);\n'}
+[0.797490] (subpub) StderrLine: {'line': b'                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.797545] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rcutils/logging_macros.h:72:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KRCUTILS_LOG_COND_NAMED\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.797601] (subpub) StderrLine: {'line': b'       rcutils_log(&__rcutils_logging_location, severity, name, \x1b[01;36m\x1b[K__VA_ARGS__\x1b[m\x1b[K); \\\n'}
+[0.797656] (subpub) StderrLine: {'line': b'                                                                \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.797710] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/logging.hpp:218:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCUTILS_LOG_INFO_NAMED\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.797770] (subpub) StderrLine: {'line': b'     \x1b[01;36m\x1b[KRCUTILS_LOG_INFO_NAMED\x1b[m\x1b[K( \\\n'}
+[0.797865] (subpub) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.798003] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/logging.hpp:221:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_ALL_BUT_FIRST_ARGS\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.798090] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[KRCLCPP_ALL_BUT_FIRST_ARGS\x1b[m\x1b[K(__VA_ARGS__,"")); \\\n'}
+[0.798153] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.798213] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.798270] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Publishing: \'%s\'", message.data);\n'}
+[0.798336] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.798397] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:40:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.798454] (subpub) StderrLine: {'line': b'         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(message);\n'}
+[0.798515] (subpub) StderrLine: {'line': b'         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.798570] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:40:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.798626] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[Kpublisher_\x1b[m\x1b[K->publish(message);\n'}
+[0.798684] (subpub) StderrLine: {'line': b'         \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.798739] (subpub) StderrLine: {'line': b'         \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[0.801719] (-) TimerEvent: {}
+[0.901947] (-) TimerEvent: {}
+[0.933495] (subpub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0\x1b[m\x1b[K,\n'}
+[0.933642] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[0.933708] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/string:41\x1b[m\x1b[K,\n'}
+[0.933767] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/stdexcept:39\x1b[m\x1b[K,\n'}
+[0.933832] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/array:39\x1b[m\x1b[K,\n'}
+[0.933888] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/tuple:39\x1b[m\x1b[K,\n'}
+[0.933945] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/functional:54\x1b[m\x1b[K,\n'}
+[0.934001] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:2\x1b[m\x1b[K:\n'}
+[0.934061] (subpub) StderrLine: {'line': b'/usr/include/c++/7/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Poggers; _Args = {}; _Tp = Poggers]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.934120] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/alloc_traits.h:475:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Poggers; _Args = {}; _Tp = Poggers; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<Poggers>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934178] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr_base.h:526:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = Poggers; _Alloc = std::allocator<Poggers>; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934236] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr_base.h:637:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(std::_Sp_make_shared_tag, _Tp*, const _Alloc&, _Args&& ...) [with _Tp = Poggers; _Alloc = std::allocator<Poggers>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934293] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr_base.h:1295:35:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<Poggers>; _Args = {}; _Tp = Poggers; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934350] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:344:64:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<Poggers>; _Args = {}; _Tp = Poggers]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934407] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:690:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Poggers; _Alloc = std::allocator<Poggers>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934463] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:706:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Poggers; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934524] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:53:44:\x1b[m\x1b[K   required from here\n'}
+[0.934580] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/ext/new_allocator.h:136:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KPoggers::Poggers()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934641] (subpub) StderrLine: {'line': b'  { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[0.934697] (subpub) StderrLine: {'line': b'    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.934757] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:11:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoggers::Poggers()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[0.934812] (subpub) StderrLine: {'line': b' class \x1b[01;36m\x1b[KPoggers\x1b[m\x1b[K: public rclcpp::Node\n'}
+[0.934867] (subpub) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.934921] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:11:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.934978] (subpub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors/single_threaded_executor.hpp:28:0\x1b[m\x1b[K,\n'}
+[0.935033] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[0.935091] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[0.935144] (subpub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/vdr/ros2/src/subpub/src/scanner.cpp:5\x1b[m\x1b[K:\n'}
+[0.935201] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:1188:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const rclcpp::Node&, const string&)\n'}
+[0.935256] (subpub) StderrLine: {'line': b'   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[0.935311] (subpub) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.935366] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:1188:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[0.935421] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:94:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\n'}
+[0.935476] (subpub) StderrLine: {'line': b'   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[0.935530] (subpub) StderrLine: {'line': b'            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.935585] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:94:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[0.935639] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:83:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\n'}
+[0.935694] (subpub) StderrLine: {'line': b'   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[0.935747] (subpub) StderrLine: {'line': b'            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.935801] (subpub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/node.hpp:83:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[1.002073] (-) TimerEvent: {}
+[1.061179] (subpub) StdoutLine: {'line': b"CMakeFiles/scanner.dir/build.make:62: recipe for target 'CMakeFiles/scanner.dir/src/scanner.cpp.o' failed\n"}
+[1.061611] (subpub) StdoutLine: {'line': b"CMakeFiles/Makefile2:173: recipe for target 'CMakeFiles/scanner.dir/all' failed\n"}
+[1.061688] (subpub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1\n'}
+[1.061753] (subpub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/scanner.dir/all] Error 2\n'}
+[1.061812] (subpub) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[1.061876] (subpub) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[1.063034] (subpub) CommandEnded: {'returncode': 2}
+[1.096519] (subpub) JobEnded: {'identifier': 'subpub', 'rc': 2}
+[1.102308] (-) TimerEvent: {}
+[1.107181] (-) EventReactorShutdown: {}

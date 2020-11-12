@@ -1,0 +1,65 @@
+[0.089s] Invoking command in '/home/vdr/ros2/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox
+[2.254s] -- The C compiler identification is GNU 7.5.0
+[2.898s] -- The CXX compiler identification is GNU 7.5.0
+[2.947s] -- Check for working C compiler: /usr/bin/cc
+[3.060s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.061s] -- Detecting C compiler ABI info
+[3.125s] -- Detecting C compiler ABI info - done
+[3.130s] -- Detecting C compile features
+[3.461s] -- Detecting C compile features - done
+[3.465s] -- Check for working CXX compiler: /usr/bin/c++
+[3.541s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.542s] -- Detecting CXX compiler ABI info
+[3.616s] -- Detecting CXX compiler ABI info - done
+[3.620s] -- Detecting CXX compile features
+[3.937s] -- Detecting CXX compile features - done
+[3.984s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[4.045s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[4.046s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.441s] -- Found message_filters: 3.1.3 (/opt/ros/dashing/share/message_filters/cmake)
+[4.460s] -- Found nav_msgs: 0.7.0 (/opt/ros/dashing/share/nav_msgs/cmake)
+[4.670s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[4.875s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[4.898s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[4.901s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.903s] -- Looking for pthread.h
+[4.996s] -- Looking for pthread.h - found
+[4.997s] -- Looking for pthread_create
+[5.069s] -- Looking for pthread_create - not found
+[5.069s] -- Looking for pthread_create in pthreads
+[5.122s] -- Looking for pthread_create in pthreads - not found
+[5.123s] -- Looking for pthread_create in pthread
+[5.187s] -- Looking for pthread_create in pthread - found
+[5.187s] -- Found Threads: TRUE  
+[5.253s] -- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[5.279s] -- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)
+[5.325s] -- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+[5.501s] -- Found visualization_msgs: 0.7.0 (/opt/ros/dashing/share/visualization_msgs/cmake)
+[5.631s] -- Found pluginlib: 2.3.3 (/opt/ros/dashing/share/pluginlib/cmake)
+[5.653s] -- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)
+[5.786s] -- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[5.846s] -- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+[6.019s] -- Found tf2_geometry_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_geometry_msgs/cmake)
+[6.041s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/dashing/share/eigen3_cmake_module/cmake)
+[6.149s] -- Found Eigen3: TRUE (found version "3.3.4") 
+[6.202s] CMake Error at CMakeLists.txt:21 (find_package):
+[6.202s]   By not providing "Findtf2_sensor_msgs.cmake" in CMAKE_MODULE_PATH this
+[6.202s]   project has asked CMake to find a package configuration file provided by
+[6.202s]   "tf2_sensor_msgs", but CMake did not find one.
+[6.203s] 
+[6.203s]   Could not find a package configuration file provided by "tf2_sensor_msgs"
+[6.203s]   with any of the following names:
+[6.203s] 
+[6.203s]     tf2_sensor_msgsConfig.cmake
+[6.203s]     tf2_sensor_msgs-config.cmake
+[6.203s] 
+[6.203s]   Add the installation prefix of "tf2_sensor_msgs" to CMAKE_PREFIX_PATH or
+[6.203s]   set "tf2_sensor_msgs_DIR" to a directory containing one of the above files.
+[6.203s]   If "tf2_sensor_msgs" provides a separate development package or SDK, be
+[6.203s]   sure it has been installed.
+[6.203s] 
+[6.203s] 
+[6.204s] -- Configuring incomplete, errors occurred!
+[6.204s] See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeOutput.log".
+[6.204s] See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeError.log".
+[6.207s] Invoked command in '/home/vdr/ros2/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox

@@ -1,0 +1,19 @@
+[ 50%] Built target listener
+[100%] Built target talker
+[ 50%] Built target listener
+[100%] Built target talker
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Up-to-date: /home/vdr/ros2/install/subpub/lib/subpub/talker
+-- Up-to-date: /home/vdr/ros2/install/subpub/lib/subpub/listener
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/package_run_dependencies/subpub
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/parent_prefix_path/subpub
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/path.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.bash
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.zsh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/packages/subpub
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig.cmake
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig-version.cmake
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/package.xml

@@ -1,0 +1,21 @@
+Terminal 1:
+
+cd ros1
+source /opt/ros/melodic/setup.bash
+source devel/setup.bash
+roslaunch tim551 scanner.launch
+
+
+Terminal 2:
+
+cd ros_bridge
+source /opt/ros/melodic/setup.bash
+source /opt/ros/dashing/setup.bash
+source install/setup.bash
+ros2 run ros1_bridge dynamic_bridge
+
+Terminal 3:
+
+cd ros2
+source install/setup.bash              *if already sourced to ros2
+ros2 run subpub listener

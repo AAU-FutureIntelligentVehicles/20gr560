@@ -1,0 +1,18 @@
+[35m[1mScanning dependencies of target scanner[0m
+[ 33%] Built target talker
+[ 66%] Built target listener
+[ 83%] [32mBuilding CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o[0m
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kvoid Poggers::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCPCPP_INFO[m[K’ was not declared in this scope
+         [01;31m[KRCPCPP_INFO[m[K(this->get_logger(), "Welcome to poggers!");
+         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:26:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KRCLCPP_INFO[m[K’
+         [01;36m[KRCPCPP_INFO[m[K(this->get_logger(), "Welcome to poggers!");
+         [01;36m[K^~~~~~~~~~~[m[K
+         [32m[KRCLCPP_INFO[m[K
+make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1
+CMakeFiles/scanner.dir/build.make:62: recipe for target 'CMakeFiles/scanner.dir/src/scanner.cpp.o' failed
+CMakeFiles/Makefile2:173: recipe for target 'CMakeFiles/scanner.dir/all' failed
+make[1]: *** [CMakeFiles/scanner.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

@@ -1,0 +1,35 @@
+-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vdr/ros2/build/subpub
+[ 33%] Built target talker
+[ 83%] [32m[1mLinking CXX executable scanner[0m
+[ 83%] Built target listener
+[100%] Built target scanner
+[ 33%] Built target talker
+[ 66%] Built target listener
+[100%] Built target scanner
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Up-to-date: /home/vdr/ros2/install/subpub/lib/subpub/talker
+-- Up-to-date: /home/vdr/ros2/install/subpub/lib/subpub/listener
+-- Installing: /home/vdr/ros2/install/subpub/lib/subpub/scanner
+-- Set runtime path of "/home/vdr/ros2/install/subpub/lib/subpub/scanner" to ""
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/package_run_dependencies/subpub
+-- Installing: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/parent_prefix_path/subpub
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/environment/path.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.bash
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.sh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/local_setup.zsh
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/ament_index/resource_index/packages/subpub
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig.cmake
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/cmake/subpubConfig-version.cmake
+-- Up-to-date: /home/vdr/ros2/install/subpub/share/subpub/package.xml

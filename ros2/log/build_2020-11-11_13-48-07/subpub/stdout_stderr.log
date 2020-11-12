@@ -1,0 +1,63 @@
+[35m[1mScanning dependencies of target scanner[0m
+[ 66%] Built target talker
+[ 66%] Built target listener
+[ 83%] [32mBuilding CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o[0m
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:52:0:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+ }
+ 
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:20:22:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KMinimalPublisher[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+     MinimalPublisher([01;31m[K)[m[K
+                      [01;31m[K^[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Publishing: '%f'", message.data;
+         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kint MinimalSubscriber::MinimalPublisher()[m[K’:
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:21:15:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+             : [01;31m[KNode[m[K("minimal_publisher"), count_(0)
+               [01;31m[K^~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:21:42:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMinimalSubscriber[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+             : Node("minimal_publisher"), [01;31m[Kcount_[m[K(0)
+                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+         [01;31m[Kpublisher_[m[K = this->create_publisher<sensor_msgs::msg::LaserScan>("topic", 10);
+         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:23:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_publisher_t[m[K’
+         [01;36m[Kpublisher_[m[K = this->create_publisher<sensor_msgs::msg::LaserScan>("topic", 10);
+         [01;36m[K^~~~~~~~~~[m[K
+         [32m[Krcl_publisher_t[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope
+         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+         [01;31m[K^~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:24:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktimer_t[m[K’
+         [01;36m[Ktimer_[m[K = this->create_wall_timer(
+         [01;36m[K^~~~~~[m[K
+         [32m[Ktimer_t[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:25:35:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalPublisher[m[K’ is not a class, namespace, or enumeration
+                 500ms, std::bind(&[01;31m[KMinimalPublisher[m[K::timer_callback, this));
+                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:26:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+     [01;35m[K}[m[K
+     [01;35m[K^[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::timer_callback()[m[K’:
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct sensor_msgs::msg::LaserScan_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdata[m[K’
+         message.[01;31m[Kdata[m[K = scan->ranges[179];
+                 [01;31m[K^~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan[m[K’ was not declared in this scope
+         message.data = [01;31m[Kscan[m[K->ranges[179];
+                        [01;31m[K^~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:38:24:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kscanf[m[K’
+         message.data = [01;36m[Kscan[m[K->ranges[179];
+                        [01;36m[K^~~~[m[K
+                        [32m[Kscanf[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Publishing: '%f'", message.data;
+         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K At global scope:
+[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1
+CMakeFiles/scanner.dir/build.make:62: recipe for target 'CMakeFiles/scanner.dir/src/scanner.cpp.o' failed
+make[1]: *** [CMakeFiles/scanner.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:173: recipe for target 'CMakeFiles/scanner.dir/all' failed
+Makefile:140: recipe for target 'all' failed

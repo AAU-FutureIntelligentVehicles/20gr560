@@ -19,10 +19,13 @@ add_executable(listener src/listener.cpp)
 ament_target_dependencies(listener rclcpp std_msgs sensor_msgs)
 add_executable(talker src/talker.cpp)
 ament_target_dependencies(talker rclcpp std_msgs sensor_msgs)
+add_executable(scanner src/scanner.cpp)
+ament_target_dependencies(scanner rclcpp std_msgs sensor_msgs)
 
 install(TARGETS
 	talker
 	listener
+	scanner
 	DESTINATION lib/${PROJECT_NAME}
 )
 

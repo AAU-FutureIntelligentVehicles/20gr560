@@ -1,0 +1,6 @@
+[0.189s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[1.123s] [35m[1mScanning dependencies of target listener[0m
+[1.171s] [ 50%] Built target talker
+[1.272s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[5.368s] [100%] [32m[1mLinking CXX executable listener[0m
+[6.346s] [100%] Built target listener

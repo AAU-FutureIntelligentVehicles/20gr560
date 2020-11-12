@@ -1,0 +1,38 @@
+[0.012s] Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
+[0.047s] [35m[1mScanning dependencies of target scanner[0m
+[0.059s] [ 33%] Built target talker
+[0.061s] [ 66%] Built target listener
+[0.066s] [ 83%] [32mBuilding CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o[0m
+[0.800s] In file included from [01m[K/opt/ros/dashing/include/rclcpp/client.hpp:39:0[m[K,
+[0.800s]                  from [01m[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23[m[K,
+[0.800s]                  from [01m[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20[m[K,
+[0.800s]                  from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.801s]                  from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.801s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executor.hpp:33[m[K,
+[0.801s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+[0.801s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executors.hpp:21[m[K,
+[0.801s]                  from [01m[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144[m[K,
+[0.801s]                  from [01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:5[m[K:
+[0.801s] [01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kvoid Poggers::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr) const[m[K’:
+[0.802s] [01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:63:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[0.802s]          RCLCPP_INFO(this->get_logger(), "Readings: [%.5f]", s[[01;31m[Ki[m[K]);
+[0.802s]                                                                [01;31m[K^[m[K
+[0.802s] [01m[K/opt/ros/dashing/include/rcutils/logging_macros.h:72:64:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRCUTILS_LOG_COND_NAMED[m[K’
+[0.802s]        rcutils_log(&__rcutils_logging_location, severity, name, [01;36m[K__VA_ARGS__[m[K); \
+[0.802s]                                                                 [01;36m[K^~~~~~~~~~~[m[K
+[0.802s] [01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:218:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCUTILS_LOG_INFO_NAMED[m[K’
+[0.802s]      [01;36m[KRCUTILS_LOG_INFO_NAMED[m[K( \
+[0.802s]      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.802s] [01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:221:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_ALL_BUT_FIRST_ARGS[m[K’
+[0.803s]          [01;36m[KRCLCPP_ALL_BUT_FIRST_ARGS[m[K(__VA_ARGS__,"")); \
+[0.803s]          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.803s] [01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:39:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_INFO[m[K’
+[0.803s]          [01;36m[KRCLCPP_INFO[m[K(this->get_logger(), "Readings: [%.5f]", s[i]);
+[0.803s]          [01;36m[K^~~~~~~~~~~[m[K
+[1.325s] CMakeFiles/scanner.dir/build.make:62: recipe for target 'CMakeFiles/scanner.dir/src/scanner.cpp.o' failed
+[1.325s] CMakeFiles/Makefile2:173: recipe for target 'CMakeFiles/scanner.dir/all' failed
+[1.326s] make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1
+[1.326s] make[1]: *** [CMakeFiles/scanner.dir/all] Error 2
+[1.326s] make: *** [all] Error 2
+[1.327s] Makefile:140: recipe for target 'all' failed
+[1.331s] Invoked command in '/home/vdr/ros2/build/subpub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8

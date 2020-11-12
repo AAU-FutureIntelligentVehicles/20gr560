@@ -1,0 +1,46 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found message_filters: 3.1.3 (/opt/ros/dashing/share/message_filters/cmake)
+-- Found nav_msgs: 0.7.0 (/opt/ros/dashing/share/nav_msgs/cmake)
+-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+-- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)
+-- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+-- Found visualization_msgs: 0.7.0 (/opt/ros/dashing/share/visualization_msgs/cmake)
+-- Found pluginlib: 2.3.3 (/opt/ros/dashing/share/pluginlib/cmake)
+-- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)
+-- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+-- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+-- Found tf2_geometry_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/dashing/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.3.4") 
+-- Configuring incomplete, errors occurred!
+See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeOutput.log".
+See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeError.log".

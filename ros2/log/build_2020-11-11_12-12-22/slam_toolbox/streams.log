@@ -1,0 +1,61 @@
+[0.017s] Invoking command in '/home/vdr/ros2/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox
+[0.214s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.246s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.414s] -- Found message_filters: 3.1.3 (/opt/ros/dashing/share/message_filters/cmake)
+[0.415s] -- Found nav_msgs: 0.7.0 (/opt/ros/dashing/share/nav_msgs/cmake)
+[0.418s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[0.456s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[0.464s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[0.465s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.485s] -- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[0.493s] -- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)
+[0.496s] -- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+[0.532s] -- Found visualization_msgs: 0.7.0 (/opt/ros/dashing/share/visualization_msgs/cmake)
+[0.541s] -- Found pluginlib: 2.3.3 (/opt/ros/dashing/share/pluginlib/cmake)
+[0.541s] -- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)
+[0.550s] -- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+[0.554s] -- Found tf2_geometry_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_geometry_msgs/cmake)
+[0.556s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/dashing/share/eigen3_cmake_module/cmake)
+[0.570s] -- Found tf2_sensor_msgs: 0.11.6 (/opt/ros/dashing/share/tf2_sensor_msgs/cmake)
+[0.590s] -- Found std_srvs: 0.7.0 (/opt/ros/dashing/share/std_srvs/cmake)
+[0.593s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[0.666s] -- Found nav2_map_server: 0.2.6 (/opt/ros/dashing/share/nav2_map_server/cmake)
+[0.979s] -- Boost version: 1.65.1
+[0.980s] -- Found the following Boost libraries:
+[0.980s] --   system
+[0.980s] --   serialization
+[0.980s] --   filesystem
+[0.980s] --   thread
+[0.980s] --   chrono
+[0.980s] --   date_time
+[0.980s] --   atomic
+[1.276s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[1.308s] -- Could NOT find CSPARSE (missing: CSPARSE_INCLUDE_DIR CSPARSE_LIBRARY) 
+[1.347s] -- Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDE_DIR CHOLMOD_LIBRARIES) 
+[1.399s] -- Looking for sgemm_
+[1.504s] -- Looking for sgemm_ - found
+[1.507s] -- A library with BLAS API found.
+[1.511s] -- Looking for cheev_
+[1.707s] -- Looking for cheev_ - found
+[1.710s] -- A library with LAPACK API found.
+[1.718s] CMake Error at CMakeLists.txt:73 (find_package):
+[1.718s]   By not providing "FindCeres.cmake" in CMAKE_MODULE_PATH this project has
+[1.718s]   asked CMake to find a package configuration file provided by "Ceres", but
+[1.718s]   CMake did not find one.
+[1.718s] 
+[1.718s]   Could not find a package configuration file provided by "Ceres" with any of
+[1.718s]   the following names:
+[1.718s] 
+[1.719s]     CeresConfig.cmake
+[1.719s]     ceres-config.cmake
+[1.719s] 
+[1.719s]   Add the installation prefix of "Ceres" to CMAKE_PREFIX_PATH or set
+[1.719s]   "Ceres_DIR" to a directory containing one of the above files.  If "Ceres"
+[1.719s]   provides a separate development package or SDK, be sure it has been
+[1.719s]   installed.
+[1.719s] 
+[1.719s] 
+[1.720s] -- Configuring incomplete, errors occurred!
+[1.720s] See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeOutput.log".
+[1.720s] See also "/home/vdr/ros2/build/slam_toolbox/CMakeFiles/CMakeError.log".
+[1.725s] Invoked command in '/home/vdr/ros2/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox
