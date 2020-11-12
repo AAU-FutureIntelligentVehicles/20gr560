@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a529311-8ca9-4c84-b0af-c5040004e4dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/CHANGELOG.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/CHANGELOG.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/Dockerfile-kinetic" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/Dockerfile-kinetic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/Dockerfile-melodic" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/Dockerfile-melodic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/debian/udev" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/debian/udev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/abstract_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/abstract_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/scan_and_cloud_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/scan_and_cloud_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_mrs1000_communication.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_mrs1000_communication.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_mrs1000_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_mrs1000_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310_1130000m01_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310_1130000m01_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310s01_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim310s01_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim551_2050001_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim551_2050001_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_mockup.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_mockup.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_tcp.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_tcp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_common_usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_datagram_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/include/sick_tim/sick_tim_datagram_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_mrs1000.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_mrs1000.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310_1130000m01.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310_1130000m01.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310s01.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim310s01.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim551_2050001.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim551_2050001.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim571_2050101.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/launch/sick_tim571_2050101.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/meshes/sick_mrs1000.stl" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/meshes/sick_mrs1000.stl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/meshes/sick_tim310.stl" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/meshes/sick_tim310.stl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/meshes/sick_tim551.stl" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/meshes/sick_tim551.stl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/abstract_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/abstract_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/scan_and_cloud_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/scan_and_cloud_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000_communication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000_communication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_mrs1000_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_1130000m01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_1130000m01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_1130000m01_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_1130000m01_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310s01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310s01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310s01_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim310s01_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim551_2050001.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim551_2050001.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim551_2050001_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim551_2050001_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_mockup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_mockup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_tcp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_tcp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_usb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/src/sick_tim_common_usb.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/test/sick_tim_datagram_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/test/sick_tim_datagram_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/urdf/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/urdf/example.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/urdf/sick_mrs1000.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/urdf/sick_mrs1000.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sick_tim/urdf/sick_tim.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sick_tim/urdf/sick_tim.urdf.xacro" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/sick_tim" />
+  </component>
+  <component name="ProjectId" id="1k9FPugw2Pd4vCJawvMe0NUbMyC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a529311-8ca9-4c84-b0af-c5040004e4dd" name="Default Changelist" comment="" />
+      <created>1605104880030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605104880030</updated>
+      <workItem from="1605104881054" duration="2653000" />
+      <workItem from="1605168941518" duration="772000" />
+      <workItem from="1605178737783" duration="3756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
