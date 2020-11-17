@@ -6,6 +6,21 @@ import rospy, math
 from costmap_converter.msg import ObstacleArrayMsg, ObstacleMsg
 from geometry_msgs.msg import PolygonStamped, Point32
 
+def makebox(a=(0.0), b=(0.1), c=(1.1), d=(1.0)):
+  obstacle_msg.obstacles.append(ObstacleMsg())
+  obstacle_msg.obstacles[1].id = 2
+  v1 = Point32()
+  v1.x = a[0]
+  v1.y = a[1]
+  v2 = Point32()
+  v2.x = b[0]
+  v2.y = b[1]
+  v3 = Point32()
+  v3.x = c[0]
+  v3.y = c[1]
+  obstacle_msg.obstacles[2].polygon.points = [v1, v2, v3]
+  
+  
 
 def publish_obstacle_msg():
   pub = rospy.Publisher('/test_optim_node/obstacles', ObstacleArrayMsg, queue_size=1)

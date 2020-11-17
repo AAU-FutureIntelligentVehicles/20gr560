@@ -184,6 +184,10 @@ catkin_install_python(PROGRAMS scripts/cmd_vel_to_ackermann_drive.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+catkin_install_python(PROGRAMS scripts/park_planner.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 catkin_install_python(PROGRAMS scripts/export_to_mat.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
