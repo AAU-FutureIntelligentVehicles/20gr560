@@ -14,59 +14,46 @@ Frederik Johannes Christensen (fjch18@student.aau.dk)
 #include <fstream>
 //=====================================
 
-class _key_teleop{
+class _set_vel{
 public:
-  //Constructor
-  _key_teleop() {
-    _sub_key_teleop = n.subscribe("key_vel", 10, &_key_teleop::KeyCallback, this);
+  _set_vel(){
     set_vel_pub = n.advertise<std_msgs::Float64>("tpod_set_vel", 1000);
   }
 
-  //Callbacks
-  void KeyCallback(const geometry_msgs::Twist::ConstPtr& msg){
-    ROS_INFO("Speed: [%f], Turn: [%f]", msg->linear.x, msg->angular.z);
-    current_vel = msg->linear.x;
-    current_turn = msg->angular.z;
+  void _publish_vel(){
+    msg.data = set_vel_input;
+    set_vel_pub.publish(msg);
+    ROS_INFO ("Published: [%f]", msg.data);
   }
 
-  void _log_vel(){
-
-  }
-
-  void _log_turn(){
-
+  void _input_vel(){
+    std::cin >> set_vel_input;
   };
 
 
 private:
-  ros::NodeHandle n;
   ros::Publisher set_vel_pub;
-  ros::Subscriber _sub_key_teleop;
-  double current_vel = 0;
-  double current_turn = 0;
+  ros::NodeHandle n;
+  double set_vel_input;
+  std_msgs::Float64 msg;
 };
-
-
-
 
 int main(int argc, char **argv) //Required inits, allows node to take cmds from externally through terminal etc.
 {
-  ros::init(argc, argv, "tpod_teleop"); //Inits the ros node by name with arguments.
-  ROS_INFO("tpod_teleop initiated");
+  ros::init(argc, argv, "set_vel"); //Inits the ros node by name with arguments.
+  ROS_INFO("set_vel started");
   ros::NodeHandle n;
-  _key_teleop _key_teleop;
+  _set_vel _set_vel;
   ros::Rate loop_rate(10);
-  std::ofstream myFile("vel_turn_acc_log.csv");
 
   while (ros::ok())
   {
-
-
+    _set_vel._input_vel();
+    _set_vel._publish_vel();
     ros::spinOnce();
 
     loop_rate.sleep();
   }
 
-  myFile.close();
   return 0;
 }

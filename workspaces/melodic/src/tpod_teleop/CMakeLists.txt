@@ -113,6 +113,10 @@ add_executable(tpod_teleop src/tpod_teleop.cpp)
 target_link_libraries(tpod_teleop ${catkin_LIBRARIES})
 add_dependencies(tpod_teleop tpod_teleop)
 
+add_executable(set_vel src/set_vel.cpp)
+target_link_libraries(set_vel ${catkin_LIBRARIES})
+add_dependencies(tpod_teleop tpod_teleop)
+
 ###########
 ## Build ##
 ###########
