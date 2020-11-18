@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>path_planner_p5</name>
+  <name>path_planner</name>
   <version>0.0.0</version>
   <description>The path_planner_p5 package</description>
 
@@ -29,6 +29,7 @@
   <run_depend>move_base</run_depend>
   <run_depend>map_server</run_depend>
   <run_depend>amcl</run_depend>
+  <run_depend>std_msgs</run_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

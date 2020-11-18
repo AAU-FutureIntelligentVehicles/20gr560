@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(path_planner_p5)
+project(path_planner)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -180,11 +180,15 @@ install(DIRECTORY
   PATTERN ".svn" EXCLUDE
 )
 
-catkin_install_python(PROGRAMS scripts/cmd_vel_to_ackermann_drive.py
+catkin_install_python(PROGRAMS scripts/park_planner.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-catkin_install_python(PROGRAMS scripts/park_planner.py
+catkin_install_python(PROGRAMS scripts/sender.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+catkin_install_python(PROGRAMS scripts/cmd_vel_to_ackermann_drive.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
