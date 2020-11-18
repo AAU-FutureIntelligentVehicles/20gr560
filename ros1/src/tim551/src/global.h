@@ -8,7 +8,7 @@ struct scan{
   float angle_min;
   float angle_max;
   float len = 14;
-  float limit = 0.3;
+  float limit = 0.2;
 };
 struct results{
   float sum;
