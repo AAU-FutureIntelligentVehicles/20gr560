@@ -23,7 +23,7 @@ public:
   void _publish_vel(){
     msg.data = set_vel_input;
     set_vel_pub.publish(msg);
-    ROS_INFO ("Published: [%f]", msg.data);
+    ROS_INFO ("set_vel: [%f]", msg.data);
   }
 
   void _input_vel(){

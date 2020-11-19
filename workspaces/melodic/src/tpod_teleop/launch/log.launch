@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="tpod_teleop" pkg="tpod_teleop" type="tpod_teleop" output="screen">
+  </node>
+  <node name="set_vel" pkg="tpod_teleop" type="set_vel" output="screen">
+  </node>
+</launch>
