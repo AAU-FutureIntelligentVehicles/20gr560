@@ -51,7 +51,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n("~");
   ros::Publisher scan_pub = nh.advertise<sensor_msgs::LaserScan>("scan_front", 1);
 
-  n.param<std::string>("host", host, "192.168.1.2");
+  n.param<std::string>("host", host, "169.254.196.14");
   n.param<std::string>("frame_id", frame_id, "laser_front");
   n.param<bool>("publish_min_range_as_inf", inf_range, false);
   n.param<int>("port", port, 2111);

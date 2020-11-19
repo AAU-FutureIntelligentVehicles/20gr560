@@ -4,7 +4,9 @@
 #include <queue>
 #include <limits>
 #include "global.h"
-
+#include <tf/transform_broadcaster.h>
+#include <iostream>
+ros::Time newtime;
 
 class tim{
 private:
@@ -26,6 +28,17 @@ void subscriber(){
   sub= nh.subscribe("scanr",10,&tim::scanner, this);
 }
 void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
+    //ROS_INFO("Scan time: [%]", scan->header.stamp);
+    newtime = scan->header.stamp;
+    msg.header.frame_id = "laser_rear";
+    msg.header.stamp = newtime;
+    msg.angle_min = -1.570796;
+    msg.angle_max = -1.570796;
+    msg.angle_increment= 0.01745329238474369;
+    msg.time_increment= 0.00018518499564379454;
+    msg.scan_time = 0.06666667014360428;
+    msg.range_min = 0.05000000074505806;
+    msg.range_max = 8;
 
   for(int i=0;i<(scan->ranges.size());i++){
             if(!(scan->ranges.empty()))
@@ -37,25 +50,16 @@ void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
 }
 
 void distance(int i){
-    msg.header.frame_id = "laser_mount_link";
-    msg.header.stamp = ros::Time();
-    msg.angle_min = -1.570796;
-    msg.angle_max = -1.570796;
-    msg.angle_increment= 0.01745329238474369;
-    msg.time_increment= 0.00018518499564379454;
-    msg.scan_time = 0.06666667014360428;
-    msg.range_min = 0.05000000074505806;
-    msg.range_max = 8;
     msg.ranges.resize(180);
     msg.ranges[i] = s.ranges[i];
     if(s.ranges[i] > s.limit && s.ranges[i] != inf){
         pub.publish(msg);
     }
     else{
-        ROS_ERROR("***Angle is too close***");
+  //      ROS_ERROR("***Angle is too close***");
        // ros::shutdown();
     }
-    ROS_INFO("Ranges: [%.5f]", msg.ranges[i]);
+  //  ROS_INFO("Ranges: [%.5f]", msg.ranges[i]);
 
 }
 };
