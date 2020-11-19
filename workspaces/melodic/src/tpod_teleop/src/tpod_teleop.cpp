@@ -1,9 +1,8 @@
-/*
-=============== AUTHORS ===============
+/*============= AUTHORS ===============
 Frederik Johannes Christensen (fjch18@student.aau.dk)
 20gr560 (5th Semester Robotics AAU)
-=======================================
-*/
+=====================================*/
+
 
 //============= INCLUDES ==============
 #include "ros/ros.h"
@@ -13,6 +12,7 @@ Frederik Johannes Christensen (fjch18@student.aau.dk)
 #include <iostream>
 #include <fstream>
 //=====================================
+double set_vel = 0;
 
 class _key_teleop{
 public:
@@ -27,6 +27,7 @@ public:
     ROS_INFO("Speed: [%f], Turn: [%f]", msg->linear.x, msg->angular.z);
     current_vel = msg->linear.x;
     current_turn = msg->angular.z;
+    set_vel = current_vel;
   }
 
   void _log_vel(){
@@ -57,16 +58,21 @@ int main(int argc, char **argv) //Required inits, allows node to take cmds from 
   _key_teleop _key_teleop;
   ros::Rate loop_rate(10);
   std::ofstream myFile("vel_turn_acc_log.csv");
+  myFile << "set_vel,";
+  myFile << "odometry_feedback\n";
 
   while (ros::ok())
   {
 
-
+    myFile << set_vel;
+    myFile << ",";
+    myFile << "feedback\n";
     ros::spinOnce();
-
     loop_rate.sleep();
   }
 
+
+  ROS_INFO("Closing and saving log file");
   myFile.close();
   return 0;
 }
