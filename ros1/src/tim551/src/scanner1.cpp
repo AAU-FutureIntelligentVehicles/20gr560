@@ -5,8 +5,8 @@
 #include <limits>
 #include "global.h"
 #include <tf/transform_broadcaster.h>
-#include <iostream>
-ros::Time newtime;
+//#include <iostream>
+//ros::Time newtime;
 
 class tim{
 private:
@@ -18,6 +18,7 @@ private:
   std::queue<float> q;
   float inf = std::numeric_limits<float>::infinity();
   sensor_msgs::LaserScan msg;
+  ros::Time newtime;
 public:
 
 void publisher(){
@@ -28,7 +29,6 @@ void subscriber(){
   sub= nh.subscribe("scanr",10,&tim::scanner, this);
 }
 void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
-    //ROS_INFO("Scan time: [%]", scan->header.stamp);
     newtime = scan->header.stamp;
     msg.header.frame_id = "laser_rear";
     msg.header.stamp = newtime;
@@ -59,7 +59,6 @@ void distance(int i){
   //      ROS_ERROR("***Angle is too close***");
        // ros::shutdown();
     }
-  //  ROS_INFO("Ranges: [%.5f]", msg.ranges[i]);
 
 }
 };

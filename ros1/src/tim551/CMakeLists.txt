@@ -12,6 +12,7 @@ find_package(catkin REQUIRED
       sensor_msgs
       message_generation
       visualization_msgs
+      tf
 )
 
 find_package(PkgConfig REQUIRED)
@@ -21,7 +22,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 
 add_message_files(
     FILES
-    floater.msg
+ #   floater.msg
 )
 
 generate_messages(
@@ -35,7 +36,7 @@ generate_messages(
 
 catkin_package(
     DEPENDS Boost libusb
-    CATKIN_DEPENDS roscpp rospy sensor_msgs diagnostic_updater dynamic_reconfigure message_runtime visualization_msgs
+    CATKIN_DEPENDS roscpp rospy sensor_msgs diagnostic_updater dynamic_reconfigure message_runtime visualization_msgs tf
     LIBRARIES
     INCLUDE_DIRS)
 include_directories(include ${catkin_INCLUDE_DIRS} ${libusb_INCLUDE_DIRS})
@@ -47,8 +48,8 @@ add_dependencies(scanner1 tim551_generate_messages_cpp)
 add_executable(avgsub src/avgsub.cpp)
 target_link_libraries(avgsub ${catkin_LIBRARIES})
 add_dependencies(avgsub tim551_generate_messages_cpp)
-add_executable(test1 src/test1.cpp)
-target_link_libraries(test1 ${catkin_LIBRARIES})
-add_dependencies(test1 tim551_generate_messages_cpp)
+add_executable(tfe src/tfe.cpp)
+target_link_libraries(tfe ${catkin_LIBRARIES})
+add_dependencies(tfe tim551_generate_messages_cpp)
 
 
