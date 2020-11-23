@@ -1,6 +1,0 @@
-Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/subpub -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/subpub
-Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/subpub -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/subpub
-Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
-Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub -- -j8 -l8
-Invoking command in '/home/vdr/ros2/build/subpub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8
-Invoked command in '/home/vdr/ros2/build/subpub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/vdr/ros2/build/subpub --target install -- -j8 -l8

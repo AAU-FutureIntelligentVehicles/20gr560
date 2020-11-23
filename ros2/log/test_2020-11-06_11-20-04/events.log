@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000542] (subpub) JobQueued: {'identifier': 'subpub', 'dependencies': OrderedDict([('subpub', '/home/vdr/ros2/install/subpub')])}
-[0.000697] (subpub) JobStarted: {'identifier': 'subpub'}
-[0.017670] (subpub) JobEnded: {'identifier': 'subpub', 'rc': 0}
-[0.018375] (-) EventReactorShutdown: {}

@@ -1,2 +1,0 @@
-Invoking command in '/home/vdr/ros2/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox
-Invoked command in '/home/vdr/ros2/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/vdr/ros2/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/vdr/ros2/install/slam_toolbox

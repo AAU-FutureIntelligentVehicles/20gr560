@@ -1,4 +1,0 @@
-[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kvoid Poggers::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:28:22:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
-         for(int i=0;[01;35m[Ki<scan->ranges.size()[m[K;i++){
-                     [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K

@@ -1,7 +1,0 @@
-[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:[m[K In member function ‘[01m[Kvoid Poggers::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/vdr/ros2/src/subpub/src/scanner.cpp:33:45:[m[K [01;31m[Kerror: [m[K‘[01m[KNow[m[K’ is not a member of ‘[01m[Krclcpp::Node[m[K’
-         marker.header.stamp = rclcpp::Node::[01;31m[KNow[m[K();
-                                             [01;31m[K^~~[m[K
-make[2]: *** [CMakeFiles/scanner.dir/src/scanner.cpp.o] Error 1
-make[1]: *** [CMakeFiles/scanner.dir/all] Error 2
-make: *** [all] Error 2
