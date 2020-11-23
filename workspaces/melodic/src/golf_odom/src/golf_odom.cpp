@@ -3,6 +3,7 @@
 #include <sstream>
 #include <iostream>
 #include <std_msgs/Int64.h>
+#include <std_msgs/Float64.h>
 #include <math.h>
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
@@ -15,9 +16,9 @@ double heading, currentHeading, previousHeading = 0;
 double x, y, delta_x, delta_y = 0;
 double v_left, v_right, v_x, v_heading = 0;
 
-double rearTread = 0.98; //cm
-double wheelDiameter = 0.453; //cm
-double wheelCircumference = 1.42314147208; //cm
+double rearTread = 0.98; //m
+double wheelDiameter = 0.453; //m
+double wheelCircumference = 1.42314147208; //m
 double ticksPerRotation_Left = 310;
 double ticksPerRotation_Right = 395;
 double tickLength_Left = wheelCircumference/ticksPerRotation_Left;
@@ -27,6 +28,7 @@ double current_Time;
 ros::Time previousTime;
 double previous_Time;
 ros::Time currentTime;
+double timeChange;
 
 nav_msgs::Odometry odom;
 
@@ -53,10 +55,6 @@ void calculateOdometry(){
   delta_left = left - p_left;
   delta_right = right - p_right;
 
-  //Update previous length
-  p_left = left;
-  p_right = right;
-
   //Find heading
   heading = (left - right) / rearTread;
 
@@ -72,15 +70,20 @@ void calculateOdometry(){
 	y = y + delta_y;
   currentHeading = currentHeading + heading;
 
-  v_left = (left - p_left) * (current_Time - previous_Time);
-  v_right = (right - p_right) * (current_Time - previous_Time);
-  v_x = (v_left + v_right)/2; // meter/s
+	timeChange = current_Time - previous_Time;
+
+  v_left = delta_left / timeChange;
+  v_right = delta_right / timeChange;
+  v_x = (v_left + v_right)/2.0; // meter/s
 
   v_heading = (currentHeading - previousHeading) * (current_Time - previous_Time);
 
   previousHeading = currentHeading;
   previousTime = currentTime;
   previous_Time = current_Time;
+	//Update previous length
+  p_left = left;
+  p_right = right;
 }
 
 void odomPublisher(){
@@ -122,7 +125,7 @@ int main(int argc, char **argv)
 	double previous_Time = ros::Time::now().toSec();
 
   ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
-	ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("vel_odom",50);
+	ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("vel_odom",1);
 	std_msgs::Float64 vel_msg;
 
 	ros::Subscriber LeftTicks_sub = nh.subscribe("ticks_left", 1000, LeftTicks_Callback);
@@ -136,6 +139,8 @@ int main(int argc, char **argv)
 		std::cout<<"%%%%%%%%%%%%%%%%%%%%%"<<std::endl;
 		std::cout<<"X: "<<x<<" Y: "<<y<<std::endl;
 	  std::cout<<"Left distance (m): "<<left<<" Right distance (m): "<<right<<std::endl;
+		std::cout<<"Vel: " << v_x << std::endl;
+		std::cout<< "Time change: " << timeChange << std::endl;
 	  //std::cout<<"Heading: "<<heading<<std::endl;
 
     odomPublisher();

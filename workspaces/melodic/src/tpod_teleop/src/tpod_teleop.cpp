@@ -20,8 +20,8 @@ public:
   //Constructor
   _key_teleop() {
     _sub_key_teleop = n.subscribe("key_vel", 10, &_key_teleop::KeyCallback, this);
-    set_vel_sub = n.subscribe("tpod_set_vel", 1, &_key_teleop::set_velCallback, this);
-    odometry_sub = n.subscribe("odometry", 1, &_key_teleop::odometryCallback, this);
+    set_vel_sub = n.subscribe("accelerator_position", 1, &_key_teleop::set_velCallback, this);
+    odometry_sub = n.subscribe("vel_odom", 1, &_key_teleop::odometryCallback, this);
   }
 
   //Callbacks
@@ -68,9 +68,17 @@ int main(int argc, char **argv) //Required inits, allows node to take cmds from 
   while (ros::ok())
   {
 
-    myFile << set_vel;
+    if(set_vel>0.025){
+      myFile << set_vel;
+      std::cout << "Set_vel: " << set_vel << '\n';
+    }
+    else{
+      myFile << 0.0;
+      std::cout << "Set_vel: 0.0" << '\n';
+    };
     myFile << ",";
     myFile << odometry_vel << '\n';
+    std::cout << "odom_vel: " << odometry_vel << '\n';
     ros::spinOnce();
     loop_rate.sleep();
   }
