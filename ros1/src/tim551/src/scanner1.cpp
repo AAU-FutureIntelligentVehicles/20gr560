@@ -19,6 +19,7 @@ private:
   float inf = std::numeric_limits<float>::infinity();
   sensor_msgs::LaserScan msg;
   ros::Time newtime;
+  tf::TransformBroadcaster bc;
 public:
 
 void publisher(){
@@ -28,7 +29,17 @@ void publisher(){
 void subscriber(){
   sub= nh.subscribe("scanr",10,&tim::scanner, this);
 }
+void transform(){
+    tf::TransformBroadcaster bc;
+    tf::Transform transform4;
+    transform4.setOrigin( tf::Vector3(-1.02, 0, 0.27) );  //(-1.02, 0, 0.27)
+    tf::Quaternion q4;
+    q4.setRPY(0, 0, 3.1416); //(0, 0, 3.1416)
+    transform4.setRotation(q4);
+    bc.sendTransform(tf::StampedTransform(transform4, ros::Time::now(), "base_link", "laser_rear"));
+}
 void scanner(const sensor_msgs::LaserScan::ConstPtr& scan){
+   // transform();
     newtime = scan->header.stamp;
     msg.header.frame_id = "laser_rear";
     msg.header.stamp = newtime;

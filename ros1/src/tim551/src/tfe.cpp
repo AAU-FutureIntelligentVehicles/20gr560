@@ -36,9 +36,9 @@ int main(int argc, char** argv){
         bc.sendTransform(tf::StampedTransform(transform3, ros::Time::now(), "base_link", "laser_mount_link"));
 
         tf::Transform transform4;
-        transform4.setOrigin( tf::Vector3(-1.02, 0, 0.27) );
+        transform4.setOrigin( tf::Vector3(-1.02, 0, 0.27) );  //(-1.02, 0, 0.27)
         tf::Quaternion q4;
-        q4.setRPY(0, 0, 3.1416);
+        q4.setRPY(0, 0, 3.1416); //(0, 0, 3.1416)
         transform4.setRotation(q4);
         bc.sendTransform(tf::StampedTransform(transform4, ros::Time::now(), "base_link", "laser_rear"));
 

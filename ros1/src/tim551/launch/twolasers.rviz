@@ -7,10 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1
-        - /TF1/Status1
-        - /TF1/Tree1
-        - /TF1/Tree1/base_footprint1
-        - /TF1/Tree1/base_footprint1/base_link1
+        - /LaserScan2/Status1
       Splitter Ratio: 0.5
     Tree Height: 728
   - Class: rviz/Selection
@@ -57,6 +54,40 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        base_link:
+          Value: true
+        laser:
+          Value: false
+        laser_front:
+          Value: true
+        laser_mount_link:
+          Value: true
+        laser_rear:
+          Value: true
+        rear_axle:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        rear_axle:
+          base_link:
+            laser_front:
+              {}
+            laser_mount_link:
+              laser:
+                {}
+            laser_rear:
+              {}
+      Update Interval: 0
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -72,9 +103,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 879
+      Max Intensity: 802
       Min Color: 0; 0; 0
-      Min Intensity: 352
+      Min Intensity: 422
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -117,44 +148,41 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Class: rviz/TF
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
       Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        base_footprint:
-          Value: true
-        base_l:
-          Value: true
-        base_link:
-          Value: true
-        laser:
-          Value: true
-        laser_front:
-          Value: true
-        laser_mount_link:
-          Value: true
-        laser_rear:
-          Value: true
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        base_footprint:
-          base_link:
-            laser_front:
-              {}
-            laser_rear:
-              {}
-      Update Interval: 0
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /scan_multi
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_footprint
+    Fixed Frame: rear_axle
     Frame Rate: 30
   Name: root
   Tools:
@@ -178,7 +206,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 10
+      Distance: 7.724208831787109
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -193,10 +221,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4853980541229248
+      Pitch: 0.4853978455066681
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.348574161529541
+      Yaw: 1.080397605895996
     Saved: ~
 Window Geometry:
   Displays:
