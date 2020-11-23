@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/src/hector_slam" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ira_laser_tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/laser_assembler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/lms1xx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/navigation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/sick_tim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/tpod_driver" vcs="Git" />
+  </component>
+</project>
