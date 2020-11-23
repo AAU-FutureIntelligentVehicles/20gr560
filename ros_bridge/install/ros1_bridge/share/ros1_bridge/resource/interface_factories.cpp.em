@@ -1,1 +1,0 @@
-/home/vdr/ros_bridge/src/ros1_bridge/resource/interface_factories.cpp.em

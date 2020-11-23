@@ -1,2 +1,0 @@
-Invoking command in '/home/vdr/ros_bridge/build/ros1_bridge': CMAKE_PREFIX_PATH=/opt/ros/dashing:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/vdr/ros_bridge/src/ros1_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vdr/ros_bridge/install/ros1_bridge
-Invoked command in '/home/vdr/ros_bridge/build/ros1_bridge' returned '1': CMAKE_PREFIX_PATH=/opt/ros/dashing:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/vdr/ros_bridge/src/ros1_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vdr/ros_bridge/install/ros1_bridge
