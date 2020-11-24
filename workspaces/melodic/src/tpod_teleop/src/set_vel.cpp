@@ -17,7 +17,7 @@ Frederik Johannes Christensen (fjch18@student.aau.dk)
 class _set_vel{
 public:
   _set_vel(){
-    set_vel_pub = n.advertise<std_msgs::Float64>("tpod_set_vel", 1000);
+    set_vel_pub = n.advertise<std_msgs::Float64>("cmd_accelerator_position", 1000);
   }
 
   void _publish_vel(){
