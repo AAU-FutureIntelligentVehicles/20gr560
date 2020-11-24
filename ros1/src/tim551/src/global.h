@@ -4,7 +4,7 @@
 struct scan{
   float ranges[180];
   float len = 14;
-  float limit = 0.2;
+  float limit = 1;
 };
 struct results{
   float sum;
