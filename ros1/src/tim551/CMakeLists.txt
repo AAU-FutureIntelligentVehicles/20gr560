@@ -51,5 +51,8 @@ add_dependencies(avgsub tim551_generate_messages_cpp)
 add_executable(tfe src/tfe.cpp)
 target_link_libraries(tfe ${catkin_LIBRARIES})
 add_dependencies(tfe tim551_generate_messages_cpp)
+add_executable(test1 src/test1.cpp)
+target_link_libraries(test1 ${catkin_LIBRARIES})
+add_dependencies(test1 tim551_generate_messages_cpp)
 
 
