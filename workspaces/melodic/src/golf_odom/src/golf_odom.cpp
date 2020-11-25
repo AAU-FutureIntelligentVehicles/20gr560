@@ -56,19 +56,25 @@ void calculateOdometry(){
   delta_right = right - p_right;
 
   //Find heading
-  heading = (left - right) / rearTread;
+  heading = (delta_right - delta_left) / rearTread;
+	//Update Current Heading
+	currentHeading = currentHeading + heading;
 
   //Find change in XY position since last iteration
   //Since we are looking at the center of the axle, we take the average of both left and right ticks
-  axleLength = ((delta_left-delta_right)/2);
-  delta_x = axleLength * cos(heading);
-  delta_y = axleLength * sin(heading);
+  //axleLength = ((delta_left+delta_right)/2);
+	double delta_s = (delta_right + delta_left)/2;
+
+	double delta_d = delta_s;
+	delta_x = delta_d*cos(currentHeading+(heading/2));
+	delta_y = delta_d*sin(currentHeading+(heading/2));
+  //delta_x = axleLength * cos(currentHeading);
+  //delta_y = axleLength * sin(currentHeading);
 	//std::cout<<delta_x<<std::endl;
 
   //Update current position
   x = x + delta_x;
 	y = y + delta_y;
-  currentHeading = currentHeading + heading;
 
 	timeChange = current_Time - previous_Time;
 
@@ -131,7 +137,7 @@ int main(int argc, char **argv)
 	ros::Subscriber LeftTicks_sub = nh.subscribe("ticks_left", 1000, LeftTicks_Callback);
 	ros::Subscriber RightTicks_sub = nh.subscribe("ticks_right", 1000, RightTicks_Callback);
 
-  ros::Rate rate(10);
+  ros::Rate rate(5);
   while(nh.ok()){
     ros::spinOnce();
 
@@ -139,7 +145,7 @@ int main(int argc, char **argv)
 		std::cout<<"%%%%%%%%%%%%%%%%%%%%%"<<std::endl;
 		std::cout<<"X: "<<x<<" Y: "<<y<<std::endl;
 	  std::cout<<"Left distance (m): "<<left<<" Right distance (m): "<<right<<std::endl;
-		std::cout<<"Vel: " << v_x << std::endl;
+		std::cout<<"Vel: " << v_x << "  currentHeading: " << currentHeading << std::endl;
 		std::cout<< "Time change: " << timeChange << std::endl;
 	  //std::cout<<"Heading: "<<heading<<std::endl;
 
