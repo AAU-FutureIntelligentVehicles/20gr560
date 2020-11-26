@@ -1,8 +1,0 @@
-prefix=/home/frederik/Documents/20gr560/workspaces/melodic/devel
-
-Name: golf_odom
-Description: Description of golf_odom
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
