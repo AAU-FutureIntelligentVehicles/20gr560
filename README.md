@@ -29,12 +29,10 @@ Project report to be found here: []
 <img src="https://www.intelrealsense.com/wp-content/uploads/2020/07/depth-camera-d455-intel-realsense.jpg" alt="D455" width="200"/>
 
 ## Software
-* ROS2 Foxy Fitzroy LTS distribution [https://index.ros.org/doc/ros2/Installation/Foxy/]
+* ROS2 Foxy Fitzroy [https://index.ros.org/doc/ros2/Installation/Foxy/]
+* ROS Melodic Morenia [https://wiki.ros.org/melodic#ROS_Melodic_Morenia]
 * tpod_driver (Main driver for interfacing with the AAU vehicle platform) [https://github.com/AAU-FutureIntelligentVehicles/tpod_driver]
-### Langauges used
-* C++
-* LaTeX
-* Markdown
+
 
 
 # SETUP, INSTRUCTIONS, INSTALLATIONS
