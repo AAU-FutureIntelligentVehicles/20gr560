@@ -1,0 +1,6 @@
+image: parking_lot.png
+resolution: 0.1
+origin: [-5.0, -5.0, 0.0]
+negate: 0
+occupied_thresh: 0.70
+free_thresh: 0.1
