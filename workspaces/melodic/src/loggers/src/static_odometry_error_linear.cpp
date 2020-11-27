@@ -20,17 +20,22 @@ public:
   //Constructor
   logger(){
     odom_sub = nh.subscribe("odom", 50, &logger::Odom_Callback, this);
+    dist_sub = nh.subscribe("dist", 1, &logger::Dist_Callback, this);
   }
 
   //Callbacks
+  void Dist_Callback(const std_msgs::Float64::ConstPtr& msg){
+    x_pos = msg->data;
+  }
   void Odom_Callback(const nav_msgs::Odometry::ConstPtr& msg){
-    x_pos = msg->pose.pose.position.x;
+    //x_pos = msg->pose.pose.position.x;
     y_pos = msg->pose.pose.position.y;
   };
 
 private:
   ros::NodeHandle nh;
-  ros::Subscriber odom_sub;
+  ros::Subscriber odom_sub,
+                  dist_sub;
 };
 
 

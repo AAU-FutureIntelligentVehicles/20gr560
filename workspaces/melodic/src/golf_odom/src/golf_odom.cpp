@@ -132,7 +132,9 @@ int main(int argc, char **argv)
 
   ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
 	ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("vel_odom",1);
+	ros::Publisher dist = nh.advertise<std_msgs::Float64>("dist", 1);
 	std_msgs::Float64 vel_msg;
+	std_msgs::Float64 dist_msg;
 
 	ros::Subscriber LeftTicks_sub = nh.subscribe("ticks_left", 1000, LeftTicks_Callback);
 	ros::Subscriber RightTicks_sub = nh.subscribe("ticks_right", 1000, RightTicks_Callback);
@@ -142,16 +144,18 @@ int main(int argc, char **argv)
     ros::spinOnce();
 
 	  calculateOdometry();
-		std::cout<<"%%%%%%%%%%%%%%%%%%%%%"<<std::endl;
+		//std::cout<<"%%%%%%%%%%%%%%%%%%%%%"<<std::endl;
 		std::cout<<"X: "<<x<<" Y: "<<y<<std::endl;
 	  std::cout<<"Left distance (m): "<<left<<" Right distance (m): "<<right<<std::endl;
-		std::cout<<"Vel: " << v_x << "  currentHeading: " << currentHeading << std::endl;
-		std::cout<< "Time change: " << timeChange << std::endl;
+		//std::cout<<"Vel: " << v_x << "  currentHeading: " << currentHeading << std::endl;
+		//std::cout<< "Time change: " << timeChange << std::endl;
 	  //std::cout<<"Heading: "<<heading<<std::endl;
 
     odomPublisher();
     odom_pub.publish(odom);
 		vel_msg.data = v_x;
+		dist_msg.data = left;
+		dist.publish(dist_msg);
 		vel_pub.publish(vel_msg);
     rate.sleep();
   }

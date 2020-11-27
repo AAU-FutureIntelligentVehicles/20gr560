@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="tpod_driver" pkg="tpod_driver" type="tpod_driver_node" output="screen">
+    <param name="tpod_ip" value="192.168.1.20:50000" type="str" />
+
+    <param name="axis_linear" value="1" type="int" />
+    <param name="axis_angular" value="0" type="int" />
+  </node>
+  <node name="golf_odom" pkg="golf_odom" type="golf_odom" output="screen">
+  </node>
+  <node name="static_odometry_error_linear_logger" pkg="loggers" type="static_odometry_error_linear_logger" output="screen">
+  </node>
+</launch>
