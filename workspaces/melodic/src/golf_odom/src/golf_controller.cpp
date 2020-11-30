@@ -8,6 +8,7 @@
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
 #include <cmath>
+#include <ackermann_msgs/AckermannDriveStamped.h>
 
 double linear_vel;
 double wheel_base = 1.64;
@@ -32,13 +33,13 @@ std::cout<<"Steering angle map:"<<steering_angle_map<<std::endl;
     steering_angle_map = -20000;
   }
   else{
-	steering_angle_map = steering_angle_map;	
+	steering_angle_map = steering_angle_map;
 }
 }
 
-void PathPlanner_Callback(const nav_msgs::Odometry::ConstPtr& msg){
-  path_lin_vel = msg->twist.twist.linear.x;
-  path_ang_vel = msg->twist.twist.angular.z;
+void PathPlanner_Callback(const ackermann_msgs::AckermannDriveStamped::ConstPtr& msg){
+  path_lin_vel = double(msg->drive.speed);
+  path_ang_vel = double(msg->drive.steering_angle);
   //std::cout<<"Path linear velocity:"<<path_lin_vel<<std::endl;
   //std::cout<<"Path angular velocity:"<<path_ang_vel<<std::endl;
 }
@@ -47,7 +48,7 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "golf_controller");
   ros::NodeHandle nh;
-  ros::Subscriber odom_sub = nh.subscribe("odom", 1000, PathPlanner_Callback);
+  ros::Subscriber Ackermann_sub = nh.subscribe("ackermann_cmd", 1, PathPlanner_Callback);
   ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("cmd_accelerator_position", 1000);
   ros::Publisher steer_pub = nh.advertise<std_msgs::Float64>("cmd_steering_angle", 1000);
 
@@ -56,7 +57,7 @@ int main(int argc, char **argv)
   while(nh.ok()){
     ros::spinOnce();
 
-       
+
     SetLinearVelocity(path_lin_vel);
     SetSteeringWheelPosition(path_ang_vel);
 

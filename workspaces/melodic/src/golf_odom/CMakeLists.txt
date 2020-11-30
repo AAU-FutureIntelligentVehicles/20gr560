@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf
   nav_msgs
+  ackermann_msgs
 )
 
 catkin_package(
@@ -26,3 +27,6 @@ include_directories(
 
 add_executable(golf_odom src/golf_odom.cpp)
 target_link_libraries(golf_odom ${catkin_LIBRARIES})
+
+add_executable(golf_controller src/golf_controller.cpp)
+target_link_libraries(golf_controller ${catkin_LIBRARIES})

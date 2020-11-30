@@ -127,7 +127,7 @@ int main(int argc, char **argv)
 	ros::Subscriber RightTicks_sub = nh.subscribe("ticks_right", 1000, RightTicks_Callback);
 
   ros::Rate rate(10);
-  while(nh.ok()){
+  while(ros::ok()){
     ros::spinOnce();
 
 	  calculateOdometry();
