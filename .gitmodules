@@ -1,0 +1,3 @@
+[submodule "workspaces/noetic/tpod_driver"]
+	path = workspaces/noetic/tpod_driver
+	url = https://github.com/AAU-FutureIntelligentVehicles/tpod_driver.git
