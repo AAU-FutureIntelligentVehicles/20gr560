@@ -1,3 +1,6 @@
 [submodule "workspaces/noetic/tpod_driver"]
 	path = workspaces/noetic/tpod_driver
 	url = https://github.com/AAU-FutureIntelligentVehicles/tpod_driver.git
+[submodule "workspaces/noetic/src/Path_planner"]
+	path = workspaces/noetic/src/Path_planner
+	url = https://github.com/Hakaino/Path_Planner.git
