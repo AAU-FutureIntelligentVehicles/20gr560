@@ -130,7 +130,7 @@ int main(int argc, char **argv)
 	ros::Time previousTime = ros::Time::now();
 	double previous_Time = ros::Time::now().toSec();
 
-  ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
+  ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("golf_odom", 50);
 	ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("vel_odom",1);
 	ros::Publisher dist = nh.advertise<std_msgs::Float64>("dist", 1);
 	std_msgs::Float64 vel_msg;
