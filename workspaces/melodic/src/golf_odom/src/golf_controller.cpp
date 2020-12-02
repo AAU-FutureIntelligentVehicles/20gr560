@@ -14,6 +14,9 @@ double linear_vel;
 double wheel_base = 1.64;
 double steering_angle, steering_angle_map;
 double path_lin_vel, path_ang_vel;
+double steering_resolution = 19900;
+double max_steering_angle = 0.617322956;
+double steering_resolution_map = steering_resolution/max_steering_angle;
 
 std_msgs::Float64 lin_vel_pub;
 std_msgs::Float64 ang_vel_pub;
@@ -24,13 +27,13 @@ void SetLinearVelocity(double desired_lin_vel){
 
 void SetSteeringWheelPosition(double desired_ang_vel){
   steering_angle = atan2((wheel_base*desired_ang_vel), linear_vel);
-  steering_angle_map = steering_angle*42735.042735;
+  steering_angle_map = steering_angle*steering_resolution_map;
 std::cout<<"Steering angle map:"<<steering_angle_map<<std::endl;
-  if(steering_angle_map > 20000){
-    steering_angle_map = 20000;
+  if(steering_angle_map > steering_resolution){
+    steering_angle_map = steering_resolution;
   }
-  else if(steering_angle_map < -20000){
-    steering_angle_map = -20000;
+  else if(steering_angle_map < -steering_resolution){
+    steering_angle_map = -steering_resolution;
   }
   else{
 	steering_angle_map = steering_angle_map;
