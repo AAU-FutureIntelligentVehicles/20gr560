@@ -49,6 +49,13 @@ int main(int argc, char** argv){
         transform5.setRotation(q5);
         bc.sendTransform(tf::StampedTransform(transform5, ros::Time::now(), "base_link", "laser_rear"));
 
+        tf::Transform transform6;
+        transform6.setOrigin( tf::Vector3(0, -0.41, 0.97) );
+        tf::Quaternion q6;
+        q6.setRPY(0,0,0);
+        transform6.setRotation(q6);
+        bc.sendTransform(tf::StampedTransform(transform5, ros::Time::now(), "base_link", "real_sense_link"))
+
         r.sleep();
     }
 }
