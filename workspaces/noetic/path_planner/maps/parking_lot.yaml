@@ -1,0 +1,6 @@
+image: parking_lot.png
+resolution: 0.1		#with 200x200 pixels, a 20p x 0.1r = 20 units side 
+origin: [-10.0, -10.0, 0.0]	#so we (-10, -10) translate so that the center is at 0
+negate: 0
+occupied_thresh: 0.70
+free_thresh: 0.1
