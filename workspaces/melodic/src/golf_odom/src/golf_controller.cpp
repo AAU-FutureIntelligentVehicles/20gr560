@@ -10,65 +10,81 @@
 #include <cmath>
 #include <ackermann_msgs/AckermannDriveStamped.h>
 
-double linear_vel;
+double linear_vel = 0;
 double wheel_base = 1.64;
-double steering_angle, steering_angle_map;
-double path_lin_vel, path_ang_vel;
-double steering_resolution = 19900;
+double steering_pos;
+double path_lin_vel, path_ang = 0;
+double steering_resolution = 20000;
 double max_steering_angle = 0.617322956;
-double steering_resolution_map = steering_resolution/max_steering_angle;
+double steering_resolution_map = max_steering_angle/steering_resolution;
 
 std_msgs::Float64 lin_vel_pub;
-std_msgs::Float64 ang_vel_pub;
+std_msgs::Float64 ang_pub;
 
 void SetLinearVelocity(double desired_lin_vel){
   linear_vel = 0.6252*desired_lin_vel + 0.4173;
 }
 
-void SetSteeringWheelPosition(double desired_ang_vel){
-  steering_angle = atan2((wheel_base*desired_ang_vel), linear_vel);
-  steering_angle_map = steering_angle*steering_resolution_map;
-std::cout<<"Steering angle map:"<<steering_angle_map<<std::endl;
-  if(steering_angle_map > steering_resolution){
-    steering_angle_map = steering_resolution;
+void SetSteeringWheelPosition(double desired_ang){
+  steering_pos = desired_ang/steering_resolution_map;
+  if(steering_pos > steering_resolution){
+    steering_pos = steering_resolution;
   }
-  else if(steering_angle_map < -steering_resolution){
-    steering_angle_map = -steering_resolution;
+  else if(steering_pos < -steering_resolution){
+    steering_pos = -steering_resolution;
   }
   else{
-	steering_angle_map = steering_angle_map;
-}
+    steering_pos = steering_pos;
+  }
+  std::cout << "Steering pos: " << steering_pos << std::endl;
+  /*
+  //std::cout<<"Desired angular velocity:"<<desired_ang_vel<<std::endl;
+  //std::cout<<"Desired linear velocity:"<<linear_vel<<std::endl;
+  //std::cout<<"Steering resolution map:"<<steering_resolution_map<<std::endl;
+  steering_angle = atan((wheel_base*desired_ang_vel) / linear_vel);
+  steering_angle_map = steering_angle*steering_resolution_map;
+  //std::cout<<"Steering angle map:"<<steering_angle_map<<std::endl;
+  if(steering_angle_map > steering_resolution){
+    std::cout << "Steering angle too high: " << steering_angle_map << std::endl;
+  }
+  else if(steering_angle_map < -steering_resolution){
+    std::cout << "Steering angle too low" << steering_angle_map << std::endl;
+  }
+  else{
+	   steering_angle_map_real = steering_angle_map;
+  }
+  */
 }
 
-void PathPlanner_Callback(const ackermann_msgs::AckermannDriveStamped::ConstPtr& msg){
-  path_lin_vel = double(msg->drive.speed);
-  path_ang_vel = double(msg->drive.steering_angle);
-  //std::cout<<"Path linear velocity:"<<path_lin_vel<<std::endl;
-  //std::cout<<"Path angular velocity:"<<path_ang_vel<<std::endl;
+
+void cmdvel_Callback(const geometry_msgs::Twist::ConstPtr& msg){
+  path_lin_vel = double(msg->linear.x);
+  path_ang = double(msg->angular.z);
 }
 
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "golf_controller");
   ros::NodeHandle nh;
-  ros::Subscriber Ackermann_sub = nh.subscribe("ackermann_cmd", 1, PathPlanner_Callback);
+  ros::Subscriber cmd_vel_sub = nh.subscribe("cmd_vel", 1, cmdvel_Callback);
   ros::Publisher vel_pub = nh.advertise<std_msgs::Float64>("cmd_accelerator_position", 1000);
   ros::Publisher steer_pub = nh.advertise<std_msgs::Float64>("cmd_steering_angle", 1000);
 
-  ros::Rate rate(10);
+  ros::Rate rate(5);
 
   while(nh.ok()){
     ros::spinOnce();
 
-
-    SetLinearVelocity(path_lin_vel);
-    SetSteeringWheelPosition(path_ang_vel);
+    if(path_lin_vel){
+        SetLinearVelocity(path_lin_vel);
+    }
+    SetSteeringWheelPosition(path_ang);
 
     lin_vel_pub.data = linear_vel;
-    ang_vel_pub.data = steering_angle_map;
+    ang_pub.data = steering_pos;
 
     vel_pub.publish(lin_vel_pub);
-    steer_pub.publish(ang_vel_pub);
+    steer_pub.publish(ang_pub);
 
     rate.sleep();
   }
