@@ -23,7 +23,7 @@ std_msgs::Float64 lin_vel_pub;
 std_msgs::Float64 ang_pub;
 
 void SetLinearVelocity(double desired_lin_vel){
-  linear_vel = 0.6252*desired_lin_vel + 0.4173;
+  linear_vel = 0.6252*abs(desired_lin_vel) + 0.4173; //taking abs() because we cannot switch directions with + and -
   if(linear_vel < min_vel){
     linear_vel = min_vel;
   }
