@@ -144,12 +144,6 @@ int main(int argc, char **argv)
     ros::spinOnce();
 
 	  calculateOdometry();
-		//std::cout<<"%%%%%%%%%%%%%%%%%%%%%"<<std::endl;
-		//std::cout<<"X: "<<x<<" Y: "<<y<<std::endl;
-	  //std::cout<<"Left distance (m): "<<left<<" Right distance (m): "<<right<<std::endl;
-		std::cout<<"Vel: " << v_x << "  currentHeading: " << currentHeading << std::endl;
-		//std::cout<< "Time change: " << timeChange << std::endl;
-	  std::cout<<"Heading: "<<heading<<std::endl;
 
     odomPublisher();
     odom_pub.publish(odom);
