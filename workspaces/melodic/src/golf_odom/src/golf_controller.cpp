@@ -16,6 +16,7 @@ double steering_pos;
 double path_lin_vel, path_ang = 0;
 double steering_resolution = 20000;
 double max_steering_angle = 0.617322956;
+double min_vel = 0.5;
 double steering_resolution_map = max_steering_angle/steering_resolution;
 
 std_msgs::Float64 lin_vel_pub;
@@ -23,6 +24,9 @@ std_msgs::Float64 ang_pub;
 
 void SetLinearVelocity(double desired_lin_vel){
   linear_vel = 0.6252*desired_lin_vel + 0.4173;
+  if(linear_vel < min_vel){
+    linear_vel = min_vel;
+  }
 }
 
 void SetSteeringWheelPosition(double desired_ang){
@@ -36,24 +40,6 @@ void SetSteeringWheelPosition(double desired_ang){
   else{
     steering_pos = steering_pos;
   }
-  std::cout << "Steering pos: " << steering_pos << std::endl;
-  /*
-  //std::cout<<"Desired angular velocity:"<<desired_ang_vel<<std::endl;
-  //std::cout<<"Desired linear velocity:"<<linear_vel<<std::endl;
-  //std::cout<<"Steering resolution map:"<<steering_resolution_map<<std::endl;
-  steering_angle = atan((wheel_base*desired_ang_vel) / linear_vel);
-  steering_angle_map = steering_angle*steering_resolution_map;
-  //std::cout<<"Steering angle map:"<<steering_angle_map<<std::endl;
-  if(steering_angle_map > steering_resolution){
-    std::cout << "Steering angle too high: " << steering_angle_map << std::endl;
-  }
-  else if(steering_angle_map < -steering_resolution){
-    std::cout << "Steering angle too low" << steering_angle_map << std::endl;
-  }
-  else{
-	   steering_angle_map_real = steering_angle_map;
-  }
-  */
 }
 
 
