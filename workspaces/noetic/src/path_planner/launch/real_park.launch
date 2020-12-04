@@ -8,10 +8,10 @@
  -->
 <launch>
 
-        <!--  ************** Ackermann steering converter ***************  
+        <!--  ************** Ackermann steering converter ***************
 	 <include file="$(find path_planner)/scripts/ackermann.py" />-->
 	  <node name="ackermann" pkg="path_planner" type="ackermann.py" />
-	 
+
 	<!--  ************** Global Parameters ***************  -->
         <param name="/use_sim_time" value="true"/>
 
@@ -33,7 +33,7 @@
 		<param name="planner_patience" value="5.0" />
 
 		<param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
-		<param name="controller_frequency" value="5.0" />
+		<param name="controller_frequency" value="0.5" />
 		<param name="controller_patience" value="15.0" />
 
                 <param name="clearing_rotation_allowed" value="false" /> <!-- Our carlike robot is not able to rotate in place -->
