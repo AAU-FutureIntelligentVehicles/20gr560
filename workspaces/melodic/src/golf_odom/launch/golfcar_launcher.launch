@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node name = "sick_tim551_2050001" pkg = "sick_tim" type = "sick_tim551_2050001" output = "screen" />
+  <include file = "$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch" />
+  <node name = "golf_odom" pkg = "golf_odom" type = "golf_odom" output = "screen" />
+  <node name = "odom_merge" pkg = "laser_data" type = "odom_merge" output = "screen" />
+  <include file = "$(find path_planner)/launch/real_park.launch" />
+  <node name = "golf_controller" pkg = "golf_odom" type = "golf_controller" output = "screen" />
+</launch>
