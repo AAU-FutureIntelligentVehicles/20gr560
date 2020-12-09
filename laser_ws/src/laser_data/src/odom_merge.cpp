@@ -19,7 +19,7 @@ private:
 public:
     void subscriber(){
         sub=nh.subscribe("odom_rf2o",10,&test::callback, this);
-        sub1=nh.subscribe("odom", 10, &test::callback1, this);
+        sub1=nh.subscribe("golf_odom", 10, &test::callback1, this);
     }
     void publisher(){
         pub=nh.advertise<nav_msgs::Odometry>("odom_merge", 1000);
