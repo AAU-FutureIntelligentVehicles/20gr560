@@ -28,7 +28,7 @@ public:
     //ROS_INFO("X: [%f]", laser_data->pose.pose.position.x);
 
 
-    laser_x = laser_data->pose.pose.position.x;
+    laser_x = -(laser_data->pose.pose.position.x);
     laser_y = laser_data->pose.pose.position.y;
     laser_ori_x = laser_data->pose.pose.orientation.x;
     laser_ori_y = laser_data->pose.pose.orientation.y;
