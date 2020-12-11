@@ -70,9 +70,9 @@ void pubi(){
         ori = encoder_weigth * encoder_yaw + laser_weigth * laser_yaw;
         vel_x = encoder_weigth * encoder_vel_x + laser_weigth * laser_vel_x;
         ang_z = encoder_weigth * encoder_ang_z + laser_weigth * laser_ang_z;
-      //  ROS_INFO("X: [%f]", x);
-       // ROS_INFO("Y: [%f]", y);
-      //  ROS_INFO("Heading: [%f]", ori);
+        ROS_INFO("X: [%f]", x);
+        ROS_INFO("Y: [%f]", y);
+        ROS_INFO("Heading: [%f]", ori);
 
         geometry_msgs::Quaternion quaternion = tf::createQuaternionMsgFromYaw(ori);
 
