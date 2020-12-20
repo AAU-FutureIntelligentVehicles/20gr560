@@ -1,26 +1,42 @@
-cmake_minimum_required(VERSION 3.0.2)
-project(parking_spot_detector)
+cmake_minimum_required(VERSION 3.8.0)
+project(rs_parking)
+message(-- CMake version: ${CMAKE_VERSION})
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+add_compile_options(-std=c++14)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  cv_bridge
   geometry_msgs
-  pcl_ros
   roscpp
   sensor_msgs
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS 
-   system
+# find_package(Boost REQUIRED COMPONENTS system)
+find_package(OpenCV 4 REQUIRED
+  HINTS /usr/local
 )
-find_package(OpenCV REQUIRED)
+find_package(realsense2 2.39.0 REQUIRED)
+if(NOT realsense2_FOUND)
+    message(FATAL_ERROR "\n\n Intel RealSense SDK 2.0 is missing, please install it from https://github.com/IntelRealSense/librealsense/releases\n\n")
+endif()
+#find_package(PCL 1.8 REQUIRED
+#  HINTS /usr/lib/x86_64-linux-gnu
+#  HINTS /usr/local/lib
+#)
 
+#if(PCL_FOUND)
+#	message(INFO " PCL details")
+#	message(${PCL_INCLUDE_DIRS})
+#	message(${PCL_LIBRARY_DIRS})
+#	message(${PCL_LIBRARIES})
+#	message(${PCL_DEFINITIONS})
+#	message(INFO " PCL end")
+#endif()
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -75,7 +91,7 @@ find_package(OpenCV REQUIRED)
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   geometry_msgs#   sensor_msgs
+#   geometry_msgs#   sensor_msgs#   std_msgs
 # )
 
 ################################################
@@ -109,8 +125,8 @@ find_package(OpenCV REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES parking_spot_detector
-#  CATKIN_DEPENDS OpenCV cv_bridge geometry_msgs pcl_ros roscpp sensor_msgs
+#  LIBRARIES rs_parking
+#  CATKIN_DEPENDS geometry_msgs roscpp sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
@@ -124,13 +140,13 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
-  ${Boost_INCLUDE_DIRS}
-  ${system_INCLUDE_DIRS}
+  ${realsense2_INCLUDE_DIR}
+#  ${PCL_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/parking_spot_detector.cpp
+#   src/${PROJECT_NAME}/rs_parking.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -141,7 +157,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(${PROJECT_NAME}_node src/detector.cpp)
+add_executable(${PROJECT_NAME}_node src/rs_parking_node.cpp)
+add_executable(recorder_node src/recorder_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -151,20 +168,24 @@ add_executable(${PROJECT_NAME}_node src/detector.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(
-	${PROJECT_NAME}_node 
-	${${PROJECT_NAME}_EXPORTED_TARGETS} 
-	${catkin_EXPORTED_TARGETS} 
-	${Boost_EXPORTED_TARGETS}
-)
+# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_definitions( ${PCL_DEFINITIONS} )
+link_directories( ${PCL_LIBRARY_DIRS} )
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
-    ${catkin_LIBRARIES}
-	${OpenCV_LIBS}
-	${Boost_LIBS}
-	${system_LIBS}
- )
+  ${catkin_LIBRARIES}
+#  ${PCL_LIBRARIES}
+  ${OpenCV_LIBS}
+  ${realsense2_LIBRARY}
+)
+target_link_libraries(recorder_node
+  ${catkin_LIBRARIES}
+#  ${PCL_LIBRARIES}
+  ${OpenCV_LIBS}
+  ${realsense2_LIBRARY}
+)
 
 #############
 ## Install ##
@@ -213,7 +234,7 @@ target_link_libraries(${PROJECT_NAME}_node
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_parking_spot_detector.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_rs_parking.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
