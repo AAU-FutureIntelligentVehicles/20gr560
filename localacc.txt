@@ -1,0 +1,112 @@
+Parpendicular parking:
+Test 1:
+	Starting odom_merge:			
+		X: [-0.008015]
+		Y: [0.029798]
+		Heading: [0.008661]
+	Move base goal:					End odom_merge:
+		X: [-1.973320961]				X:[-3.052769]
+		Y: [-2.89839434624]				Y:[2.377093]
+		Z: [0.0]					Heading:[1.264109]
+		Orientation:
+			z: 0.7046392386
+			w: 0.709565742849
+
+
+	Off-sets:
+	 X: [1.079448039]		Real Z: [140]
+	 Y: [0.521297]
+	 				Computed Z: [1.1987]
+					Difference: [0.2013]	
+
+
+Test 2:
+	Starting odom_merge:			
+		X: [-0.004110]
+		Y: [0.020415]
+		Heading: [-0.004681]
+	Move base goal:					End odom_merge:
+		X: [-1.98065710068]				X:[-3.014397]
+		Y: [-2.9931473732]				Y:[2.010158]
+		Z: [0.0]					Heading:[1.227051]
+		Orientation:
+			z: 0.712616039918
+			w: 0.701554259948
+
+	Off-sets:
+	 X: [1.033747]		Real Z: [90]
+	 Y: [0.982982]
+	 			Computed Z: [1.4265]	
+				Difference: [0.5265]
+
+
+Test 3:
+	Starting odom_merge:			
+		X: [0.047678]
+		Y: [-0.000036]
+		Heading: [-0.013642]
+	Move base goal:					End odom_merge:
+		X: [-1.99673986435]				X:[-3.149613]
+		Y: [-2.8460586071]				Y:[1.930222]
+		Z: [0.0]					Heading:[1.138829]
+		Orientation:
+			z: 0.711670563849
+			w: 0.702513351155
+	Off-sets:
+	 X: [1.152883]		Real Z: [115]
+	 Y: [0.915828]
+	 			Computed Z: [1.4724]
+				Difference : [0.3224]
+
+Parallel parking:
+Test 1:
+	Starting odom_merge:			
+		X: [-0.024346]
+		Y: [0.006526]
+		Heading: [-0.002144]
+	Move base goal:					End odom_merge:
+		X: [-3.99547529221]				X:[-3.164500]
+		Y: [-1.97889471054]				Y:[0.676486]
+		Z: [0.0]					Heading:[0.403479]
+		Orientation:
+			z: 0.00200342369357
+			w: 0.999997993145
+	Off-sets:
+	 X: [0.83097]		Real Z: [110]
+	 Y: [1.302404]
+	 			Computed Z: [1.5449]
+				Diffrence: [0.4449]
+Test 2:
+	Starting odom_merge:			
+		X: [-0.001695]
+		Y: [0.005855]
+		Heading: [-0.000168]
+	Move base goal:					End odom_merge:
+		X: [-4.06773710251]				X:[-3.509264]
+		Y: [-1.89857316017]				Y:[0.125001]
+		Z: [0.0]					Heading:[0.095633]
+		Orientation:
+			z: 0.00352793339826
+			w: 0.999993776924
+	Off-sets:
+	 X: [0.558466]		Real Z: [112]
+	 Y: [1.773569]
+	 			Computed Z: [1.8594]
+				Difference: [0.7394)
+Test 3:
+	Starting odom_merge:			
+		X: [-0.004779]
+		Y: [0.001204]
+		Heading: [-0.007875]
+	Move base goal:					End odom_merge:
+		X: [-4.05760097504]				X:[-3.746128]
+		Y: [-2.00678658485]				Y:[0.013380]
+		Z: [0.0]					Heading:[0.108003]
+		Orientation:
+			z: -0.00150491287007
+			w: 0.999998867618
+	Off-sets:
+	 X: [0.311472]		Real Z: [121]
+	 Y: [1.9934]
+	 			Computed Z: [2.0176]
+				Difference: [0.8076]
